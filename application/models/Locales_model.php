@@ -17,8 +17,8 @@ class Locales_model extends CI_Model {
     
     function buscador_locales($busqueda = null, $categoria = null)
     {
-        //$this->db->where('t2.estatus', 'activo');
-        //$this->db->where('t3.estatus', 'activo');
+        $this->db->where('t2.estatus', 'activo');
+        $this->db->where('t3.estatus', 'activo');
 
         if($categoria != '')
         {
