@@ -38,7 +38,7 @@ class Inicio extends MY_Controller {
 		$data['subcategorias_list'] = $subcategorias_list;
 		$data['buscador_list'] = $buscador_list;
 
-		$this->construir_public_ui('inicio' ,$data);
+		$this->construir_public_ui('inicio/index' ,$data);
 	}
 
 	public function fetch()
@@ -58,9 +58,6 @@ class Inicio extends MY_Controller {
 		$output .= '
 			<div class="table-responsive">
 				<table class="table table-bordered table-striped">
-				<tr>
-					<th>Nombre</th>
-				</tr>
 		';
 
 		/**

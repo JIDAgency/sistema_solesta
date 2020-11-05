@@ -13,5 +13,5 @@ class MY_Controller extends CI_Controller {
 		$this->load->view('_layout/public/header', $data);
         $this->load->view($contenido, $data);
         $this->load->view('_layout/public/footer', $data);
-	}
+    }
 }

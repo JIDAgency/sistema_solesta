@@ -43,14 +43,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-light navbar-border navbar-brand-center">
             <div class="navbar-wrapper">
             
-                <div class="navbar-header">
+                <!--div class="navbar-header"-->
+                <div class="">
 
                     <ul class="nav navbar-nav flex-row">
-                        <li class="nav-item d-none d-md-block">
-                            <a class="navbar-brand" href="<?php echo base_url(); ?>">
-                                <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
+                        <!--li class="nav-item d-none d-md-block">
+                            <a class="navbar-brand" href="<?php //echo base_url(); ?>">
+                                <img class="brand-logo" alt="robust admin logo" src="<?php //echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
                             </a>
-                        </li>
+                        </li-->
                         <li class="nav-item mobile-menu d-md-none mr-auto">
                             <!--a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
                                 <i class="fa fa-ellipsis-v"></i>
@@ -71,19 +72,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="collapse navbar-collapse" id="navbar-mobile">
 
                         <ul class="nav navbar-nav mr-auto float-left">
-                            <li class="nav-item nav-search">
+                            <li class="nav-item d-none d-md-block">
+                                <a class="navbar-brand" href="<?php echo base_url(); ?>">
+                                    <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
+                                </a>
+                            </li>
+                            <!--li class="nav-item nav-search">
                                 <a class="nav-link nav-link-search" href="#">
                                     <i class="ficon ft-search"></i>
                                 </a>
                                 <div class="search-input">
                                     <input class="input" type="text" placeholder="Explore Robust...">
                                 </div>
-                            </li>
+                            </li-->
                         </ul>
 
-                        <ul class="nav navbar-nav float-right">         
-                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a>
-                            </li>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."portada"; ?>" data-toggle="">Portada</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."directorio"; ?>" data-toggle="">Directorio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."info/acerca"; ?>" data-toggle="">Acerca</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."info/contacto"; ?>" data-toggle="">Contacto</a></li>
                         </ul>
 
                     </div>

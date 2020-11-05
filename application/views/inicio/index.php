@@ -77,6 +77,7 @@
 							</div>
 							
 							<div class="card-text">
+								<p>Hola</p>
 							</div>
 
 						</div>
