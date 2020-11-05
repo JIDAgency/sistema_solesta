@@ -3,6 +3,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Categorias_model extends CI_Model {
 
+    /** Metodos Basicos [Inicio] */
+    public function get_categorias(){
+        $query = $this->db
+            ->get('categorias');
+
+        return $query;
+    }
+
+    public function get_categoria_por_id($id)
+    {
+        $query = $this->db
+            ->where('id', intval($id))
+            ->get('categorias');
+        
+        return $query;
+    }
+
+    public function insert_categoria($data)
+    {
+        $query = $this->db
+            ->insert('categorias', $data);
+
+        return $query;
+    }
+
+    public function insert_matriz_categorias($data)
+    {
+        $query = $this->db
+            ->insert_batch('categorias', $data);
+
+        return $query;
+    }
+
+    public function update_categoria($id, $data)
+    {
+        $query = $this->db
+            ->where('id', $id)
+            ->update('categorias', $data);
+
+        return $query;
+    }
+    /** Metodos Basicos [Fin] */
+
 	public function get_lista_de_categorias_activas()
 	{
         $query = $this->db

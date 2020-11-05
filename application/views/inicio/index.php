@@ -61,7 +61,9 @@
 											<?php foreach ($categorias_list as $categoria_row): ?>
 													<option value="<?php echo $categoria_row->id; ?>" class="optionGroup"><?php echo $categoria_row->nombre; ?></option>
 													<?php foreach ($subcategorias_list as $subcategoria_row): ?>
-														<option value="<?php echo $subcategoria_row->id; ?>" class="optionChild"><?php echo $subcategoria_row->nombre; ?></option>
+														<?php if ($subcategoria_row->subcategoria_de == $categoria_row->id): ?>
+															<option value="<?php echo $subcategoria_row->id; ?>" class="optionChild"><?php echo $subcategoria_row->nombre; ?></option>
+														<?php endif; ?>
 													<?php endforeach; ?>
 											<?php endforeach; ?>
 										</select>

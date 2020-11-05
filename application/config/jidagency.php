@@ -20,3 +20,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['sistema_id'] = 'sistema_solesta';
 $config['sistema_nombre'] = 'SOLESTA';
 $config['sistema_nombre_cliente'] = 'SOLESTA';
+
+/*
+|--------------------------------------------------------------------------
+| URL's del sistema
+|--------------------------------------------------------------------------
+|
+*/
+$config['base_url_categorias'] = 'almacenamiento/imagenes/categorias/';

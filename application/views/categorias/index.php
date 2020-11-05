@@ -21,26 +21,17 @@
                     </div>
                     <div class="card-body  my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12 mb-2">
-                                <a href="<?php echo site_url("categorias"); ?>" itemprop="" data-size="480x360">
-                                    <img class="img-fluid" src="<?php echo base_url(); ?>app-assets/images/gallery/1.jpg" itemprop="" alt="Image description" />
-                                </a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 mb-2">
-                                <a href="<?php echo site_url("categorias"); ?>" itemprop="" data-size="480x360">
-                                    <img class="img-fluid" src="<?php echo base_url(); ?>app-assets/images/gallery/2.jpg" itemprop="" alt="Image description" />
-                                </a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 mb-2">
-                                <a href="<?php echo site_url("categorias"); ?>" itemprop="" data-size="480x360">
-                                    <img class="img-fluid" src="<?php echo base_url(); ?>app-assets/images/gallery/3.jpg" itemprop="" alt="Image description" />
-                                </a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 mb-2">
-                                <a href="<?php echo site_url("categorias"); ?>" itemprop="" data-size="480x360">
-                                    <img class="img-fluid" src="<?php echo base_url(); ?>app-assets/images/gallery/4.jpg" itemprop="" alt="Image description" />
-                                </a>
-                            </div>
+
+                            <?php foreach ($categorias_list as $categoria_row): ?>
+
+                                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                                    <a href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>" itemprop="" data-size="480x360">
+                                        <img class="img-fluid" src="<?php echo base_url_categorias().$categoria_row->url_imagen; ?>" itemprop="" alt="Imagen de <?php echo strtolower($categoria_row->nombre); ?>" />
+                                    </a>
+                                    <span><?php echo $categoria_row->nombre; ?></span>
+                                </div>
+
+                            <?php endforeach; ?>
                             
                         </div>
                     </div>

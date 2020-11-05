@@ -92,6 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."directorio"; ?>" data-toggle="">Directorio</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a></li>
