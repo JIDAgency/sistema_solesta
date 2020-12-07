@@ -7,18 +7,33 @@ if(actual_url.indexOf("index") < 0){
 
 $(document).ready(function(){
 
-    cargar_datos_busqueda();
+    //cargar_datos_busqueda();
 
     function cargar_datos_busqueda(busqueda, categoria)
     {
-        $.ajax({
-            url: method_call+"fetch",
-            method:"POST",
-            data:{busqueda : busqueda, categoria : categoria},
-            success:function(data){
-                $('#resultado').html(data);
-            }
-        })
+        var busqueda = $('#buscador').val();
+
+        if (busqueda.length === 0)
+        {
+            $('#resultado').hide();
+        } else {
+            $.ajax({
+                url: method_call+"fetch",
+                method:"POST",
+                data:{busqueda : busqueda, categoria : categoria},
+                success:function(data){
+                    $('#resultado').show();
+                    $('#resultado').addClass('auto_list');
+                    $('#resultado').html(data);
+                }
+            })
+        }
+    }
+
+    document.getElementById("vista").addEventListener("click", ocultar_resultado);
+
+    function ocultar_resultado() {
+        $('#resultado').hide();
     }
 
     $('#buscador').keyup(function(){

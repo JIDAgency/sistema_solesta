@@ -54,41 +54,21 @@ class Inicio extends MY_Controller {
 		}
 
 		$data = $this->locales_model->buscador_locales($busqueda, $categoria);
-		
-		$output .= '
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped">
-		';
 
-		/**
-		$output .= '
-			<tr>
-				<td>'.$busqueda.' '.$categoria.'</td>
-			</tr>
-		';
-		*/
-
-		if($data->num_rows() > 0)
-		{
+		if ($data->num_rows() > 0) {
 			foreach($data->result() as $row)
 			{
 				$output .= '
-					<tr>
-						<td>'.$row->nombre.'</td>
-					</tr>
+					<a href="'.site_url('/locales/ver/'.$row->url).'" class="list-group-item list-group-item-action">'.$row->nombre.'</a>
 				';
 			}
-		}
-		else
-		{
+		} else {
 			$output .= '
-				<tr>
-					<td colspan="5">No Data Found</td>
-				</tr>
+				<a href="'.base_url().'" class="list-group-item list-group-item-action">No se encontraron coincidencias...</a>
 			';
 		}
 
-		$output .= '</table>';
+		//$output .= '</table>';
 
 		echo $output;
 	}

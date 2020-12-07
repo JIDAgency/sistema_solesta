@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php endif;?>
 
     </head>
-    <body class="horizontal-layout horizontal-menu horizontal-menu-padding 2-columns   menu-expanded" data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+    <body id="vista" class="horizontal-layout horizontal-menu horizontal-menu-padding 2-columns   menu-expanded" data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
 
         <!-- fixed-top-->
         

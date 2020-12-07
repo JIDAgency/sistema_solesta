@@ -14,6 +14,8 @@
                     <h4 class="card-title text-uppercase">Categorías Solesta</h4>
                 </div>
                 <div class="card-content">
+                    <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
+
                     <div class="card-body">
                         <div class="card-text">
                             <p>Texto complementario. Texto complementario. Texto complementario. Texto complementario. Texto complementario.</p>

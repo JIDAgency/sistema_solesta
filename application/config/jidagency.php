@@ -23,8 +23,18 @@ $config['sistema_nombre_cliente'] = 'SOLESTA';
 
 /*
 |--------------------------------------------------------------------------
+| Cuentas del sistema
+|--------------------------------------------------------------------------
+|
+*/
+$config['email_envio'] = 'contacto@jid.agency';
+$config['email_contacto'] = 'contacto@jid.agency';
+
+/*
+|--------------------------------------------------------------------------
 | URL's del sistema
 |--------------------------------------------------------------------------
 |
 */
 $config['base_url_categorias'] = 'almacenamiento/imagenes/categorias/';
+$config['base_url_locales'] = 'almacenamiento/imagenes/locales/';

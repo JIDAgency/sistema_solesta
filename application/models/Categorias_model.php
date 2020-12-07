@@ -6,6 +6,7 @@ class Categorias_model extends CI_Model {
     /** Metodos Basicos [Inicio] */
     public function get_categorias(){
         $query = $this->db
+            ->order_by("nombre asc")
             ->get('categorias');
 
         return $query;
@@ -53,6 +54,15 @@ class Categorias_model extends CI_Model {
             ->where('tipo', 'categoria')
             ->get('categorias');
 
+        return $query;
+    }
+
+    public function get_categoria_por_url($categoria)
+    {
+        $query = $this->db
+            ->where('url', strval($categoria))
+            ->get('categorias');
+        
         return $query;
     }
     

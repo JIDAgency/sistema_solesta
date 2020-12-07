@@ -8,16 +8,21 @@ class Categorias extends MY_Controller {
 		parent::__construct();
 
 		$this->load->model("categorias_model");
+		$this->load->model("locales_model");
     }
 
 	public function index()
 	{
 		$data['pagina_menu_inicio'] = true;
-		$data['pagina_titulo'] = 'Categorias';
+		$data['pagina_titulo'] = 'Categorías';
 
-		$data['controlador'] = 'index';
+		$data['controlador'] = 'categorias/index';
 		$data['regresar_a'] = 'inicio';
 		$controlador_js = "categorias/index";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
 
 		$data['styles'] = array(
 			array('es_rel' => false, 'href' => base_url() . 'app-assets/css/pages/gallery.css'),
@@ -40,19 +45,39 @@ class Categorias extends MY_Controller {
 
     public function ver($categoria = null)
 	{
-		$data['pagina_menu_inicio'] = true;
-		$data['pagina_titulo'] = '';
+		if ($this->input->post()) {
+			$categoria = $this->input->post('categoria');
+		}
+		
+		$categoria_row = $this->categorias_model->get_categoria_por_url($categoria)->row();
 
-		$data['controlador'] = 'ver';
+		$data['pagina_menu_inicio'] = true;
+		$data['pagina_titulo'] = ucfirst(mb_strtolower($categoria_row->nombre));
+
+		$data['controlador'] = 'categorias/ver/'.$categoria.'';
 		$data['regresar_a'] = 'categorias';
 		$controlador_js = "categorias/ver";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
 
 		$data['styles'] = array(
 		);
 		$data['scripts'] = array(
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
-		
+
+		if (!$categoria_row) {
+			$this->session->set_flashdata('MENSAJE_ERROR', '¡Oops! Al parecer ha ocurrido un error, por favor intentelo más tarde. (1)');
+			redirect($data['regresar_a']);
+		}
+
+		$locales_list = $this->locales_model->get_locales_por_categoria_por_id($categoria_row->id)->result();
+
+		$data['categoria_row'] = $categoria_row;
+		$data['locales_list'] = $locales_list;
+
 		$this->construir_public_ui('categorias/ver' ,$data);
     }
 	
