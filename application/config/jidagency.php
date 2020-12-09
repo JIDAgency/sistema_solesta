@@ -36,5 +36,5 @@ $config['email_contacto'] = 'contacto@jid.agency';
 |--------------------------------------------------------------------------
 |
 */
-$config['base_url_categorias'] = 'almacenamiento/imagenes/categorias/';
-$config['base_url_locales'] = 'almacenamiento/imagenes/locales/';
+$config['base_url_categorias'] = 'almacenamiento/categorias/';
+$config['base_url_locales'] = 'almacenamiento/locales/';

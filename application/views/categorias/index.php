@@ -30,7 +30,6 @@
                                     <a href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>" itemprop="" data-size="480x360">
                                         <img class="img-fluid" src="<?php echo base_url_categorias().$categoria_row->url_imagen; ?>" itemprop="" alt="Imagen de <?php echo strtolower($categoria_row->nombre); ?>" />
                                     </a>
-                                    <span><?php echo $categoria_row->nombre; ?></span>
                                 </div>
 
                             <?php endforeach; ?>

@@ -27,10 +27,9 @@
                             <?php foreach ($locales_list as $local_row): ?>
 
                                 <div class="col-lg-3 col-md-6 col-12 mb-2">
-                                    <a href="<?php echo site_url("categorias/ver/".$local_row->url); ?>" itemprop="" data-size="480x360">
-                                        <img class="img-fluid" src="<?php echo base_url_locales().$local_row->url_imagen; ?>" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>" />
+                                    <a href="<?php echo site_url("locales/ver/".$local_row->url); ?>" itemprop="" data-size="480x360">
+                                        <img class="img-fluid" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>" />
                                     </a>
-                                    <span><?php echo $local_row->nombre; ?></span>
                                 </div>
 
                             <?php endforeach; ?>
