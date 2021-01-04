@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <!-- fixed-top-->
         
-        <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-light navbar-border navbar-brand-center">
+        <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-dark bg-purple bg-darken-3 navbar-border navbar-brand-center">
             <div class="navbar-wrapper">
             
                 <!--div class="navbar-header"-->

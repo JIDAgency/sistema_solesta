@@ -20,6 +20,10 @@
 				.auto_list {
 					position: absolute;
 				}
+
+				.carousel-inner img {
+				margin: auto;
+				}
 			</style>
 
 			<div class="row mb-3 mt-2">
@@ -61,9 +65,9 @@
 
 <div class="content center-layout">
 	<div class="content-wrapper">
-		<section class="">
+		<section class="mt-5">
 			<div class="text-center">
-				<h1 class="text-center primary">CONOCE SOLESTA</h1>
+				<h1 class="text-center purple darken-3">CONOCE SOLESTA</h1>
 				<p>Jdcjnd kmskcmpw pokowhc joxck po psix oijn dcnkn oikjd kcpr jdns</p>
 			</div>
 			<div class="row mt-2 text-center">
@@ -94,29 +98,75 @@
 
 <div class="content center-layout">
 	<div class="content-wrapper">
-		<section class="">
+		<section class="mt-5">
 			<div class="text-center">
-				<h1 class="text-center primary">CONOCE SOLESTA</h1>
+				<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
 				<p>Jdcjnd kmskcmpw pokowhc joxck po psix oijn dcnkn oikjd kcpr jdns</p>
 			</div>
-			<div class="row mt-2 text-center">
-				<div class="col-md-4">
-					<img src="almacenamiento\inicio\mosaico-shopping.jpg" alt="" width="100%">
+			<div id="carousel-example-generic" class="carousel slide carousel-multi-item" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="row mt-2 text-center">
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row mt-2 text-center">
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row mt-2 text-center">
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-8">
-					<img src="almacenamiento\inicio\mosaico-mercado.jpg" alt="" width="100%">
-				</div>
-			</div>
-			<div class="row mt-1 text-center">
-				<div class="col-md-4">
-					<img src="almacenamiento\inicio\mosaico-restaurantes.jpg" alt="" width="100%">
-				</div>
-				<div class="col-md-4">
-					<img src="almacenamiento\inicio\mosaico-entretenimiento.jpg" alt="" width="100%">
-				</div>
-				<div class="col-md-4">
-					<img src="almacenamiento\inicio\mosaico-wellness.jpg" alt="" width="100%">
-				</div>
+				<a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</section>
 	</div>
@@ -124,3 +174,5 @@
 		<button type="button" class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1">Ver todo</button>
 	</div>
 </div>
+
+<img src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
