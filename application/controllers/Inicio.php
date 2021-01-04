@@ -20,6 +20,7 @@ class Inicio extends MY_Controller {
 		$controlador_js = "inicio/index";
 
 		$data['styles'] = array(
+			array('es_rel' => false, 'href' => base_url() . 'assets/css/inicio/index.css'),
 			array('es_rel' => false, 'href' => base_url() . 'app-assets/vendors/css/forms/selects/select2.min.css'),
 		);
 		$data['scripts'] = array(
