@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <ul class="nav navbar-nav flex-row">
                         <!--li class="nav-item d-none d-md-block">
                             <a class="navbar-brand" href="<?php //echo base_url(); ?>">
-                                <img class="brand-logo" alt="robust admin logo" src="<?php //echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
+                                <img class="brand-logo" alt="robust admin logo" src="<?php //echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png">
                             </a>
                         </li-->
                         <li class="nav-item mobile-menu d-md-none mr-auto">
@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <i class="fa fa-ellipsis-v"></i>
                             </a-->
                             <a class="nav-link" href="<?php echo base_url(); ?>">
-                                <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
+                                <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png">
                             </a>
                         </li>
                         <li class="nav-item d-md-none">
@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <ul class="nav navbar-nav mr-auto float-left">
                             <li class="nav-item d-none d-md-block">
                                 <a class="navbar-brand" href="<?php echo base_url(); ?>">
-                                    <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>app-assets/images/logo/logo-dark-sm.png">
+                                    <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png">
                                 </a>
                             </li>
                             <!--li class="nav-item nav-search">

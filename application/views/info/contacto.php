@@ -1,23 +1,5 @@
 <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\contacto\banner-contacto.jpg" alt="">
 
-<div class="container">
-    <h2>Contacto</h2>
-    <div class="row">
-        <div class="col-lg-6">
-        
-
-
-                <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
-
-                
-
-                <button name="submit" id="submit" type="submit" class="btn btn-info"/>Send</button>
-
-
-        </div>
-    </div>
-</div>
-
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
@@ -28,12 +10,14 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Project Info</h4>
+                                <h4 class="card-title"><strong>Contactanos</strong></h4>
                             </div>
                             <div class="card-content collpase show">
                                 <div class="card-body">
-                                    <?php echo form_open($controlador, array('class' => 'needs-validation p-2', 'id' => 'forma-'.$controlador, 'novalidate' => '', 'method' => 'post')); ?>
+                                    <?php echo form_open($controlador, array('class' => 'needs-validation', 'id' => 'forma-'.$controlador, 'novalidate' => '', 'method' => 'post')); ?>
                                         <div class="form-body">
+                                            <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
+
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="contacto_nombre" id="" placeholder="Nombre completo *" value="<?php echo set_value('contacto_nombre') == false ? $this->session->flashdata('contacto_nombre') : set_value('contacto_nombre'); ?>"/>
                                                 <?php echo form_error('contacto_nombre', '<span class="text-danger">','</span>'); ?>
@@ -73,12 +57,7 @@
                                         </div>
 
                                         <div class="form-actions">
-                                            <button type="button" class="btn btn-outline-warning mr-1">
-                                                <i class="ft-x"></i> Cancel
-                                            </button>
-                                            <button type="submit" class="btn btn-outline-primary">
-                                                <i class="ft-check"></i> Save
-                                            </button>
+                                            <button name="submit" id="submit" type="submit" class="btn btn-info btn-purple btn-darken-3"/>Enviar</button>
                                         </div>
                                     <?php echo form_close(); ?>
                                 </div>
@@ -89,12 +68,12 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">User Profile</h4>
+                                <h4 class="card-title"><strong>Nos ubicamos en</strong></h4>
                             </div>
                             <div class="card-content collpase show">
                                 <div class="card-body">
 
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6678442665034!2d-98.23146918529508!3d19.0343526871118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta%20Shop%20%26%20Fun!5e0!3m2!1ses-419!2smx!4v1609803866956!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6678442665034!2d-98.23146918529508!3d19.0343526871118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta%20Shop%20%26%20Fun!5e0!3m2!1ses-419!2smx!4v1609803866956!5m2!1ses-419!2smx" width="100%" height="493" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                                 </div>
                             </div>
