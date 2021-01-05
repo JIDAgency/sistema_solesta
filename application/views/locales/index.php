@@ -1,3 +1,4 @@
+<img class="img-fluid" src="almacenamiento\locales\banner-locales.jpg" alt="">
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-header row">

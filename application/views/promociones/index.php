@@ -1,0 +1,1 @@
+<img class="img-fluid" src="almacenamiento\promociones\banner-promociones.jpg" alt="">
