@@ -61,6 +61,7 @@ class Locales_model extends CI_Model {
     public function get_locales_por_categoria_por_id($id)
     {
         $query = $this->db
+            ->where("t1.estatus", "activo")
             ->where('t2.categoria_id', intval($id))
             ->select("
                 t1.*,
@@ -75,6 +76,7 @@ class Locales_model extends CI_Model {
     public function get_locales_con_detalles_ordenados_por_categoria()
     {
         $query = $this->db
+            ->where("t1.estatus", "activo")
             ->select("
                 t1.*,
                 t3.nombre as categorias_nombre,

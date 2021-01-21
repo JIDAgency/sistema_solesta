@@ -3,13 +3,7 @@
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
-            <h4 class="card-title text-uppercase">Locales Solesta</h4>
-
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
-
-            <div class="card-text">
-                <p>Texto complementario. Texto complementario. Texto complementario. Texto complementario. Texto complementario.</p>
-            </div>
 
             <!-- Basic example section start -->
             <section id="">

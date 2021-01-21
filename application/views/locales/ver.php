@@ -1,1 +1,6 @@
-<img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\vistas\solesta-web-escritorio-marca.jpg">
+<div class="d-none d-sm-block">
+    <img class="img-fluid" src="<?php echo $img_nombre; ?>">
+</div>
+<div class="d-block d-sm-none">
+    <img class="img-fluid" src="<?php echo $img_movil_nombre; ?>">
+</div>
