@@ -2,7 +2,7 @@
 	<div class="content-wrapper">
 		<section class="">
 
-		<div style="margin-top:160px;" class="text-center white">
+			<div style="margin-top:160px;" class="text-center white">
 				<h1 class="card-title white" style="font-family:montserrat; font-weight:700; font-size:3em;">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
 				<p style="font-family:montserrat; font-size:2em;">Shoppping, restaurantes, entretenimiento y más</p>
 			</div>
@@ -121,48 +121,48 @@
 					<div class="carousel-item active">
 						<div class="row mt-2 text-center">
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-2.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="row mt-2 text-center">
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="row mt-2 text-center">
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row mt-2 text-center">
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\pickups-temp\pickup-1.jpg" alt="" width="100%">
 							</div>
 						</div>
 					</div>
@@ -236,10 +236,10 @@
 								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
 								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
