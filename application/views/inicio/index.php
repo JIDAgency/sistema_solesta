@@ -66,9 +66,18 @@
 <div class="content center-layout">
 	<div class="content-wrapper">
 		<section class="mt-5">
+
+			<div class="row mb-3 mt-1 text-center">
+				<div class="col-md-6">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6">
+					<img src="almacenamiento\inicio\shopping-to-go-solesta-web.jpg" alt="" width="100%">
+				</div>
+			</div>
+
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">CONOCE SOLESTA</h1>
-				<p>Jdcjnd kmskcmpw pokowhc joxck po psix oijn dcnkn oikjd kcpr jdns</p>
 			</div>
 			<div class="row mt-2 text-center">
 				<div class="col-md-4">
@@ -101,7 +110,6 @@
 		<section class="mt-5">
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
-				<p>Jdcjnd kmskcmpw pokowhc joxck po psix oijn dcnkn oikjd kcpr jdns</p>
 			</div>
 			<div id="carousel-example-generic" class="carousel slide carousel-multi-item" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -182,7 +190,6 @@
 		<section class="mt-5">
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
-				<p>Jdcjnd kmskcmpw pokowhc joxck po psix oijn dcnkn oikjd kcpr jdns</p>
 			</div>
 			<div id="promos" class="carousel slide carousel-multi-item" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -194,48 +201,48 @@
 					<div class="carousel-item active">
 						<div class="row mt-2 text-center">
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-03.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="row mt-2 text-center">
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
-							</div>
-							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="row mt-2 text-center">
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
 							</div>
 							<div class="col-md-3">
-								<img src="almacenamiento\locales\adidas_originals\pick-up-1.jpg" alt="" width="100%">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row mt-2 text-center">
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-3">
+								<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
 							</div>
 						</div>
 					</div>
