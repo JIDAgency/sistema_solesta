@@ -2,9 +2,9 @@
 	<div class="content-wrapper">
 		<section class="">
 
-			<div class="text-center white">
-				<h1 class="card-title white">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
-				<p>Shoppping, restaurantes, entretenimiento y más</p>
+		<div style="margin-top:160px;" class="text-center white">
+				<h1 class="card-title white" style="font-family:montserrat; font-weight:700; font-size:3em;">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
+				<p style="font-family:montserrat; font-size:2em;">Shoppping, restaurantes, entretenimiento y más</p>
 			</div>
 
 			<style>
