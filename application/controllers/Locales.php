@@ -71,40 +71,6 @@ class Locales extends MY_Controller {
 
 		$data['local_row'] = $local_row;
 
-		if ($local == 'mochomos') {
-			$img_nombre = 'almacenamiento\vistas\local-mochomos.jpg';
-			$img_movil_nombre = 'almacenamiento\vistas\local-mochomos-movil.jpg';
-		} elseif ($local == 'city_market') {
-			$img_nombre = 'almacenamiento\vistas\local-city_market.jpg';
-			$img_movil_nombre = 'almacenamiento\vistas\local-city_market-movil.jpg';
-		} elseif ($local == 'linfolab') {
-			$img_nombre = 'almacenamiento\vistas\local-linfolab.jpg';
-			$img_movil_nombre = 'almacenamiento\vistas\local-linfolab-movil.jpg';
-		} elseif ($local == 'sonora_grill') {
-			$img_nombre = 'almacenamiento\vistas\local-sonora_grill.jpg';
-		} elseif ($local == 'cabanna') {
-			$img_nombre = 'almacenamiento\vistas\local-cabanna.jpg';
-		} elseif ($local == 'ocho30') {
-			$img_nombre = 'almacenamiento\vistas\local-ocho30.jpg';
-			$img_movil_nombre = 'almacenamiento\vistas\local-ocho30-movil.jpg';
-		} elseif ($local == 'forever_21') {
-			$img_nombre = 'almacenamiento\vistas\local-forever_21.jpg';
-			$img_movil_nombre = 'almacenamiento\vistas\local-forever_21-movil.jpg';
-		} else {
-			$img_nombre = 'almacenamiento\vistas\solesta-web-escritorio-marca.jpg';
-		}
-
-		$data['img_nombre'] = base_url().$img_nombre;
-		$data['img_movil_nombre'] = base_url().$img_movil_nombre;
-
-		/** 
-		 * Las imagenes que se necesitan
-		 * City market
-		 * Laboratorios Forever
-		 * Sonora o Cabanna
-		 * Ocho 30
-		 */
-
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
 

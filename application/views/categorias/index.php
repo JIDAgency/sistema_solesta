@@ -12,7 +12,7 @@
 
                         <div class="card">
                             <div class="card-content">
-                                <!--img class="card-img-top img-fluid" src="<?php echo base_url_categorias().$categoria_row->url_imagen; ?>" alt="Imagen de <?php echo strtolower($categoria_row->nombre); ?>"-->
+                                <img class="card-img-top img-fluid" src="<?php echo base_url_categorias().$categoria_row->url_imagen; ?>" alt="Imagen de <?php echo strtolower($categoria_row->nombre); ?>">
                                 <div class="card-body text-center mt-1">
                                     <h4 class="card-title"><strong><?php echo $categoria_row->nombre; ?></strong></h4>
                                 </div>
