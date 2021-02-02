@@ -74,6 +74,53 @@ class Locales extends MY_Controller {
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
 
+	/** funciones de desarrollador */
+
+	public function dar_de_alta_pick_ups(Type $var = null)
+	{
+		$locales_list = $this->locales_model->get_locales()->result();
+		$data_imagen = array();
+
+		foreach ($locales_list as $local_row) {
+			echo $local_row->nombre;
+			echo "<br>";
+			echo "<br>";
+			echo $local_row->id;
+			echo "<br>";
+			echo 'pick-up-1.jpg';
+			echo "<br>";
+			echo ucwords(mb_strtolower(trim('Pick Up de '.$local_row->nombre)));
+			echo "<br>";
+			echo 'pickup';
+			echo "<br>";
+			echo 'no';
+			echo "<br>";
+			echo 'activo';
+			echo "<br>";
+			echo "<br>";
+			echo "<br>";
+
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'pick-up-1.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Pick Up de '.$local_row->nombre))),
+				'tipo' => 'pickup',
+				'caduca' => 'no',
+				'estatus' => 'suspendido',
+			);
+		}
+
+		print_r($data_imagen);
+		echo "<br>";
+		echo "<br>";
+
+		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
+			echo "OK <br>";
+		} else {
+			echo "BAD <br>";
+		}
+	}
+
     public function dar_de_alta_locales()
     {
         $data = array(

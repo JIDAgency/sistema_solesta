@@ -36,6 +36,14 @@ class Locales_model extends CI_Model {
         return $query;
     }
 
+    public function insert_matriz_locales_imagenes($data)
+    {
+        $query = $this->db
+            ->insert_batch('locales_imagenes', $data);
+
+        return $query;
+    }
+
     public function update_local($id, $data)
     {
         $query = $this->db
