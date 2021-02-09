@@ -84,29 +84,29 @@
 			<div class="row mt-2 text-center">
 				<div class="col-md-4">
 					<a href="<?php echo base_url(); ?>categorias/ver/shopping">
-						<img src="almacenamiento\inicio\banner-shopping.jpg" alt="Sección de shopping" width="100%">
+						<img src="almacenamiento\inicio\banner-shopping.png" alt="Sección de shopping" width="100%">
 					</a>
 				</div>
 				<div class="col-md-8">
 					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta">
-						<img src="almacenamiento\inicio\banner-mercado-solesta.jpg" alt="Sección de mercado solesta" width="100%">
+						<img src="almacenamiento\inicio\banner-mercado-solesta.png" alt="Sección de mercado solesta" width="100%">
 					</a>
 				</div>
 			</div>
 			<div class="row mt-1 text-center">
 				<div class="col-md-4">
 					<a href="<?php echo base_url(); ?>categorias/ver/restaurantes">
-						<img src="almacenamiento\inicio\banner-restaurantes.jpg" alt="Sección de restaurantes" width="100%">
+						<img src="almacenamiento\inicio\banner-restaurantes.png" alt="Sección de restaurantes" width="100%">
 					</a>
 				</div>
 				<div class="col-md-4">
 					<a href="<?php echo base_url(); ?>categorias/ver/fun">
-						<img src="almacenamiento\inicio\banner-fun.jpg" alt="Sección de entretenimiento" width="100%">
+						<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
 					</a>
 				</div>
 				<div class="col-md-4">
 					<a href="<?php echo base_url(); ?>categorias/ver/wellness">
-						<img src="almacenamiento\inicio\banner-wellness.jpg" alt="Sección de wellness" width="100%">
+						<img src="almacenamiento\inicio\banner-wellness.png" alt="Sección de wellness" width="100%">
 					</a>
 				</div>
 			</div>
@@ -123,7 +123,7 @@
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
 			</div>
-			<div id="carousel-example-generic" class="carousel slide carousel-multi-item" data-ride="carousel">
+			<div id="carousel-pick-up" class="carousel slide carousel-multi-item" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -203,7 +203,7 @@
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 			</div>
-			<div id="promos" class="carousel slide carousel-multi-item" data-ride="carousel">
+			<div id="carousel-promos" class="carousel slide carousel-multi-item" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="1"></li>

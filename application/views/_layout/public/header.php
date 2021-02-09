@@ -36,14 +36,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php endif;?>
 
     </head>
-    <body id="vista" class="horizontal-layout horizontal-menu horizontal-menu-padding 2-columns   menu-expanded" data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+    <body id="vista" class="">
 
-        <!-- fixed-top-->
+        <!-- fixed-top
         
-        <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-dark bg-purple bg-darken-3 navbar-border navbar-brand-center">
+        <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-static-top navbar-dark bg-purple bg-darken-3 navbar-border navbar-brand-center d-none d-sm-block d-sm-none d-md-block d-md-none">
             <div class="navbar-wrapper">
             
-                <!--div class="navbar-header"-->
+                <!--div class="navbar-header"
                 <div class="">
 
                     <ul class="nav navbar-nav flex-row">
@@ -51,11 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a class="navbar-brand" href="<?php //echo base_url(); ?>">
                                 <img class="brand-logo" alt="robust admin logo" src="<?php //echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png">
                             </a>
-                        </li-->
+                        </li-
                         <li class="nav-item mobile-menu d-md-none mr-auto">
                             <!--a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
                                 <i class="fa fa-ellipsis-v"></i>
-                            </a-->
+                            </a--
                             <a class="nav-link" href="<?php echo base_url(); ?>">
                                 <img class="brand-logo" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png">
                             </a>
@@ -84,13 +84,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="search-input">
                                     <input class="input" type="text" placeholder="Explore Robust...">
                                 </div>
-                            </li-->
+                            </li--
                         </ul>
-
                         <ul class="nav navbar-nav float-right">
-                            <!--li class="nav-item"><a class="nav-link" href="<?php echo base_url()."portada"; ?>" data-toggle="">Portada</a></li-->
+                            <!--li class="nav-item"><a class="nav-link" href="<?php echo base_url()."portada"; ?>" data-toggle="">Portada</a></li--
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a></li>
-                            <!--li class="nav-item"><a class="nav-link" href="<?php echo base_url()."directorio"; ?>" data-toggle="">Directorio</a></li-->
+                            <!--li class="nav-item"><a class="nav-link" href="<?php echo base_url()."directorio"; ?>" data-toggle="">Directorio</a></li--
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo base_url()."pickup"; ?>" data-toggle="">PickUp</a></li>
@@ -104,11 +103,141 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>-->
 
-        <!-- ////////////////////////////////////////////////////////////////////////////-->
+        <section class="seccion-boton p-md-5 d-none d-xl-block d-xl-block d-lg-none d-md-none d-lg-block d-sm-none d-md-block bg-purple bg-darken-3">
+            <div class="container">
+                <div class="row">
 
-        <div class="d-md-none mr-auto header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow" role="navigation" data-menu="menu-wrapper">
-            <div class="navbar-container main-menu-content container center-layout" data-menu="menu-container">
+                    <div class="col-3">
+                        <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-9">
+                    
+                        <ul class="nav menu-principal">
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a>   
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."pickup"; ?>" data-toggle="">PickUp</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."info/acerca"; ?>" data-toggle="">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."info/contacto"; ?>" data-toggle="">Contacto</a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="seccion-boton p-md-5 d-block d-sm-none d-none d-sm-block d-md-none bg-purple bg-darken-3">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-6">
+                        <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-6">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="<?php echo base_url(); ?>almacenamiento\header\menu-movil.png" class="float-right" width="60"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content-2">
+            
+                    <div class="row">
+                        <div class="col">   
+
+                            <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid p-md-5">
+
+                            <ul class="navbar-light menu-movil">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a>   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a>
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."pickup"; ?>" data-toggle="">PickUp</a> 
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a>
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a></li>
+                                </li>
+                    
+                                <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a>
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."info/acerca"; ?>" data-toggle="">Nosotros</a>
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url()."info/contacto"; ?>" data-toggle="">Contacto</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            
             </div>
         </div>
+
+        <!-- ////////////////////////////////////////////////////////////////////////////-->

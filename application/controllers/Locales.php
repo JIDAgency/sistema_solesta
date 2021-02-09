@@ -8,6 +8,7 @@ class Locales extends MY_Controller {
 		parent::__construct();
 		$this->load->model("categorias_model");
 		$this->load->model("locales_model");
+		$this->load->model("locales_imagenes_model");
 		$this->load->model("relacion_locales_categorias_model");
     }
 
@@ -69,7 +70,14 @@ class Locales extends MY_Controller {
 			redirect($data['regresar_a']);
 		}
 
+		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
+		$imagen_logotipo = $this->locales_imagenes_model->get_logotipo_por_local_id($local_row->id)->row();
+		$imagenes_galeria_list = $this->locales_imagenes_model->get_galeria_por_local_id($local_row->id)->result();
+
 		$data['local_row'] = $local_row;
+		$data['imagen_banner_principal'] = $imagen_banner_principal;
+		$data['imagen_logotipo'] = $imagen_logotipo;
+		$data['imagenes_galeria_list'] = $imagenes_galeria_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
