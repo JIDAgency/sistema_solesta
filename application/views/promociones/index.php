@@ -7,8 +7,8 @@
             <!-- Basic example section start -->
             <section id="">
                 <form class="form">
-                    <div class="form-body">
-
+                    <div class="form-body text-center mt-5">
+                        <h1 class="text-bold-700 purple darken-3 mb-3"><strong>Promociones Solesta en las mejores tiendas</strong></h1>
                         <div class="row match-height">
                             <div class="col-xl-3 col-md-6 col-sm-12">
                                 <div class="card">

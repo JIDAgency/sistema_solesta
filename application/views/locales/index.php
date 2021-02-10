@@ -15,7 +15,7 @@
 
                     <div class="form-body mt-5">
                         <?php foreach ($categorias_list as $categoria_row): ?>
-                            <h5 id="<?php echo $categoria_row->url; ?>" class="form-section"><?php echo $categoria_row->nombre; ?></h5>
+                            <h5 class="form-section" id="<?php echo $categoria_row->url; ?>"><?php echo $categoria_row->nombre; ?></h5>
                             <div class="row match-height">
                                 <?php foreach ($locales_list as $local_row): ?>
 

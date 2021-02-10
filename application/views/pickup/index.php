@@ -39,9 +39,9 @@
 
             <section id="">
                 <div class="text-center mt-5 mb-5">
-                    <h1 class="text-bold-700 purple darken-3 mb-1"><strong>Restaurantes y Mercado Solesta Pick Up</strong></h1>
+                    <h1 class="text-bold-700 purple darken-3 mb-1 mt-3"><strong>Restaurantes y Mercado Solesta Pick Up</strong></h1>
                 </div>
-                <div class="row mt-3">
+                <div class="row">
                     <?php foreach ($pickups_restautantes_list as $pickup_restautante_row): ?>
                         <div class="col-xl-3 col-md-6 col-sm-12 mb-2">
                             <a href="<?php echo base_url().'locales/ver/'.$pickup_restautante_row->local_url; ?>">
