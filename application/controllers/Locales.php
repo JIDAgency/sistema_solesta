@@ -73,11 +73,13 @@ class Locales extends MY_Controller {
 		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
 		$imagen_logotipo = $this->locales_imagenes_model->get_logotipo_por_local_id($local_row->id)->row();
 		$imagenes_galeria_list = $this->locales_imagenes_model->get_galeria_por_local_id($local_row->id)->result();
+		$imagen_pickup = $this->locales_imagenes_model->get_pickup_por_local_id($local_row->id)->row();
 
 		$data['local_row'] = $local_row;
 		$data['imagen_banner_principal'] = $imagen_banner_principal;
 		$data['imagen_logotipo'] = $imagen_logotipo;
 		$data['imagenes_galeria_list'] = $imagenes_galeria_list;
+		$data['imagen_pickup'] = $imagen_pickup;
 
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
