@@ -5,7 +5,7 @@
     </footer-->
 
     <footer>
-        <img class="img-fluid" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\footer\footer.jpg">
+        <!--img class="img-fluid" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\footer\footer.jpg"-->
     </footer>
 
     <!-- BEGIN VENDOR JS-->

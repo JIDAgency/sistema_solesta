@@ -5,9 +5,17 @@
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
             <section id="">
                 <form class="form">
+                <ul class="list-inline">
+                    <?php foreach ($categorias_list as $categoria_row): ?>
+                        <li>
+                            <a class="btn btn-outline-secondary btn-min-width mr-1 mb-1" href="#<?php echo $categoria_row->url; ?>"><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
                     <div class="form-body mt-5">
                         <?php foreach ($categorias_list as $categoria_row): ?>
-                            <h5 class="form-section"><?php echo $categoria_row->nombre; ?></h5>
+                            <h5 id="<?php echo $categoria_row->url; ?>" class="form-section"><?php echo $categoria_row->nombre; ?></h5>
                             <div class="row match-height">
                                 <?php foreach ($locales_list as $local_row): ?>
 

@@ -32,6 +32,7 @@ class Categorias extends MY_Controller {
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
 		
+		/** Metodo para llamar a todas las categorias */
 		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
 		
 		if (!$categorias_list) {
@@ -75,7 +76,11 @@ class Categorias extends MY_Controller {
 
 		$locales_list = $this->locales_model->get_locales_por_categoria_por_id($categoria_row->id)->result();
 
+		/** Metodo para llamar a todas las categorias */
+		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
+
 		$data['categoria_row'] = $categoria_row;
+		$data['categorias_list'] = $categorias_list;
 		$data['locales_list'] = $locales_list;
 
 		$this->construir_public_ui('categorias/ver' ,$data);

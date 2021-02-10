@@ -57,6 +57,7 @@ class Locales_imagenes_model extends CI_Model {
     public function get_banner_principal_por_local_id($local_id)
     {
         $query = $this->db
+            ->where('estatus', 'activo')
             ->where('local_id', intval($local_id))
             ->where('tipo', 'banner_principal')
             ->get('locales_imagenes');
@@ -67,6 +68,7 @@ class Locales_imagenes_model extends CI_Model {
     public function get_logotipo_por_local_id($local_id)
     {
         $query = $this->db
+            ->where('estatus', 'activo')
             ->where('local_id', intval($local_id))
             ->where('tipo', 'logotipo')
             ->get('locales_imagenes');
@@ -77,8 +79,20 @@ class Locales_imagenes_model extends CI_Model {
     public function get_galeria_por_local_id($local_id)
     {
         $query = $this->db
+            ->where('estatus', 'activo')
             ->where('local_id', intval($local_id))
             ->where('tipo', 'galeria')
+            ->get('locales_imagenes');
+        
+        return $query;
+    }
+
+    public function get_pickup_por_local_id($local_id)
+    {
+        $query = $this->db
+            ->where('estatus', 'activo')
+            ->where('local_id', intval($local_id))
+            ->where('tipo', 'pickup')
             ->get('locales_imagenes');
         
         return $query;

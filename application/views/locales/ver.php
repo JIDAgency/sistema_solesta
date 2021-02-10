@@ -10,7 +10,9 @@
 
 
             <section id="categorias-gallery" class="card">
-                <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
+                <?php if (isset($imagen_banner_principal)): ?>
+                    <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
+                <?php endif; ?>
                 <div class="card-header">
                     <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
                 </div>
@@ -18,8 +20,12 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-6 col-md-6 col-sm-12">
-                                <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_logotipo->url; ?>" alt="" width="250">
-                                <h4 class="card-title text-uppercase"><?php echo $local_row->nombre.' | '.titulo(); ?></h4>
+                                <?php if (isset($imagen_logotipo)): ?>
+                                    <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_logotipo->url; ?>" alt="" width="250">
+                                <?php endif; ?>
+                                <?php if (isset($local_row->nombre)): ?>
+                                    <h4 class="card-title text-uppercase"><?php echo $local_row->nombre.' | '.titulo(); ?></h4>
+                                <?php endif; ?>
                                 <div class="card-text">
                                     <?php if (isset($local_row->nombre)): ?>
                                         <p><?php echo $local_row->nombre; ?></p>
@@ -102,7 +108,9 @@
                             </div>
 
                             <div class="col-xl-6 col-md-6 col-sm-12">
-
+                                <?php if (isset($imagen_pickup)): ?>
+                                    <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_pickup->url; ?>" alt="" width="250">
+                                <?php endif; ?>
                             </div>
                             <div class="col-xl-6 col-md-6 col-sm-12">
                                 
