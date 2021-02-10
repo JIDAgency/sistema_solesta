@@ -86,8 +86,121 @@ class Locales extends MY_Controller {
 
 	/** funciones de desarrollador */
 
-	public function dar_de_alta_pick_ups(Type $var = null)
+	public function dar_de_alta_imagenes()
 	{
+		$locales_list = $this->locales_model->get_locales()->result();
+		$data_imagen = array();
+
+		foreach ($locales_list as $local_row) {
+			echo $local_row->nombre;
+			echo "<br>";
+			echo "<br>";
+
+			/** Banner principal */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'banner-principal.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Banner principal de '.$local_row->nombre))),
+				'tipo' => 'banner_principal',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+			
+			/** Logotipo */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'logotipo.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+				'tipo' => 'logotipo',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+
+			/** Logotipo PNG */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'logotipo.png',
+				'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+				'tipo' => 'logotipo_png',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+
+			/** Galería 1 */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'galeria-1.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Galería 1 de '.$local_row->nombre))),
+				'tipo' => 'galeria',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+
+			/** Promoción 1 */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'promocion-1.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Promoción 1 de '.$local_row->nombre))),
+				'tipo' => 'promocion',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+
+			/** Evento 1 */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'evento-1.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Evento 1 de '.$local_row->nombre))),
+				'tipo' => 'evento',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+
+			/** Banner principal movil */
+			/*
+			$data_imagen[] = array(
+				'local_id' => $local_row->id,
+				'url' => 'banner-principal-movil.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Banner principal de móvil de '.$local_row->nombre))),
+				'tipo' => 'banner_principal_movil',
+				'caduca' => 'no',
+				'estatus' => 'activo',
+			);
+			*/
+		}
+
+		echo "<br>";
+		echo "<br>";
+
+		print_r($data_imagen);
+
+		echo "<br>";
+		echo "<br>";
+
+		/*
+		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
+			echo "OK <br>";
+		} else {
+			echo "BAD <br>";
+		}
+		*/
+	}
+
+	public function dar_de_alta_pick_ups()
+	{
+		/*
 		$locales_list = $this->locales_model->get_locales()->result();
 		$data_imagen = array();
 
@@ -129,6 +242,7 @@ class Locales extends MY_Controller {
 		} else {
 			echo "BAD <br>";
 		}
+		*/
 	}
 
     public function dar_de_alta_locales()
