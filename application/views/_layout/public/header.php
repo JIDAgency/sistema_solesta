@@ -117,37 +117,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     
                         <ul class="nav menu-principal">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a>
+                                <a class="nav-link white" href="<?php echo site_url("inicio"); ?>" data-toggle=""><strong>Inicio</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a>   
+                                <a class="nav-link white" href="<?php echo site_url("locales"); ?>" data-toggle=""><strong>Locales</strong></a>   
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."pickup"; ?>" data-toggle="">PickUp</a>
+                                <a class="nav-link white" href="<?php echo site_url("categorias"); ?>" data-toggle=""><strong>Categorías</strong></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a>
+                                <a class="nav-link white" href="<?php echo site_url("pickup"); ?>" data-toggle=""><strong>PickUp</strong></a>
                             </li>
 
                             <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a>
+                                <a class="nav-link white" href="<?php echo site_url("promociones"); ?>" data-toggle=""><strong>Promociones</strong></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a>
+                                <a class="nav-link white" href="<?php echo site_url("eventos"); ?>" data-toggle=""><strong>Eventos</strong></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."info/acerca"; ?>" data-toggle="">Nosotros</a>
+                                <a class="nav-link white" href="<?php echo site_url("mapa"); ?>" data-toggle=""><strong>Mapa</strong></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."info/contacto"; ?>" data-toggle="">Contacto</a>
+                                <a class="nav-link white" href="<?php echo site_url("info/acerca"); ?>" data-toggle=""><strong>Nosotros</strong></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link white" href="<?php echo site_url("info/contacto"); ?>" data-toggle=""><strong>Contacto</strong></a>
                             </li>
                             
                         </ul>
@@ -172,7 +172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <div class="col-6">
-                        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="<?php echo base_url(); ?>almacenamiento\header\menu-movil.png" class="float-right" width="60"></a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="<?php echo base_url(); ?>almacenamiento\header\menu-movil.png" class="float-right" width="60"></strong></a>
                     </div>
 
                 </div>
@@ -194,37 +194,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <ul class="navbar-light menu-movil">
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url(); ?>" data-toggle="">Inicio</a>
+                                    <a class="nav-link white" href="<?php echo site_url("inicio"); ?>" data-toggle=""><strong>Inicio</strong></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."locales"; ?>" data-toggle="">Locales</a>   
+                                    <a class="nav-link white" href="<?php echo site_url("locales"); ?>" data-toggle=""><strong>Locales</strong></a>   
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."categorias"; ?>" data-toggle="">Categorías</a>
-                                </li>
-                    
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."pickup"; ?>" data-toggle="">PickUp</a> 
+                                    <a class="nav-link white" href="<?php echo site_url("categorias"); ?>" data-toggle=""><strong>Categorías</strong></a>
                                 </li>
                     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."promociones"; ?>" data-toggle="">Promociones</a>
+                                    <a class="nav-link white" href="<?php echo site_url("pickup"); ?>" data-toggle=""><strong>PickUp</strong></a> 
                                 </li>
                     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."eventos"; ?>" data-toggle="">Eventos</a></li>
+                                    <a class="nav-link white" href="<?php echo site_url("promociones"); ?>" data-toggle=""><strong>Promociones</strong></a>
                                 </li>
                     
                                 <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url()."mapa"; ?>" data-toggle="">Mapa</a>
+                                    <a class="nav-link white" href="<?php echo site_url("eventos"); ?>" data-toggle=""><strong>Eventos</strong></a>
                                 </li>
                     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."info/acerca"; ?>" data-toggle="">Nosotros</a>
+                                    <a class="nav-link white" href="<?php echo site_url("mapa"); ?>" data-toggle=""><strong>Mapa</strong></a>
                                 </li>
                     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url()."info/contacto"; ?>" data-toggle="">Contacto</a>
+                                    <a class="nav-link white" href="<?php echo site_url("info/acerca"); ?>" data-toggle=""><strong>Nosotros</strong></a>
+                                </li>
+                    
+                                <li class="nav-item">
+                                    <a class="nav-link white" href="<?php echo site_url("info/contacto"); ?>" data-toggle=""><strong>Contacto</strong></a>
                                 </li>
                             
                             </ul>
