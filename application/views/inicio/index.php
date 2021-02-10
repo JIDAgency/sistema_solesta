@@ -1,7 +1,5 @@
-<div class="content center-layout bg-banner-index">
-	<div class="content-wrapper">
-		<section class="">
-
+<div class="row bg-banner-index">
+	<div class="col">
 			<div style="margin-top:160px;" class="text-center white">
 				<h1 class="card-title white" style="font-family:montserrat; font-weight:700; font-size:3em;">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
 				<p style="font-family:montserrat; font-size:2em;">Shoppping, restaurantes, entretenimiento y más</p>
@@ -58,13 +56,11 @@
 
 				</div>
 			</div>
+			</div>
+			</div>
 
-		</section>
-	</div>
-</div>
-
-<div class="content center-layout">
-	<div class="content-wrapper">
+<div class="row">
+	<div class="col">
 		<section class="mt-5">
 
 			<div class="row mb-3 mt-1 text-center">
@@ -110,15 +106,20 @@
 					</a>
 				</div>
 			</div>
+
+			<div class="row text-center mt-5">
+			<div class="col">
+			<a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="<?php echo base_url(); ?>categorias">Ver todas las categorías</a>
+			</div>
+			</div>
 		</section>
 	</div>
-	<div class="text-center">
-		<a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="<?php echo base_url(); ?>categorias">Ver todo</a>
 	</div>
+	
 </div>
 
-<div class="content center-layout">
-	<div class="content-wrapper">
+<div class="row">
+	<div class="col">
 		<section class="mt-5">
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
@@ -188,17 +189,28 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+
+			<div class="row text-center mt-5">
+			<div class="col">
+			<button type="button" class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1">Ver todos las opciones Pickup</button>
+			</div>
+			</div>
 		</section>
-	</div>
-	<div class="text-center">
-		<button type="button" class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1">Ver todo</button>
 	</div>
 </div>
 
-<img src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
 
-<div class="content center-layout">
-	<div class="content-wrapper">
+<div class="row">
+	<div class="col">
+		<img src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
+</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="col">
 		<section class="mt-5">
 			<div class="text-center">
 				<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
@@ -269,8 +281,12 @@
 				</a>
 			</div>
 		</section>
-	</div>
-	<div class="text-center">
-		<button type="button" class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1">Ver todo</button>
+
+		<div class="row text-center mt-5">
+		<div class="col">
+		<button type="button" class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1">Ver todas las promociones</button>
+		</div>
+		</div>
+
 	</div>
 </div>

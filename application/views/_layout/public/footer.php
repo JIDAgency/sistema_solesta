@@ -1,3 +1,8 @@
+<!--/ tTERMINA EL CONTENIDO-->
+
+</div>
+      </div>
+    </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <!--footer class="footer footer-static footer-light navbar-shadow fixed-bottom">
@@ -6,7 +11,7 @@
 
     <footer>
         <!--<img class="img-fluid" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\footer\footer.jpg">-->
-        <section class="seccion-footer bg-purple bg-darken-3 p-md-5">
+        <section class="seccion-footer bg-black bg-darken-3 p-md-5 mt-5">
             <div class="container">
                 <div class="row">
 

@@ -172,7 +172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <div class="col-6">
-                        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="<?php echo base_url(); ?>almacenamiento\header\menu-movil.png" class="float-right" width="60"></strong></a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="<?php echo base_url(); ?>almacenamiento\header\menu-movil.png" class="float-right" width="30"></strong></a>
                     </div>
 
                 </div>
@@ -239,5 +239,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
             </div>
         </div>
+
+        <div class="app-content container center-layout mt-2">
+            <div class="content-wrapper">
+                <div class="content-body"><!-- INICIA CONTENIDO  -->
 
         <!-- ////////////////////////////////////////////////////////////////////////////-->
