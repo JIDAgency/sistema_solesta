@@ -5,7 +5,31 @@
     </footer-->
 
     <footer>
-        <img class="img-fluid" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\footer\footer.jpg">
+        <!--<img class="img-fluid" alt="robust admin logo" src="<?php echo base_url(); ?>almacenamiento\footer\footer.jpg">-->
+
+
+    <section class="seccion-footer bg-purple bg-darken-3 p-md-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4">
+                    <img src="<?php echo base_url(); ?>almacenamiento\footer\solesta-oficial-blanco.png" class="img-fluid">
+                </div>
+
+                <div class="col-5 text-center">
+                    <p>Solesta 2021 Todos los derecehos resarvados.</p>
+                </div>
+
+                <div class="col-3 list-inline">
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-facebook-square"></span></a>
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-instagram"></span></a>
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-twitter-square"></span></a>
+                </div>
+
+            </div> 
+        </div>
+    </section>
+
     </footer>
 
     <!-- BEGIN VENDOR JS-->
