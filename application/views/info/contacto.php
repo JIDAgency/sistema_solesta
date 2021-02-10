@@ -1,5 +1,10 @@
 <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\contacto\banner-contacto.jpg" alt="">
 
+
+<div class="app-content container center-layout mt-2">
+<div class="content-wrapper">
+<div class="content-body"><!-- INICIA CONTENIDO  -->
+
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">

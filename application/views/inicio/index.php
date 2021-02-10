@@ -1,3 +1,5 @@
+
+
 <div class="row bg-banner-index">
 	<div class="col">
 			<div style="margin-top:160px;" class="text-center white">
@@ -58,6 +60,13 @@
 			</div>
 			</div>
 			</div>
+
+
+
+<div class="app-content container center-layout mt-2">
+<div class="content-wrapper">
+<div class="content-body"><!-- INICIA CONTENIDO  -->
+
 
 <div class="row">
 	<div class="col">

@@ -240,8 +240,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
 
-        <div class="app-content container center-layout mt-2">
-            <div class="content-wrapper">
-                <div class="content-body"><!-- INICIA CONTENIDO  -->
+
 
         <!-- ////////////////////////////////////////////////////////////////////////////-->
