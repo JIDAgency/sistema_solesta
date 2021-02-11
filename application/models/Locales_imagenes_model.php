@@ -65,6 +65,17 @@ class Locales_imagenes_model extends CI_Model {
         return $query;
     }
 
+    public function get_banner_principal_movil_por_local_id($local_id)
+    {
+        $query = $this->db
+            ->where('estatus', 'activo')
+            ->where('local_id', intval($local_id))
+            ->where('tipo', 'banner_principal_movil')
+            ->get('locales_imagenes');
+        
+        return $query;
+    }
+
     public function get_logotipo_por_local_id($local_id)
     {
         $query = $this->db
@@ -97,4 +108,28 @@ class Locales_imagenes_model extends CI_Model {
         
         return $query;
     }
+
+    public function get_promociones_por_local_id($local_id)
+    {
+        $query = $this->db
+            ->where('estatus', 'activo')
+            ->where('local_id', intval($local_id))
+            ->where('tipo', 'promocion')
+            ->get('locales_imagenes');
+        
+        return $query;
+    }
+
+    public function get_eventos_por_local_id($local_id)
+    {
+        $query = $this->db
+            ->where('estatus', 'activo')
+            ->where('local_id', intval($local_id))
+            ->where('tipo', 'evento')
+            ->get('locales_imagenes');
+        
+        return $query;
+    }
+
+
 }
