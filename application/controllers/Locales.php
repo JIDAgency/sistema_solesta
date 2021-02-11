@@ -70,6 +70,7 @@ class Locales extends MY_Controller {
 			redirect($data['regresar_a']);
 		}
 		
+		$categorias_list = $this->categorias_model->get_categorias_por_local($local_row->id)->result();
 		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
 		$imagen_banner_principal_movil = $this->locales_imagenes_model->get_banner_principal_movil_por_local_id($local_row->id)->row();
 		$imagen_logotipo = $this->locales_imagenes_model->get_logotipo_por_local_id($local_row->id)->row();
@@ -79,6 +80,7 @@ class Locales extends MY_Controller {
 		$imagenes_eventos_list = $this->locales_imagenes_model->get_eventos_por_local_id($local_row->id)->result();
 		
 		$data['local_row'] = $local_row;
+		$data['categorias_list'] = $categorias_list;
 		$data['imagen_banner_principal'] = $imagen_banner_principal;
 		$data['imagen_banner_principal_movil'] = $imagen_banner_principal_movil;
 		$data['imagen_logotipo'] = $imagen_logotipo;

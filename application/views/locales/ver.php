@@ -1,21 +1,52 @@
-<div class="app-content container center-layout mt-2">
-    <div class="content-wrapper">
-        <div class="content-header row">
-            <!--div class="content-header-left col-md-6 col-12 mb-2">
-            </div>
-            <div class="content-header-right col-md-6 col-12">
-            </div-->
-        </div>
+<div class="app-content center-layout">
+    <div class="container-fluid">
         <div class="content-body">
+            <?php if (isset($imagen_banner_principal)): ?>
+            <?php endif; ?>
+            <div class="row bg-banner-locales-ver d-none d-sm-block" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>) no-repeat center center; background-size: cover;">
 
+                <?php //if (isset($imagen_banner_principal_movil)): ?>
+                    <!--div class="row bg-banner-locales-ver d-block d-sm-none" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>) no-repeat center center; background-size: cover;"-->
+                <?php //endif; ?>
 
+                <?php foreach ($categorias_list as $categoria_row): ?>
+                    <a class="btn btn-primary btn-min-width mr-1 mb-1" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
+                <?php endforeach; ?>
+
+                <?php if (isset($local_row->nombre)): ?>
+                    <h1><?php echo $local_row->nombre; ?></h1>
+                <?php endif; ?>
+
+                <p><i class="fa fa-clock-o info"></i> Lun - Dom | 10:00am - 18:00pm</p>
+
+                <?php if (isset($local_row->telefono_1)): ?>
+                    <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
+                        <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
+                    </a>
+                <?php endif; ?>
+
+                <?php if (isset($local_row->telefono_2)): ?>
+                    <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
+                        <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
+                    </a>
+                <?php endif; ?>
+
+                <?php if (isset($local_row->correo_electronico)): ?>
+                    <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
+                        <p><i class="fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
+                    </a>
+                <?php endif; ?>
+
+                <?php if (isset($local_row->ubicacion)): ?>
+                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
+                        <p><i class="fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
+                    </a>
+                <?php endif; ?>
+            </div>
+        </div>
+
+        <div class="content-body">
             <section id="categorias-gallery" class="card">
-                <?php if (isset($imagen_banner_principal)): ?>
-                    <img class="card-img-top img-fluid mb-1 d-none d-sm-block" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
-                <?php endif; ?>
-                <?php if (isset($imagen_banner_principal_movil)): ?>
-                    <img class="card-img-top img-fluid mb-1 d-block d-sm-none" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>" alt="Bienvenida">
-                <?php endif; ?>
                 <div class="card-header">
                     <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
                 </div>
@@ -30,29 +61,11 @@
                                     <h4 class="card-title text-uppercase"><?php echo $local_row->nombre.' | '.titulo(); ?></h4>
                                 <?php endif; ?>
                                 <div class="card-text">
-                                    <?php if (isset($local_row->nombre)): ?>
-                                        <p><?php echo $local_row->nombre; ?></p>
-                                    <?php endif; ?>
+                                    
                                     <?php if (isset($local_row->descripcion)): ?>
                                         <p><?php echo $local_row->descripcion; ?></p>
                                     <?php endif; ?>
-                                    <?php if (isset($local_row->telefono_1)): ?>
-                                        <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                                            <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
-                                        </a>
-                                    <?php endif; ?>
-                                    <?php if (isset($local_row->telefono_2)): ?>
-                                        <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                                            <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
-                                        </a>
-                                    <?php endif; ?>
-                                    <?php if (isset($local_row->ubicacion)): ?>
-                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer"></a>
-                                        <p><?php if (isset($local_row->url_ubicacion)): ?><a href="" target="_blank" class="btn btn-social-icon"><span class=""></span></a><?php endif; ?><?php echo $local_row->ubicacion; ?></p>
-                                    <?php endif; ?>
-                                    <?php if (isset($local_row->correo_electronico)): ?>
-                                        <p><?php echo $local_row->correo_electronico; ?></p>
-                                    <?php endif; ?>
+
                                     <div class="text-center mt-2">
                                         <?php if (isset($local_row->url_pagina)): ?>
                                             <a href="//<?php echo $local_row->url_pagina; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-globe"></span></a>

@@ -57,6 +57,21 @@ class Categorias_model extends CI_Model {
         return $query;
     }
 
+    public function get_categorias_por_local($local_id)
+    {
+        $query = $this->db
+        ->where("t2.local_id", intval($local_id))
+        ->select("
+            t1.*,
+        ")
+        ->from("categorias t1")
+        ->join("relacion_locales_categorias t2", "t1.id = t2.categoria_id")
+        ->order_by("t1.nombre asc")
+        ->get();
+        
+        return $query;
+    }
+
     public function get_categoria_por_url($categoria)
     {
         $query = $this->db
