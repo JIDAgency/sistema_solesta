@@ -2,17 +2,15 @@
 
 
 <div class="app-content container center-layout mt-2">
-<div class="content-wrapper">
-<div class="content-body"><!-- INICIA CONTENIDO  -->
-
-<div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
+            <!-- INICIA CONTENIDO  -->
+
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
 
-            <!-- Basic example section start -->
             <section id="">
                 <form class="form">
+
                     <div class="form-body text-center mt-5">
                         <h1 class="text-bold-700 purple darken-3 mb-3"><strong>Promociones Solesta en las mejores tiendas</strong></h1>
                         <div class="row match-height">
@@ -163,9 +161,10 @@
                             </div>
                         </div>
                     </div>
+
                 </form>
             </section>
-            <!-- // Basic example section end -->
+
         </div>
     </div>
 </div>

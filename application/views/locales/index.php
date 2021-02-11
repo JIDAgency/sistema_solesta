@@ -1,23 +1,22 @@
 <img class="img-fluid" src="almacenamiento\locales\banner-locales.jpg" alt="">
 
 <div class="app-content container center-layout mt-2">
-<div class="content-wrapper">
-<div class="content-body"><!-- INICIA CONTENIDO  -->
-
-<div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
+            <!-- INICIA CONTENIDO  -->
         
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
+
             <section id="">
                 <form class="form">
-                <ul class="list-inline">
-                    <?php foreach ($categorias_list as $categoria_row): ?>
-                        <li>
-                            <a class="btn btn-outline-secondary btn-min-width mr-1 mb-1" href="#<?php echo $categoria_row->url; ?>"><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
+
+                    <ul class="list-inline">
+                        <?php foreach ($categorias_list as $categoria_row): ?>
+                            <li>
+                                <a class="btn btn-outline-secondary btn-min-width mr-1 mb-1" href="#<?php echo $categoria_row->url; ?>"><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
 
                     <div class="form-body mt-5">
                         <?php foreach ($categorias_list as $categoria_row): ?>
@@ -46,8 +45,10 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
+
                 </form>
             </section>
+            
         </div>
     </div>
 </div>

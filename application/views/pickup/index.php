@@ -1,12 +1,10 @@
 <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\pickup\banner.jpg" alt="Banner de la sección Pick Up">
 
 <div class="app-content container center-layout mt-2">
-<div class="content-wrapper">
-<div class="content-body"><!-- INICIA CONTENIDO  -->
-
-<div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
+            <!-- INICIA CONTENIDO  -->
+
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
 
             <section id="">
@@ -47,7 +45,7 @@
                     <h1 class="text-bold-700 purple darken-3 mb-1 mt-3"><strong>Restaurantes y Mercado Solesta Pick Up</strong></h1>
                 </div>
                 <div class="row">
-                    <?php foreach ($pickups_restautantes_list as $pickup_restautante_row): ?>
+                    <?php foreach ($pickups_restaurantes_list as $pickup_restautante_row): ?>
                         <div class="col-xl-3 col-md-6 col-sm-12 mb-2">
                             <a href="<?php echo base_url().'locales/ver/'.$pickup_restautante_row->local_url; ?>">
                                 <img class="img-fluid" src="<?php echo base_url()."almacenamiento/locales/".$pickup_restautante_row->local_url."/".$pickup_restautante_row->url; ?>" alt="<?php echo $pickup_restautante_row->alt; ?>" />

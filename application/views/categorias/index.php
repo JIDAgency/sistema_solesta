@@ -2,15 +2,15 @@
 
 
 <div class="app-content container center-layout mt-2">
-<div class="content-wrapper">
-<div class="content-body"><!-- INICIA CONTENIDO  -->
-
-<div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
+            <!-- INICIA CONTENIDO  -->
+
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
+
             <section id="">
                 <form class="form">
+
                     <div class="form-body mt-5">
                         <h5 class="form-section">Categorías</h5>
                         <div class="row match-height">
@@ -31,8 +31,10 @@
                             <?php endforeach; ?>
                         </div>
                     </div>
+
                 </form>
             </section>
+            
         </div>
     </div>
 </div>

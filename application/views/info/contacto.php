@@ -2,25 +2,27 @@
 
 
 <div class="app-content container center-layout mt-2">
-<div class="content-wrapper">
-<div class="content-body"><!-- INICIA CONTENIDO  -->
-
-<div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
-            <!-- Card sizing section start -->
+            <!-- INICIA CONTENIDO  -->
+
             <section id="sizing">
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
+
                             <div class="card-header">
                                 <h4 class="card-title"><strong>Contactanos</strong></h4>
                             </div>
+
                             <div class="card-content collpase show">
                                 <div class="card-body">
+
                                     <?php echo form_open($controlador, array('class' => 'needs-validation', 'id' => 'forma-'.$controlador, 'novalidate' => '', 'method' => 'post')); ?>
+                                        
                                         <div class="form-body">
+
                                             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
 
                                             <div class="form-group">
@@ -48,6 +50,7 @@
                                             </div>
 
                                             <div class="form-group">
+                                            
                                                 <fieldset>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="validar_captcha" id="validar_captcha" placeholder="Captcha *" value="<?php echo set_value('validar_captcha'); ?>" aria-describedby="basic-captcha">
@@ -56,17 +59,23 @@
                                                         </div>
                                                     </div>
                                                 </fieldset>
+
                                                 <input type="hidden" class="input-group-text unselectable" name="verificacion_captcha" id="verificacion_captcha" value="<?php echo $codigo; ?>" readonly></input>
                                                 <?php echo form_error('validar_captcha', '<span class="text-danger">','</span>'); ?>
+
                                             </div>
+
                                         </div>
 
                                         <div class="form-actions">
                                             <button name="submit" id="submit" type="submit" class="btn btn-info btn-purple btn-darken-3"/>Enviar</button>
                                         </div>
+
                                     <?php echo form_close(); ?>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -85,8 +94,9 @@
                         </div>
                     </div>
                 </div>
+
             </section>
-            <!-- Card sizing section end -->
+
         </div>
     </div>
 </div>

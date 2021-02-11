@@ -1,6 +1,7 @@
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
         <div class="content-body">
+
             <ul class="list-inline">
                 <?php foreach ($categorias_list as $categoria_row): ?>
                     <li>
@@ -10,7 +11,9 @@
             </ul>
 
             <h4 class="card-title text-uppercase"><?php echo $categoria_row->nombre.' | '.titulo(); ?></h4>
+
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
+            
             <section id="">
                 <div class="row match-height">
                     <?php foreach ($locales_list as $local_row): ?>
@@ -30,6 +33,7 @@
                     <?php endforeach; ?>
                 </div>
             </section>
+
         </div>
     </div>
 </div>
