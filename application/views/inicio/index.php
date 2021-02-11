@@ -295,9 +295,9 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row d-none d-xl-block">
 				<div class="col">
-					<section class="mt-5 d-none d-xl-block">
+					<section class="mt-5 ">
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 						</div>
@@ -379,9 +379,9 @@
 
 			<!--Inicia carrousel movil de promociones-->
 
-			<div class="row">
+			<div class="row d-block d-sm-none">
 				<div class="col">
-					<section class="mt-5 d-block d-sm-none">
+					<section class="mt-5 ">
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 						</div>
