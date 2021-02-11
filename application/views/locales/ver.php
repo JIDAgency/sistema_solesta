@@ -13,6 +13,9 @@
                 <?php if (isset($imagen_banner_principal)): ?>
                     <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
                 <?php endif; ?>
+                <?php if (isset($imagen_banner_principal_movil)): ?>
+                    <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>" alt="Bienvenida">
+                <?php endif; ?>
                 <div class="card-header">
                     <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
                 </div>
@@ -64,56 +67,28 @@
 
                             <div class="col-xl-6 col-md-6 col-sm-12">
                                 <?php foreach ($imagenes_galeria_list as $imagen_galeria_row): ?>
-                                    <img src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>" width="20%">
+                                    <img class="img-fluid" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
                                 <?php endforeach; ?>
-                                <div id="carousel-example-caption" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-caption" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-caption" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-caption" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="carousel-item active">
-                                            <img src="<?php echo base_url(); ?>app-assets/images/carousel/06.jpg" alt="First slide" width="100%">
-                                            <div class="carousel-caption">
-                                                <h3>First Slide Label</h3>
-                                                <p>Donut jujubes I love topping I love sweet. Jujubes I love brownie gummi bears I love donut sweet chocolate. Tart chocolate marshmallow.Tart carrot cake muffin.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="<?php echo base_url(); ?>app-assets/images/carousel/08.jpg" alt="Second slide" width="100%">
-                                            <div class="carousel-caption">
-                                                <h3>Second Slide Label</h3>
-                                                <p>Tart macaroon marzipan I love soufflé apple pie wafer. Chocolate bar jelly caramels jujubes chocolate cake gummies. Cupcake cake I love cake danish carrot cake.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="<?php echo base_url(); ?>app-assets/images/carousel/05.jpg" alt="Third slide" width="100%">
-                                            <div class="carousel-caption">
-                                                <h3>Third Slide Label</h3>
-                                                <p>Pudding sweet pie gummies. Chocolate bar sweet tiramisu cheesecake chocolate cotton candy pastry muffin. Marshmallow cake powder icing.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carousel-example-caption" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carousel-example-caption" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-
                             </div>
 
                             <div class="col-xl-6 col-md-6 col-sm-12">
                                 <?php if (isset($imagen_pickup)): ?>
-                                    <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_pickup->url; ?>" alt="" width="250">
+                                    <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_pickup->url; ?>" alt="<?php echo $imagen_pickup->alt; ?>" width="250">
                                 <?php endif; ?>
                             </div>
                             <div class="col-xl-6 col-md-6 col-sm-12">
-                                
+                                <?php if (isset($imagenes_promociones_list)): ?>
+                                    <?php foreach ($imagenes_promociones_list as $imagen_promocion_row): ?>
+                                        <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" alt="<?php echo $imagen_promocion_row->alt; ?>" width="250">
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-sm-12">
+                                <?php if (isset($imagenes_eventos_list)): ?>
+                                    <?php foreach ($imagenes_eventos_list as $imagen_evento_row): ?>
+                                        <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" alt="<?php echo $imagen_evento_row->alt; ?>" width="250">
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

@@ -69,17 +69,23 @@ class Locales extends MY_Controller {
 			$this->session->set_flashdata('MENSAJE_ERROR', '¡Oops! Al parecer ha ocurrido un error, por favor intentelo más tarde. (1)');
 			redirect($data['regresar_a']);
 		}
-
+		
 		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
+		$imagen_banner_principal_movil = $this->locales_imagenes_model->get_banner_principal_movil_por_local_id($local_row->id)->row();
 		$imagen_logotipo = $this->locales_imagenes_model->get_logotipo_por_local_id($local_row->id)->row();
 		$imagenes_galeria_list = $this->locales_imagenes_model->get_galeria_por_local_id($local_row->id)->result();
 		$imagen_pickup = $this->locales_imagenes_model->get_pickup_por_local_id($local_row->id)->row();
-
+		$imagenes_promociones_list = $this->locales_imagenes_model->get_promociones_por_local_id($local_row->id)->result();
+		$imagenes_eventos_list = $this->locales_imagenes_model->get_eventos_por_local_id($local_row->id)->result();
+		
 		$data['local_row'] = $local_row;
 		$data['imagen_banner_principal'] = $imagen_banner_principal;
+		$data['imagen_banner_principal_movil'] = $imagen_banner_principal_movil;
 		$data['imagen_logotipo'] = $imagen_logotipo;
 		$data['imagenes_galeria_list'] = $imagenes_galeria_list;
 		$data['imagen_pickup'] = $imagen_pickup;
+		$data['imagenes_promociones_list'] = $imagenes_promociones_list;
+		$data['imagenes_eventos_list'] = $imagenes_eventos_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
