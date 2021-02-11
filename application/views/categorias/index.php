@@ -15,7 +15,7 @@
                         <h5 class="form-section">Categorías</h5>
                         <div class="row match-height">
                             <?php foreach ($categorias_list as $categoria_row): ?>
-                                <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="col-md-3 col-6">
                                     <a href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>" itemprop="" data-size="480x360">
                                         <div class="card">
                                             <div class="card-content">
