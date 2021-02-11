@@ -11,10 +11,10 @@
 
             <section id="categorias-gallery" class="card">
                 <?php if (isset($imagen_banner_principal)): ?>
-                    <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
+                    <img class="card-img-top img-fluid mb-1 d-none d-sm-block" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>" alt="Bienvenida">
                 <?php endif; ?>
                 <?php if (isset($imagen_banner_principal_movil)): ?>
-                    <img class="card-img-top img-fluid mb-1" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>" alt="Bienvenida">
+                    <img class="card-img-top img-fluid mb-1 d-block d-sm-none" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>" alt="Bienvenida">
                 <?php endif; ?>
                 <div class="card-header">
                     <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
