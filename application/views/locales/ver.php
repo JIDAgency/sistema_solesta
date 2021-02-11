@@ -37,13 +37,18 @@
                                         <p><?php echo $local_row->descripcion; ?></p>
                                     <?php endif; ?>
                                     <?php if (isset($local_row->telefono_1)): ?>
-                                        <p><?php echo $local_row->telefono_1; ?></p>
+                                        <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
+                                            <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if (isset($local_row->telefono_2)): ?>
-                                        <p><?php echo $local_row->telefono_2; ?></p>
+                                        <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
+                                            <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if (isset($local_row->ubicacion)): ?>
-                                        <p><?php if (isset($local_row->url_ubicacion)): ?><a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" class="btn btn-social-icon"><span class="fa fa-location-arrow"></span></a><?php endif; ?><?php echo $local_row->ubicacion; ?></p>
+                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer"></a>
+                                        <p><?php if (isset($local_row->url_ubicacion)): ?><a href="" target="_blank" class="btn btn-social-icon"><span class=""></span></a><?php endif; ?><?php echo $local_row->ubicacion; ?></p>
                                     <?php endif; ?>
                                     <?php if (isset($local_row->correo_electronico)): ?>
                                         <p><?php echo $local_row->correo_electronico; ?></p>
