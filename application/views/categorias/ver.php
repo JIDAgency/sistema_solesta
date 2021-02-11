@@ -10,7 +10,7 @@
                 <?php endforeach; ?>
             </ul>
 
-            <h4 class="card-title text-uppercase"><?php echo $categoria_row->nombre.' | '.titulo(); ?></h4>
+            <h4 class="card-title text-uppercase"><?php echo $categoria_actual->nombre.' | '.titulo(); ?></h4>
 
             <?php $this->load->view('_templates/mensajes_alerta.tpl.php');?>
             

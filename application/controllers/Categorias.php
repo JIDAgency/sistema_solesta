@@ -50,10 +50,10 @@ class Categorias extends MY_Controller {
 			$categoria = $this->input->post('categoria');
 		}
 		
-		$categoria_row = $this->categorias_model->get_categoria_por_url($categoria)->row();
+		$categoria_actual = $this->categorias_model->get_categoria_por_url($categoria)->row();
 
 		$data['pagina_menu_inicio'] = true;
-		$data['pagina_titulo'] = ucfirst(mb_strtolower($categoria_row->nombre));
+		$data['pagina_titulo'] = ucfirst(mb_strtolower($categoria_actual->nombre));
 
 		$data['controlador'] = 'categorias/ver/'.$categoria.'';
 		$data['regresar_a'] = 'categorias';
@@ -69,17 +69,17 @@ class Categorias extends MY_Controller {
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
 
-		if (!$categoria_row) {
+		if (!$categoria_actual) {
 			$this->session->set_flashdata('MENSAJE_ERROR', '¡Oops! Al parecer ha ocurrido un error, por favor intentelo más tarde. (1)');
 			redirect($data['regresar_a']);
 		}
 
-		$locales_list = $this->locales_model->get_locales_por_categoria_por_id($categoria_row->id)->result();
+		$locales_list = $this->locales_model->get_locales_por_categoria_por_id($categoria_actual->id)->result();
 
 		/** Metodo para llamar a todas las categorias */
 		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
 
-		$data['categoria_row'] = $categoria_row;
+		$data['categoria_actual'] = $categoria_actual;
 		$data['categorias_list'] = $categorias_list;
 		$data['locales_list'] = $locales_list;
 
