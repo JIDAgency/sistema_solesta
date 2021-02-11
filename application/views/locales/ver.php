@@ -17,29 +17,29 @@
                     <h1><?php echo $local_row->nombre; ?></h1>
                 <?php endif; ?>
 
-                <p><i class="fa fa-clock-o info"></i> Lun - Dom | 10:00am - 18:00pm</p>
+                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Lun - Dom | 10:00am - 18:00pm</p>
 
                 <?php if (isset($local_row->telefono_1)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                        <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
+                        <p class="black"><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->telefono_2)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                        <p><i class="fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
+                        <p class="black"><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->correo_electronico)): ?>
                     <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
-                        <p><i class="fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
+                        <p class="black"><i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->ubicacion)): ?>
                     <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                        <p><i class="fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
+                        <p class="black"><i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
                     </a>
                 <?php endif; ?>
             </div>
@@ -68,16 +68,16 @@
 
                                     <div class="text-center mt-2">
                                         <?php if (isset($local_row->url_pagina)): ?>
-                                            <a href="//<?php echo $local_row->url_pagina; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-globe"></span></a>
+                                            <a href="//<?php echo $local_row->url_pagina; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-globe"></span></a>
                                         <?php endif; ?>
                                         <?php if (isset($local_row->url_facebook)): ?>
-                                            <a href="<?php echo $local_row->url_facebook; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-facebook-square"></span></a>
+                                            <a href="<?php echo $local_row->url_facebook; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-facebook-square"></span></a>
                                         <?php endif; ?>
                                         <?php if (isset($local_row->url_instagram)): ?>
-                                            <a href="<?php echo $local_row->url_instagram; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-instagram"></span></a>
+                                            <a href="<?php echo $local_row->url_instagram; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-instagram"></span></a>
                                         <?php endif; ?>
                                         <?php if (isset($local_row->url_twitter)): ?>
-                                            <a href="<?php echo $local_row->url_twitter; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa fa-twitter-square"></span></a>
+                                            <a href="<?php echo $local_row->url_twitter; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-twitter-square"></span></a>
                                         <?php endif; ?>
                                     </div>
                                 </div>

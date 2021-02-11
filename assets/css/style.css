@@ -108,12 +108,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
   
 .bg-banner-index {
-	background: url(../../../almacenamiento/inicio/banner-index.jpg) no-repeat center center;
+	background: url(../../almacenamiento/inicio/banner-index.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .bg-banner-locales-ver {
-	background: url(../../../almacenamiento/locales/banner-generico.jpg) no-repeat center center;
+	background: url(../../almacenamiento/locales/banner-generico.jpg) no-repeat center center;
 	background-size: cover;
     min-height: 500px;
     background-color: black;
