@@ -1,4 +1,4 @@
-<!--img class="img-fluid" src="almacenamiento\mapa\banner-mapa.jpg" alt=""-->
+<img class="img-fluid" src="almacenamiento\mapa\banner-mapa.jpg" alt="">
 
 <div class="app-content container center-layout mt-2">
     <div class="content-wrapper">
