@@ -127,7 +127,7 @@
 			
 			<div class="row">
 				<div class="col">
-					<section class="mt-5">
+					<section class="mt-5 d-none d-xl-block">
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
 						</div>
@@ -206,6 +206,89 @@
 				</div>
 			</div>
 
+			<!--Inicia carrousel movil de pick up-->
+			<div class="row">
+				<div class="col">
+					<section class="mt-5 d-block d-sm-none">
+						<div class="text-center">
+							<h1 class="text-center purple darken-3">SOLESTA PICK UP</h1>
+						</div>
+						<div id="carousel-pick-up-movil" class="carousel slide carousel-multi-item" data-ride="carousel">
+							
+							<!--<ol class="carousel-indicators">
+								<li data-target="#carousel-pick-up-movil" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-pick-up-movil" data-slide-to="1"></li>
+								<li data-target="#carousel-pick-up-movil" data-slide-to="2"></li>
+							</ol>-->
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carousel-pick-up-movil" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-pick-up-movil" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+						<div class="row text-center mt-5">
+							<div class="col">
+								<a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="<?php echo site_url("pickup"); ?>">Ver todos las opciones Pickup</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!--Termina carrousel movil de pick up-->
+
+
 			<div class="row">
 				<div class="col">
 					<img src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
@@ -214,7 +297,7 @@
 
 			<div class="row">
 				<div class="col">
-					<section class="mt-5">
+					<section class="mt-5 d-none d-xl-block">
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 						</div>
@@ -293,6 +376,122 @@
 
 				</div>
 			</div>
+
+			<!--Inicia carrousel movil de promociones-->
+
+			<div class="row">
+				<div class="col">
+					<section class="mt-5 d-block d-sm-none">
+						<div class="text-center">
+							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
+						</div>
+						<div id="carousel-promos-movil" class="carousel slide carousel-multi-item" data-ride="carousel">
+							<!--<ol class="carousel-indicators">
+								<li data-target="#carousel-promos-movil" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-promos-movil" data-slide-to="1"></li>
+								<li data-target="#carousel-promos-movil" data-slide-to="2"></li>
+							</ol>-->
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-35.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-34.png" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-33.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-32.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-31.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-30.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-29.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-28.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-27.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-26.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carousel-promos-movil" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-promos-movil" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</section>
+
+					<div class="row text-center mt-5">
+						<div class="col">
+							<a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="<?php echo site_url("promociones"); ?>">Ver todas las promociones</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!--Termina carrousel movil de promociones-->
+
 
 		</div>
 	</div>
