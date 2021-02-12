@@ -3,7 +3,7 @@
         <div class="content-body">
             <?php if (isset($imagen_banner_principal)): ?>
             <?php endif; ?>
-            <div class="row bg-banner-locales-ver d-none d-sm-block" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>) no-repeat center center; background-size: cover;">
+            <div class="row bg-banner-locales-ver" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal->url; ?>) no-repeat center center; background-size: cover;">
 
                 <?php //if (isset($imagen_banner_principal_movil)): ?>
                     <!--div class="row bg-banner-locales-ver d-block d-sm-none" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>) no-repeat center center; background-size: cover;"-->
@@ -13,6 +13,7 @@
                     <div class="row align-items-end">
                         <div class="col">
 
+                        <div class="contenedor-principal-local">
                 <?php foreach ($categorias_list as $categoria_row): ?>
                     <a class="btn btn-primary btn-min-width mr-1 mb-1 bg-purple bg-darken-3" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
                 <?php endforeach; ?>
@@ -21,31 +22,36 @@
                     <h1><?php echo $local_row->nombre; ?></h1>
                 <?php endif; ?>
 
-                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Lun - Dom | 10:00am - 18:00pm</p>
+                
 
                 <?php if (isset($local_row->telefono_1)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                        <p><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
+                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->telefono_2)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                        <p><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
+                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->correo_electronico)): ?>
                     <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
-                        <p><i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
+                        <i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?>
                     </a>
                 <?php endif; ?>
 
+                </br>
                 <?php if (isset($local_row->ubicacion)): ?>
                     <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                        <p><i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
+                        <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
                     </a>
+
                 <?php endif; ?>
+
+                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Lun - Dom | 10:00am - 18:00pm</p>
+                </div>
 
                 </div>
                 </div>

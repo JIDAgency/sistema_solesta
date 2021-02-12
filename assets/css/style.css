@@ -119,13 +119,14 @@ ul, li, a, p{
 .bg-banner-locales-ver {
 	background: url(../../almacenamiento/locales/banner-generico.jpg) no-repeat center center;
 	background-size: cover;
-    min-height: 500px;
     background-color: black;
 }
 
 
 .info-principal-local {
     color: white;
+    min-height: 400px;
+    line-height: 3em;
 }
 
 .info-principal-local h1 {
@@ -137,8 +138,20 @@ ul, li, a, p{
     color: white;
 }
 
+.contenedor-principal-local {
+    padding-top: 25%;
+    padding-bottom:5%
+    
+}
+
 .card {
     -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
 }
+
+.btn {
+    border:0;
+}
+
+
 
