@@ -8,6 +8,7 @@ class Inicio extends MY_Controller {
 		parent::__construct();
 		$this->load->model('locales_model');
 		$this->load->model('categorias_model');
+		$this->load->model('locales_imagenes_model');
     }
 
 	public function index()
@@ -33,11 +34,13 @@ class Inicio extends MY_Controller {
 		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
 		$subcategorias_list = $this->categorias_model->get_lista_de_subcategorias_activas()->result();
 		$buscador_list = $this->locales_model->buscador_locales()->result();
+		$pickups_list = $this->locales_imagenes_model->get_random_pickups()->result();
 
 		$data['locales_list'] = $locales_list;
 		$data['categorias_list'] = $categorias_list;
 		$data['subcategorias_list'] = $subcategorias_list;
 		$data['buscador_list'] = $buscador_list;
+		$data['pickups_list'] = $pickups_list;
 
 		$this->construir_public_ui('inicio/index' ,$data);
 	}

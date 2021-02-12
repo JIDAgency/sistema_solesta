@@ -131,5 +131,24 @@ class Locales_imagenes_model extends CI_Model {
         return $query;
     }
 
+    /** Inicio Index */
+
+    public function get_random_pickups()
+    {
+        $query = $this->db
+            ->where('t1.estatus', 'activo')
+            ->where('t1.tipo', 'pickup')
+            ->select("
+                t1.*,
+                t2.url as local_url,
+            ")
+            ->from("locales_imagenes t1")
+            ->join("locales t2", "t1.local_id = t2.id")
+            ->order_by('rand()')
+            ->limit(intval(12))
+            ->get();
+        
+        return $query;
+    }
 
 }

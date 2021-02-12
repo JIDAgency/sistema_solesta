@@ -129,6 +129,14 @@
 					</section>
 				</div>
 			</div>
+
+			<?php //foreach ($pickups_list as $pickup_row): ?>
+				<!--div class="row">
+					<div class="col-3">
+						<img src="<?php echo base_url(); ?>almacenamiento\locales\<?php echo $pickup_row->local_url?>\pick-up-1.jpg" alt="" width="100%">
+					</div>
+				</div-->
+			<?php //endforeach; ?>
 			
 			<div class="row">
 				<div class="col">
@@ -146,16 +154,32 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\tripoli\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\ocho30\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\la_chicatana\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\sonora_grill\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\carbon_central_de_hamburguesas\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\seratta\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -165,29 +189,13 @@
 											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\el_gran_rosticero\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\cabanna\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img src="<?php echo base_url(); ?>almacenamiento\locales\moyo\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
