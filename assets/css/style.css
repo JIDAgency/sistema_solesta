@@ -122,3 +122,23 @@ ul, li, a, p{
     min-height: 500px;
     background-color: black;
 }
+
+
+.info-principal-local {
+    color: white;
+}
+
+.info-principal-local h1 {
+    font-weight: 700;
+    color: white;
+}
+
+.info-principal-local a {
+    color: white;
+}
+
+.card {
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+

@@ -9,8 +9,12 @@
                     <!--div class="row bg-banner-locales-ver d-block d-sm-none" style="background: url(<?php echo base_url_locales().$local_row->url.'/'.$imagen_banner_principal_movil->url; ?>) no-repeat center center; background-size: cover;"-->
                 <?php //endif; ?>
 
+                <div class="container info-principal-local pt-5">
+                    <div class="row align-items-end">
+                        <div class="col">
+
                 <?php foreach ($categorias_list as $categoria_row): ?>
-                    <a class="btn btn-primary btn-min-width mr-1 mb-1" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
+                    <a class="btn btn-primary btn-min-width mr-1 mb-1 bg-purple bg-darken-3" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
                 <?php endforeach; ?>
 
                 <?php if (isset($local_row->nombre)): ?>
@@ -21,32 +25,36 @@
 
                 <?php if (isset($local_row->telefono_1)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                        <p class="black"><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
+                        <p><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->telefono_2)): ?>
                     <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                        <p class="black"><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
+                        <p><i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->correo_electronico)): ?>
                     <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
-                        <p class="black"><i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
+                        <p><i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?></p>
                     </a>
                 <?php endif; ?>
 
                 <?php if (isset($local_row->ubicacion)): ?>
                     <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                        <p class="black"><i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
+                        <p><i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?></p>
                     </a>
                 <?php endif; ?>
+
+                </div>
+                </div>
+                </div>
             </div>
         </div>
 
         <div class="content-body">
-            <section id="">
+            <div class="container">
 				<div class="row mt-3">
 					<div class="col-lg-8 col-md-12">
 
@@ -68,9 +76,9 @@
 
                         <div class="card bg-transparent">
 							<div class="card-content">
-								<div class="card-body">
+								<div class="card-body p-0">
                                     <?php foreach ($imagenes_galeria_list as $imagen_galeria_row): ?>
-                                        <img class="img-fluid" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
                                     <?php endforeach; ?>
 								</div>
 							</div>
@@ -91,9 +99,9 @@
 
                         <div class="card bg-transparent">
 							<div class="card-content">
-								<div class="card-body">
+								<div class="card-body p-0">
                                     <?php foreach ($imagenes_galeria_list as $imagen_galeria_row): ?>
-                                        <img class="img-fluid" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
                                     <?php endforeach; ?>
 								</div>
 							</div>
@@ -101,10 +109,10 @@
 
                         <div class="card bg-transparent">
 							<div class="card-content">
-								<div class="card-body">
+								<div class="card-body p-0">
                                     <?php if (isset($imagenes_promociones_list)): ?>
                                         <?php foreach ($imagenes_promociones_list as $imagen_promocion_row): ?>
-                                            <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" alt="<?php echo $imagen_promocion_row->alt; ?>" width="250">
+                                            <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" alt="<?php echo $imagen_promocion_row->alt; ?>" width="250">
                                         <?php endforeach; ?>
                                     <?php endif; ?>
 								</div>
@@ -113,10 +121,10 @@
 
                         <div class="card bg-transparent">
 							<div class="card-content">
-								<div class="card-body">
+								<div class="card-body p-0">
                                     <?php if (isset($imagenes_eventos_list)): ?>
                                         <?php foreach ($imagenes_eventos_list as $imagen_evento_row): ?>
-                                            <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" alt="<?php echo $imagen_evento_row->alt; ?>" width="250">
+                                            <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" alt="<?php echo $imagen_evento_row->alt; ?>" width="250">
                                         <?php endforeach; ?>
                                     <?php endif; ?>
 								</div>
@@ -129,9 +137,9 @@
 
                         <div class="card bg-transparent">
                             <div class="card-content">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <?php if (isset($imagen_logotipo)): ?>
-                                        <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_logotipo->url; ?>" alt="">
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_logotipo->url; ?>" alt="">
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -185,9 +193,9 @@
 
                         <div class="card bg-transparent">
                             <div class="card-content">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <?php if (isset($imagen_pickup)): ?>
-                                        <img class="img-fluid mb-2" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_pickup->url; ?>" alt="<?php echo $imagen_pickup->alt; ?>">
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_pickup->url; ?>" alt="<?php echo $imagen_pickup->alt; ?>">
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -195,7 +203,7 @@
 
 					</div>
 				</div>
-			</section>
+            </div>
 
         </div>
     </div>
