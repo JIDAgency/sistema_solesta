@@ -21,7 +21,7 @@
                             <a href="<?php echo site_url("locales/ver/".$local_row->url); ?>" itemprop="" data-size="480x360">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="card-img-top img-fluid" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>">
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>">
                                         <!--div class="card-body text-center mt-1">
                                             <h4 class="card-title"><strong><?php //echo $local_row->nombre; ?></strong></h4>
                                         </div-->
