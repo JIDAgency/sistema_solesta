@@ -105,12 +105,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </nav>-->
 
-        <section class="seccion-boton p-md-5 d-none d-xl-block d-xl-block d-lg-none d-md-none d-lg-block d-sm-none d-md-block bg-purple bg-darken-3">
+        <section class="seccion-boton p-md-5 d-none d-xl-block d-xl-block d-lg-none d-md-none d-lg-block d-sm-none d-md-block bg-burgundi-solesta">
             <div class="container">
                 <div class="row">
 
                     <div class="col-3">
-                        <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid">
+                        <a href="<?php echo site_url("inicio"); ?>"><img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid"></a>
                     </div>
 
                     <div class="col-9">
@@ -161,14 +161,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-        <section class="seccion-boton p-md-5 d-block d-sm-none d-none d-sm-block d-md-none bg-purple bg-darken-3">
+        <section class="seccion-boton p-md-20-10 d-block d-sm-none d-none d-sm-block d-md-none bg-burgundi-solesta">
 
             <div class="container">
 
                 <div class="row">
 
                     <div class="col-6">
-                        <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid">
+                        <a href="<?php echo site_url("inicio"); ?>"><img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid"></a>
                     </div>
 
                     <div class="col-6">
@@ -187,11 +187,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="modal-content-2">
             
                     <div class="row">
-                        <div class="col">   
+                        <div class="col">
+                            <ul class="navbar-light menu-movil mt-5">
 
-                            <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid p-md-5">
-
-                            <ul class="navbar-light menu-movil">
+                            <img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid mb-5">
 
                                 <li class="nav-item">
                                     <a class="nav-link white" href="<?php echo site_url("inicio"); ?>" data-toggle=""><strong>Inicio</strong></a>
@@ -226,21 +225,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li class="nav-item">
                                     <a class="nav-link white" href="<?php echo site_url("info/contacto"); ?>" data-toggle=""><strong>Contacto</strong></a>
                                 </li>
+
+                                <li>
+                                </br>
+                                <ul class="list-inline">
+                                <li class="white">Síguenos en:</li><br>
+                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a></li>
+                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a></li>
+                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a></li>
+                                </ul><li>
+
+                                <li><a href="#" class="btn btn-light square btn-min-width mr-1 mb-1" data-dismiss="modal" aria-label="Close"><strong>Cerrar</strong></a></li>
                             
                             </ul>
                         </div>
                     </div>
         
-                </div>
-                
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-light square btn-min-width mr-1 mb-1" data-dismiss="modal" aria-label="Close"><strong>Cerrar</strong></a>
-                </div>
-                
-                <div class="">
-                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a>
-                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a>
-                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a>
                 </div>
             </div>
         </div>
