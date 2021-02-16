@@ -30,8 +30,8 @@ html {
     padding-top: 0.5rem !important;
   }
 
-.p-md-5 {
-    padding: 3rem !important;
+.p-md-20-10 {
+    padding: 20px 10px !important;
 }
 
 .seccion-boton{
@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 ul, li, a, p{
     font-family: 'Montserrat', sans-serif;
+}
+
+.bg-burgundi-solesta {
+    background-color: #542a44;
 }
 
 .menu-principal {
@@ -76,7 +80,7 @@ ul, li, a, p{
 
 .modal {
     position: fixed;
-    background-color: rgba(96,39,148,1);
+    background-color: rgba(0,0,0,0.9);
     top: 0;
     left: 0;
     z-index: 1050;
@@ -89,7 +93,7 @@ ul, li, a, p{
 
 
 .modal-content-2 {
-    background-color: rgba(96,39,148,1);
+    background-color: none;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -102,7 +106,7 @@ ul, li, a, p{
 }
 
 .navbar-light {
-    background:  rgba(96,39,148,1)
+    background: none;
 }
 
 
