@@ -116,7 +116,7 @@ ul, li, a, p{
 }
   
 .bg-banner-index {
-	background: url(../../almacenamiento/inicio/banner-index.jpg) no-repeat center center;
+	background: url(../../almacenamiento/inicio/banner-index.jpg) no-repeat top;
 	background-size: cover;
 }
 
