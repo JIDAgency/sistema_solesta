@@ -55,6 +55,10 @@ ul, li, a, p{
     background-color: #542a44;
 }
 
+.rounded {
+    border-radius:14px !important;
+}
+
 .menu-principal {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
