@@ -232,11 +232,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
         
                 </div>
-
+                
                 <div class="modal-footer">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <a href="#" class="btn btn-light square btn-min-width mr-1 mb-1" data-dismiss="modal" aria-label="Close"><strong>Cerrar</strong></a>
                 </div>
-            
+                
+                <div class="">
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a>
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a>
+                    <a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a>
+                </div>
             </div>
         </div>
 

@@ -13,7 +13,7 @@
                     <ul class="list-inline">
                         <?php foreach ($categorias_list as $categoria_row): ?>
                             <li>
-                                <a class="btn btn-outline-secondary btn-min-width mr-1 mb-1" href="#<?php echo $categoria_row->url; ?>"><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></a>
+                                <a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="#<?php echo $categoria_row->url; ?>"><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></a>
                             </li>
                         <?php endforeach; ?>
                     </ul>

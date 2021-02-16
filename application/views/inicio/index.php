@@ -1,15 +1,3 @@
-<<<<<<< Updated upstream
-=======
-<div class="content center-layout bg-banner-index">
-	<div class="content-wrapper">
-		<section class="">
-
-			<div style="margin-top:300px;" class="text-center white">
-				<h1 class="card-title white" style="font-family:montserrat; font-weight:700; font-size:3em;">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
-				<p style="font-family:montserrat; font-size:2em;">Shoppping, restaurantes, entretenimiento y más</p>
-			</div>
->>>>>>> Stashed changes
-
 <div class="app-content center-layout">
 	<div class="container-fluid">
 		<div class="content-body">
@@ -87,10 +75,10 @@
 					<section class="mt-5">
 
 						<div class="row mb-3 mt-1 text-center">
-							<div class="col-md-6">
+							<div class="col-md-6 mb-2">
 								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>pickup">
 									<img src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
@@ -102,12 +90,12 @@
 						</div>
 
 						<div class="row mt-2 text-center">
-							<div class="col-md-4">
+							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/shopping">
 									<img src="almacenamiento\inicio\banner-shopping.png" alt="Sección de shopping" width="100%">
 								</a>
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-8 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta">
 									<img src="almacenamiento\inicio\banner-mercado-solesta.png" alt="Sección de mercado solesta" width="100%">
 								</a>
@@ -115,17 +103,17 @@
 						</div>
 
 						<div class="row mt-1 text-center">
-							<div class="col-md-4">
+							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/restaurantes">
 									<img src="almacenamiento\inicio\banner-restaurantes.png" alt="Sección de restaurantes" width="100%">
 								</a>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/fun">
 									<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
 								</a>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/wellness">
 									<img src="almacenamiento\inicio\banner-wellness.png" alt="Sección de wellness" width="100%">
 								</a>
@@ -165,48 +153,48 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\tripoli\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\tripoli\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\ocho30\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\ocho30\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\la_chicatana\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\la_chicatana\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\sonora_grill\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\carbon_central_de_hamburguesas\pick-up-1.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\seratta\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\el_gran_rosticero\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\sonora_grill\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\cabanna\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\carbon_central_de_hamburguesas\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\moyo\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\seratta\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\el_gran_rosticero\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\cabanna\pick-up-1.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\moyo\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -248,46 +236,7 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -315,7 +264,7 @@
 
 			<div class="row">
 				<div class="col">
-					<img src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
+					<img class="rounded" src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
 				</div>
 			</div>
 
@@ -335,48 +284,48 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-03.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-03.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.jpg" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
+										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -419,77 +368,7 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-35.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-34.png" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-33.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-32.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-31.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-30.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-29.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-28.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-27.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-26.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-35.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
