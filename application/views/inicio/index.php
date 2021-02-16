@@ -28,30 +28,26 @@
 						</style>
 
 						<div class="row mb-3 mt-2">
-							<div class="offset-md-3 col-md-6 col-sm-12">
-								<fieldset>
+							<div class="offset-md-4 col-md-4 col-sm-12">
+								<fieldset class="form-group position-relative has-icon-left">
 									<div class="input-group">
-
-										<div class="input-group-prepend">
-											<input type="text" class="form-control" name="buscador" id="buscador" autocomplete="off" placeholder="Buscar..." aria-describedby="buscador">
+										<input type="text" class="form-control" name="buscador" id="buscador" autocomplete="off" placeholder="Buscar..." aria-describedby="buscador">
+										<div class="form-control-position">
+											<i class="icon-magnifier purple darken-3"></i>
 										</div>
-
-										<select class="form-control" name="categorias_select" id="categorias_select" onchange="cambiar_seleccion(this)">
-											<option value="" class="optionPredetermined">Seleccione una categoría...</option>
-											<?php foreach ($categorias_list as $categoria_row): ?>
-													<option value="<?php echo $categoria_row->id; ?>" class="optionGroup"><?php echo $categoria_row->nombre; ?></option>
-													<?php foreach ($subcategorias_list as $subcategoria_row): ?>
-														<?php if ($subcategoria_row->subcategoria_de == $categoria_row->id): ?>
-															<option value="<?php echo $subcategoria_row->id; ?>" class="optionChild"><?php echo $subcategoria_row->nombre; ?></option>
-														<?php endif; ?>
-													<?php endforeach; ?>
-											<?php endforeach; ?>
-										</select>
-
 										<div class="input-group-append">
-											<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+											<select class="form-control" name="categorias_select" id="categorias_select" onchange="cambiar_seleccion(this)">
+												<option value="" class="optionPredetermined">Seleccione una categoría...</option>
+												<?php foreach ($categorias_list as $categoria_row): ?>
+														<option value="<?php echo $categoria_row->id; ?>" class="optionGroup"><?php echo $categoria_row->nombre; ?></option>
+														<?php foreach ($subcategorias_list as $subcategoria_row): ?>
+															<?php if ($subcategoria_row->subcategoria_de == $categoria_row->id): ?>
+																<option value="<?php echo $subcategoria_row->id; ?>" class="optionChild"><?php echo $subcategoria_row->nombre; ?></option>
+															<?php endif; ?>
+														<?php endforeach; ?>
+												<?php endforeach; ?>
+											</select>
 										</div>
-
 									</div>
 									<div id="resultado" class="list-group"></div>
 								</fieldset>
@@ -76,11 +72,11 @@
 
 						<div class="row mb-3 mt-1 text-center">
 							<div class="col-md-6 mb-2">
-								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>pickup">
-									<img src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
+									<img class="rounded" src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
 							</div>
 						</div>
@@ -236,7 +232,84 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\moyo\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\cabanna\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\el_gran_rosticero\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\seratta\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\carbon_central_de_hamburguesas\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\sonora_grill\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\la_chicatana\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\ocho30\pick-up-1.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\tripoli\pick-up-1.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -262,7 +335,7 @@
 			<!--Termina carrousel movil de pick up-->
 
 
-			<div class="row">
+			<div class="row mt-5">
 				<div class="col">
 					<img class="rounded" src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
 				</div>
@@ -270,7 +343,7 @@
 
 			<div class="row d-none d-xl-block">
 				<div class="col">
-					<section class="mt-5 ">
+					<section class="mt-5">
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 						</div>
@@ -368,7 +441,84 @@
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-35.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-32.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-03.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -394,8 +544,6 @@
 			</div>
 
 			<!--Termina carrousel movil de promociones-->
-
-
 		</div>
 	</div>
 </div>
