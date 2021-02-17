@@ -17,6 +17,7 @@ class Locales extends MY_Controller {
 		$data['pagina_menu_inicio'] = true;
 		$data['pagina_titulo'] = 'Locales';
 
+		//revisar
 		$data['controlador'] = 'locales/locales';
 		$data['regresar_a'] = 'inicio';
 		$controlador_js = "locales/index";
@@ -90,6 +91,64 @@ class Locales extends MY_Controller {
 		$data['imagenes_eventos_list'] = $imagenes_eventos_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
+	}
+
+	public function resultados()
+	{
+		$data['pagina_menu_inicio'] = true;
+		$data['pagina_titulo'] = 'Resultados';
+
+		$data['controlador'] = 'locales/resultados';
+		$data['regresar_a'] = 'inicio';
+		$controlador_js = "locales/resultados";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
+		
+		$data['styles'] = array(
+		);
+		$data['scripts'] = array(
+			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+		);
+
+		$this->construir_public_ui('locales/resultados' ,$data);
+	}
+
+	public function buscar($busqueda = null)
+	{
+		$categoria = null;
+	
+		$data = $this->locales_model->buscador_locales($busqueda, $categoria)->result();
+
+		/*if ($locales_list->num_rows() > 0) {
+			foreach($locales_list->result() as $local_row)
+			{
+				$output .= '
+					<a href="'.site_url('/locales/ver/'.$local_row->url).'" class="list-group-item list-group-item-action">'.$local_row->nombre.'</a>
+
+					<div class="col-md-3 col-6">
+						<a href="'.site_url("locales/ver/".$local_row->url).'" itemprop="" data-size="480x360">
+							<div class="card">
+								<div class="card-content">
+									<img class="img-fluid rounded" src="'.base_url_locales().$local_row->url.'/logotipo.jpg" itemprop="" alt="Imagen de '.strtolower($local_row->nombre).'" />
+								</div>
+							</div>
+						</a>
+					</div>
+				';
+			}
+		} else {
+			$output .= '
+				No se ha encontrado ningún resultado...
+			';
+		}*/
+		
+		echo json_encode($data);
+
+		//$output .= '</table>';
+
+		//echo $output;
 	}
 
 	/** funciones de desarrollador */
