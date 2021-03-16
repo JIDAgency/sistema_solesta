@@ -61,8 +61,17 @@ class Locales extends MY_Controller {
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
 
 		$data['styles'] = array(
+			array('es_rel' => false, 'href' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/photoswipe.css'),
+			array('es_rel' => false, 'href' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/default-skin/default-skin.css'),
+			array('es_rel' => false, 'href' => base_url() . 'app-assets/css/pages/gallery.css'),
 		);
+
 		$data['scripts'] = array(
+			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/ui/jquery.sticky.js'),
+			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/gallery/masonry/masonry.pkgd.min.js'),
+			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/photoswipe.min.js'),
+			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/photoswipe-ui-default.min.js'),
+			array('es_rel' => false, 'src' => base_url() . 'app-assets/js/scripts/gallery/photo-swipe/photoswipe-script.js'),
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
 
@@ -95,6 +104,10 @@ class Locales extends MY_Controller {
 
 	public function resultados()
 	{
+		if ($this->input->post()) {
+			$resultados_buscador = $this->input->post('resultados_buscador');
+		}
+
 		$data['pagina_menu_inicio'] = true;
 		$data['pagina_titulo'] = 'Resultados';
 
@@ -200,16 +213,14 @@ class Locales extends MY_Controller {
 			*/
 
 			/** Galería 1 */
-			/*
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
-				'url' => 'galeria-1.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 1 de '.$local_row->nombre))),
+				'url' => 'galeria-5.jpg',
+				'alt' => ucwords(mb_strtolower(trim('Galería 5 de '.$local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
-				'estatus' => 'activo',
+				'estatus' => 'suspendido',
 			);
-			*/
 
 			/** Promoción 1 */
 			/*
@@ -256,13 +267,11 @@ class Locales extends MY_Controller {
 		echo "<br>";
 		echo "<br>";
 
-		/*
 		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
 			echo "OK <br>";
 		} else {
 			echo "BAD <br>";
 		}
-		*/
 	}
 
 	public function dar_de_alta_pick_ups()

@@ -1,8 +1,9 @@
 <style>
-.app-content {
-    min-height: 800px;
-}
+    .app-content {
+        min-height: 800px;
+    }
 </style>
+
 <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\locales\banner-locales.jpg" alt="">
 
 <div class="app-content container center-layout mt-2">

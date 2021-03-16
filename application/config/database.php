@@ -75,10 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '198.12.250.34',
-	'username' => 'jidagenc_root',
-	'password' => 'kfKvHduFx!#Q',
-	'database' => 'jidagenc_dev',
+	'hostname' => '166.62.43.6',
+	//'hostname' => 'localhost',
+	'username' => 'solesta_root',
+	'password' => 'dzvhdw6t0ho02cr',
+	'database' => 'solesta_prod',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

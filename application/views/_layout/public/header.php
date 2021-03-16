@@ -149,6 +149,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li class="nav-item">
                                 <a class="nav-link white" href="<?php echo site_url("info/contacto"); ?>" data-toggle=""><strong>Contacto</strong></a>
                             </li>
+
+                            <!--li class="nav-item">
+                                <?php echo form_open('locales/resultados', array('id' => 'forma-resultados-buscador')); ?>
+                                    <input type="text" name="resultados_buscador" id="resultados_buscador" class="form-control rounded" placeholder="Buscar...">
+                                <?php echo form_close(); ?>
+                            </li-->
                             
                         </ul>
 
@@ -229,10 +235,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li>
                                 </br>
                                 <ul class="list-inline">
-                                <li class="white">Síguenos en:</li><br>
-                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a></li>
-                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a></li>
-                                <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a></li>
+                                    <li class="white">Síguenos en:</li><br>
+                                    <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a></li>
+                                    <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a></li>
+                                    <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a></li>
                                 </ul><li>
 
                                 <li><a href="#" class="btn btn-light square btn-min-width mr-1 mb-1" data-dismiss="modal" aria-label="Close"><strong>Cerrar</strong></a></li>

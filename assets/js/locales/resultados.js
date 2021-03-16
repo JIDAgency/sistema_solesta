@@ -4,6 +4,7 @@ $(document).ready(function() {
         buscar($(this).val());
     });
     $("#buscador").enterKey(function () {
+        $("#buscador").css("background-color");
         $("#buscador").load(this.value);
         buscar($(this).val());
     })
