@@ -32,9 +32,9 @@
                                                     <div class="card-content">
                                                         <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>" />
                                                         <!--img class="card-img-top img-fluid rounded" src="<?php //echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php //echo strtolower($local_row->nombre); ?>" /-->
-                                                        <!--div class="card-body text-center mt-1">
-                                                            <h4 class="card-title"><strong><?php //echo $local_row->nombre; ?></strong></h4>
-                                                        </div-->
+                                                        <div class="card-body text-center mt-1">
+                                                            <h4 class="card-title"><strong><?php echo $local_row->nombre; ?></strong></h4>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -44,8 +44,32 @@
                                 <?php endforeach; ?>
                             </div>
                         <?php endforeach; ?>
-                    </div>
 
+                        <h5 class="form-section" id="nuevos">Nuevos en Solesta</h5>
+                        <div class="row match-height">
+                            <?php foreach ($locales_list as $local_row): ?>
+
+                                <?php if ($local_row->categorias_nombre == null): ?>
+
+                                    <div class="col-md-3 col-6">
+                                        <a href="<?php echo site_url("locales/ver/".$local_row->url); ?>" itemprop="" data-size="480x360">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>" />
+                                                    <!--img class="card-img-top img-fluid rounded" src="<?php //echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php //echo strtolower($local_row->nombre); ?>" /-->
+                                                    <div class="card-body text-center mt-1">
+                                                        <h4 class="card-title"><strong><?php echo $local_row->nombre; ?></strong></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </div>
+
+                    </div>
                 </form>
             </section>
             

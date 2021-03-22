@@ -22,9 +22,9 @@
                                 <div class="card">
                                     <div class="card-content">
                                         <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url; ?>/logotipo.jpg" itemprop="" alt="Imagen de <?php echo strtolower($local_row->nombre); ?>">
-                                        <!--div class="card-body text-center mt-1">
-                                            <h4 class="card-title"><strong><?php //echo $local_row->nombre; ?></strong></h4>
-                                        </div-->
+                                        <div class="card-body text-center mt-1">
+                                            <h4 class="card-title"><strong><?php echo $local_row->nombre; ?></strong></h4>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
