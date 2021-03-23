@@ -224,7 +224,7 @@
                             </div>
                         </div>
 
-                        <div class="card bg-transparent">
+                        <!--div class="card bg-transparent">
                             <div class="card-content">
                                 <div class="card-body">
                                     <h4 class="card-title text-uppercase purple">Rango de precios</h4>
@@ -232,21 +232,20 @@
                                     <p>Bebidas: <span class="teal lighten-3">$60 - $1,000</span></p>
                                 </div>
                             </div>
-                        </div>
+                        </div-->
 
-                        <div class="card bg-transparent">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h4 class="card-title text-uppercase purple">Amenidades</h4>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Bebidas alcohólicas</p>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Reservaciones</p>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Bar</p>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Apto para niños</p>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Comidas gourmet</p>
-                                    <p><i class="teal lighten-3 fa fa-check"></i> Precios $100+</p>
+                        <?php if (isset($etiquetas_list) AND !empty($etiquetas_list)): ?>
+                            <div class="card bg-transparent">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <!--h4 class="card-title text-uppercase purple"></h4-->
+                                        <?php foreach ($etiquetas_list as $etiqueta_row): ?>
+                                            <p><i class="teal lighten-3 fa fa-check"></i> <?php echo $etiqueta_row->nombre; ?></p>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endif; ?>
 
                         <div class="card bg-transparent">
                             <div class="card-content">

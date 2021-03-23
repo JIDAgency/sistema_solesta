@@ -64,6 +64,7 @@
                         <div class="col-md-3 col-6 mb-2">
                             <a href="<?php echo base_url().'locales/ver/'.$pickup_shopping_row->local_url; ?>">
                                 <img class="img-fluid" src="<?php echo base_url()."almacenamiento/locales/".$pickup_shopping_row->local_url."/".$pickup_shopping_row->url; ?>" alt="<?php echo $pickup_shopping_row->alt; ?>" />
+                                <p><?php echo $pickup_shopping_row->alt; ?></p>
                             </a>
                         </div>
                     <?php endforeach; ?>

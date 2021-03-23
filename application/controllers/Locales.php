@@ -7,6 +7,7 @@ class Locales extends MY_Controller {
     {
 		parent::__construct();
 		$this->load->model("categorias_model");
+		$this->load->model("etiquetas_model");
 		$this->load->model("locales_model");
 		$this->load->model("locales_imagenes_model");
 		$this->load->model("relacion_locales_categorias_model");
@@ -90,6 +91,7 @@ class Locales extends MY_Controller {
 		$imagen_pickup = $this->locales_imagenes_model->get_pickup_por_local_id($local_row->id)->row();
 		$imagenes_promociones_list = $this->locales_imagenes_model->get_promociones_por_local_id($local_row->id)->result();
 		$imagenes_eventos_list = $this->locales_imagenes_model->get_eventos_por_local_id($local_row->id)->result();
+		$etiquetas_list = $this->etiquetas_model->get_etiqueta_por_local_id($local_row->id)->result();
 		
 		$data['local_row'] = $local_row;
 		$data['categorias_list'] = $categorias_list;
@@ -100,6 +102,7 @@ class Locales extends MY_Controller {
 		$data['imagen_pickup'] = $imagen_pickup;
 		$data['imagenes_promociones_list'] = $imagenes_promociones_list;
 		$data['imagenes_eventos_list'] = $imagenes_eventos_list;
+		$data['etiquetas_list'] = $etiquetas_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
