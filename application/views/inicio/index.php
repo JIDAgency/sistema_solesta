@@ -1,64 +1,6 @@
-<div class="app-content center-layout">
-	<div class="container-fluid">
-		<div class="content-body">
-			<div class="row bg-banner-index">
-				<div class="col">
-						<div style="margin-top:160px;" class="text-center white">
-							<h1 class="card-title white" style="font-family:montserrat; font-weight:700; font-size:3em;">¡QUÉ BUENO ES TENERTE DE REGRESO!</h1>
-							<p style="font-family:montserrat; font-size:2em;">Shoppping, restaurantes, entretenimiento y más</p>
-						</div>
+<img src="almacenamiento\inicio\banner-index-movil.jpg" alt="" width="100%" class="d-none d-xl-block">
+<img src="almacenamiento\inicio\banner-index.jpg" alt="" width="100%" class="d-block d-sm-none">
 
-						<style>
-							.optionPredetermined {
-								color: gray;
-							}
-							.optionGroup {
-								font-weight: bold;
-							}
-							.optionChild {
-							}
-
-							.auto_list {
-								position: absolute;
-							}
-
-							.carousel-inner img {
-							margin: auto;
-							}
-						</style>
-
-						<div class="row mb-3 mt-2">
-							<div class="offset-md-4 col-md-4 col-sm-12">
-								<fieldset class="form-group position-relative has-icon-left">
-									<div class="input-group">
-										<input type="text" class="form-control" name="buscador" id="buscador" autocomplete="off" placeholder="Buscar..." aria-describedby="buscador">
-										<div class="form-control-position">
-											<i class="icon-magnifier purple darken-3"></i>
-										</div>
-										<div class="input-group-append">
-											<select class="form-control" name="categorias_select" id="categorias_select" onchange="cambiar_seleccion(this)">
-												<option value="" class="optionPredetermined">Seleccione una categoría...</option>
-												<?php foreach ($categorias_list as $categoria_row): ?>
-														<option value="<?php echo $categoria_row->id; ?>" class="optionGroup"><?php echo $categoria_row->nombre; ?></option>
-														<?php foreach ($subcategorias_list as $subcategoria_row): ?>
-															<?php if ($subcategoria_row->subcategoria_de == $categoria_row->id): ?>
-																<option value="<?php echo $subcategoria_row->id; ?>" class="optionChild"><?php echo $subcategoria_row->nombre; ?></option>
-															<?php endif; ?>
-														<?php endforeach; ?>
-												<?php endforeach; ?>
-											</select>
-										</div>
-									</div>
-									<div id="resultado" class="list-group"></div>
-								</fieldset>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="app-content container center-layout mt-2">
 
@@ -75,7 +17,7 @@
 								<iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-md-6 mb-2">
-								<a href="<?php echo base_url(); ?>pickup">
+								<a href="<?php echo base_url(); ?>eventos">
 									<img class="rounded" src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
 							</div>
@@ -104,16 +46,19 @@
 									<img src="almacenamiento\inicio\banner-restaurantes.png" alt="Sección de restaurantes" width="100%">
 								</a>
 							</div>
-							<div class="col-md-4 mb-2">
-								<a href="<?php echo base_url(); ?>categorias/ver/fun">
-									<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
-								</a>
-							</div>
+							
 							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/wellness">
 									<img src="almacenamiento\inicio\banner-wellness.png" alt="Sección de wellness" width="100%">
 								</a>
 							</div>
+
+							<!--
+							<div class="col-md-4 mb-2">
+								<a href="<?php echo base_url(); ?>categorias/ver/fun">
+									<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
+								</a>
+							</div>-->
 						</div>
 
 						<div class="row text-center mt-5">
@@ -340,7 +285,8 @@
 					<img class="rounded" src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
 				</div>
 			</div>
-
+			
+			<!--
 			<div class="row d-none d-xl-block">
 				<div class="col">
 					<section class="mt-5">
@@ -423,7 +369,7 @@
 				</div>
 			</div>
 
-			<!--Inicia carrousel movil de promociones-->
+			<!--Inicia carrousel movil de promociones
 
 			<div class="row d-block d-sm-none">
 				<div class="col">
@@ -436,7 +382,7 @@
 								<li data-target="#carousel-promos-movil" data-slide-to="0" class="active"></li>
 								<li data-target="#carousel-promos-movil" data-slide-to="1"></li>
 								<li data-target="#carousel-promos-movil" data-slide-to="2"></li>
-							</ol>-->
+							</ol>-
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
