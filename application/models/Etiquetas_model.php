@@ -61,6 +61,7 @@ class Etiquetas_model extends CI_Model {
     {
         $query = $this->db
             ->where('local_id', intval($local_id))
+            ->where('estatus', 'activo')
             ->get('etiquetas');
         
         return $query;

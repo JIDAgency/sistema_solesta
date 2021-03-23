@@ -234,18 +234,18 @@
                             </div>
                         </div-->
 
-                        <div class="card bg-transparent">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h4 class="card-title text-uppercase purple">Amenidades</h4>
-                                    <?php if (isset($etiquetas_list)): ?>
+                        <?php if (isset($etiquetas_list) AND !empty($etiquetas_list)): ?>
+                            <div class="card bg-transparent">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <!--h4 class="card-title text-uppercase purple"></h4-->
                                         <?php foreach ($etiquetas_list as $etiqueta_row): ?>
                                             <p><i class="teal lighten-3 fa fa-check"></i> <?php echo $etiqueta_row->nombre; ?></p>
                                         <?php endforeach; ?>
-                                    <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endif; ?>
 
                         <div class="card bg-transparent">
                             <div class="card-content">
