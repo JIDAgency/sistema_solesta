@@ -282,7 +282,8 @@
 					<img class="rounded" src="almacenamiento\inicio\publicidad-1.jpg" alt="" width="100%">
 				</div>
 			</div>
-
+			
+			<!--
 			<div class="row d-none d-xl-block">
 				<div class="col">
 					<section class="mt-5">
