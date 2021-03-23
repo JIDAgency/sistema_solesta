@@ -52,6 +52,15 @@ class Locales_model extends CI_Model {
 
         return $query;
     }
+
+    public function update_local_por_url($url, $data)
+    {
+        $query = $this->db
+            ->where('url', $url)
+            ->update('locales', $data);
+
+        return $query;
+    }
     /** Metodos Basicos [Fin] */
 
 	public function get_lista_de_locales_con_detalles()
