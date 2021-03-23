@@ -46,16 +46,19 @@
 									<img src="almacenamiento\inicio\banner-restaurantes.png" alt="Sección de restaurantes" width="100%">
 								</a>
 							</div>
-							<div class="col-md-4 mb-2">
-								<a href="<?php echo base_url(); ?>categorias/ver/fun">
-									<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
-								</a>
-							</div>
+							
 							<div class="col-md-4 mb-2">
 								<a href="<?php echo base_url(); ?>categorias/ver/wellness">
 									<img src="almacenamiento\inicio\banner-wellness.png" alt="Sección de wellness" width="100%">
 								</a>
 							</div>
+
+							<!--
+							<div class="col-md-4 mb-2">
+								<a href="<?php echo base_url(); ?>categorias/ver/fun">
+									<img src="almacenamiento\inicio\banner-fun.png" alt="Sección de entretenimiento" width="100%">
+								</a>
+							</div>-->
 						</div>
 
 						<div class="row text-center mt-5">
