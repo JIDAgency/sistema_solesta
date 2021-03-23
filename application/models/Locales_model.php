@@ -107,6 +107,20 @@ class Locales_model extends CI_Model {
         return $query;
     }
 
+    public function get_locales_con_detalles_ordenados_por_nombre()
+    {
+        $query = $this->db
+            ->where("t1.estatus", "activo")
+            ->select("
+                t1.*,
+            ")
+            ->from("locales t1")
+            ->order_by("t1.nombre asc")
+            ->get();
+        
+        return $query;
+    }
+
     public function get_local_por_url($local)
     {
         $query = $this->db

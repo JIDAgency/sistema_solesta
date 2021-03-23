@@ -33,7 +33,7 @@ class Locales extends MY_Controller {
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
 
-		$categorias_list = $this->categorias_model->get_categorias()->result();
+		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
 		$locales_list = $this->locales_model->get_locales_con_detalles_ordenados_por_categoria()->result();
 		$switch = true;
 
@@ -105,6 +105,37 @@ class Locales extends MY_Controller {
 		$data['etiquetas_list'] = $etiquetas_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
+	}
+
+	public function todos()
+	{
+		$data['pagina_menu_inicio'] = true;
+		$data['pagina_titulo'] = 'Locales';
+
+		//revisar
+		$data['controlador'] = 'locales/locales/todos';
+		$data['regresar_a'] = 'inicio';
+		$controlador_js = "locales/index";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
+		
+		$data['styles'] = array(
+		);
+		$data['scripts'] = array(
+			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+		);
+
+		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
+		$locales_list = $this->locales_model->get_locales_con_detalles_ordenados_por_nombre()->result();
+		$switch = true;
+
+		$data['categorias_list'] = $categorias_list;
+		$data['locales_list'] = $locales_list;
+		$data['switch'] = $switch;
+
+		$this->construir_public_ui('locales/todos' ,$data);
 	}
 
 	public function resultados()
