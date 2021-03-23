@@ -278,7 +278,8 @@
 				</div>
 			</div>
 			<!--Termina carrousel movil de pick up-->
-
+			
+			<!--
 
 			<div class="row mt-5">
 				<div class="col">
@@ -286,7 +287,6 @@
 				</div>
 			</div>
 			
-			<!--
 			<div class="row d-none d-xl-block">
 				<div class="col">
 					<section class="mt-5">
@@ -297,11 +297,13 @@
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-promos" data-slide-to="0" class="active"></li>
 								<li data-target="#carousel-promos" data-slide-to="1"></li>
-								<li data-target="#carousel-promos" data-slide-to="2"></li>
 							</ol>
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-01.jpg" alt="" width="100%">
+										</div>
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
 										</div>
@@ -311,40 +313,15 @@
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
 										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
 										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.jpg" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
-										</div>
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -378,79 +355,23 @@
 							<h1 class="text-center purple darken-3">¡PROMOCIONES EN SOLESTA!</h1>
 						</div>
 						<div id="carousel-promos-movil" class="carousel slide carousel-multi-item" data-ride="carousel">
-							<!--<ol class="carousel-indicators">
+							<ol class="carousel-indicators">
 								<li data-target="#carousel-promos-movil" data-slide-to="0" class="active"></li>
 								<li data-target="#carousel-promos-movil" data-slide-to="1"></li>
 								<li data-target="#carousel-promos-movil" data-slide-to="2"></li>
-							</ol>-
+							</ol>
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
 										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-13.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-01.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
 										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-12.png" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-11.png" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-32.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-08.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-07.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="row mt-2 text-center">
-										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
@@ -464,10 +385,25 @@
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
 										<div class="col-md-12">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" alt="" width="100%">
 										</div>
 									</div>
 								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row mt-2 text-center">
+										<div class="col-md-12">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" alt="" width="100%">
+										</div>
+									</div>
+								</div>
+								
 							</div>
 							<a class="carousel-control-prev" href="#carousel-promos-movil" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>

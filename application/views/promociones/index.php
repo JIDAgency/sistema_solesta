@@ -17,7 +17,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-35.jpg" itemprop="" alt="Promocion 35"/>
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-01.jpg" itemprop="" alt="Promocion 35"/>
                                     </div>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-34.png" itemprop="" alt="Promocion 34"/>
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-02.jpg" itemprop="" alt="Promocion 34"/>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-33.jpg" itemprop="" alt="Promocion 33"/>
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-03.jpg" itemprop="" alt="Promocion 33"/>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,26 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-32.jpg" itemprop="" alt="Promocion 32"/>
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-04.jpg" itemprop="" alt="Promocion 32"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row match-height">
+                            <div class="col-md-3 col-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-05.jpg" itemprop="" alt="Promocion 35"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-06.jpg" itemprop="" alt="Promocion 34"/>
                                     </div>
                                 </div>
                             </div>
