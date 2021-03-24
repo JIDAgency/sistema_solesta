@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6 col-sm-12 mb-2">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\pickup\mapa.jpg" alt="Zona de Pick Up en Plaza Solesta" />
+                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\pickup\mapa.jpg" alt="Zona de Pick Up en Plaza Solesta" />
                     </div>
                 </div>
             </section>
@@ -48,7 +48,7 @@
                     <?php foreach ($pickups_restaurantes_list as $pickup_restautante_row): ?>
                         <div class="col-md-3 col-6 mb-2">
                             <a href="<?php echo base_url().'locales/ver/'.$pickup_restautante_row->local_url; ?>">
-                                <img class="img-fluid" src="<?php echo base_url()."almacenamiento/locales/".$pickup_restautante_row->local_url."/".$pickup_restautante_row->url; ?>" alt="<?php echo $pickup_restautante_row->alt; ?>" />
+                                <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/locales/".$pickup_restautante_row->local_url."/".$pickup_restautante_row->url; ?>" alt="<?php echo $pickup_restautante_row->alt; ?>" />
                             </a>
                         </div>
                     <?php endforeach; ?>
@@ -63,7 +63,7 @@
                     <?php foreach ($pickups_shopping_list as $pickup_shopping_row): ?>
                         <div class="col-md-3 col-6 mb-2">
                             <a href="<?php echo base_url().'locales/ver/'.$pickup_shopping_row->local_url; ?>">
-                                <img class="img-fluid" src="<?php echo base_url()."almacenamiento/locales/".$pickup_shopping_row->local_url."/".$pickup_shopping_row->url; ?>" alt="<?php echo $pickup_shopping_row->alt; ?>" />
+                                <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/locales/".$pickup_shopping_row->local_url."/".$pickup_shopping_row->url; ?>" alt="<?php echo $pickup_shopping_row->alt; ?>" />
                             </a>
                         </div>
                     <?php endforeach; ?>
