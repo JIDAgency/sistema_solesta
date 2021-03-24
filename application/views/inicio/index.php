@@ -14,7 +14,7 @@
 
 						<div class="row mb-3 mt-1 text-center">
 							<div class="col-md-6 mb-2">
-								<iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/4yfrhJiFOTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/lWq07JQuIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>eventos">
