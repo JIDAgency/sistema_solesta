@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="col-5 text-center">
-                        <p>Solesta 2021 Todos los derecehos resarvados.</p>
+                        <p>Solesta 2021 Todos los derechos resarvados.</p>
                     </div>
 
                     <div class="col-3 list-inline">
