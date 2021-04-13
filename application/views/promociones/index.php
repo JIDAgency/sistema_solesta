@@ -95,14 +95,6 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-09.png" itemprop="" alt="Promocion 09"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <div class="card">
-                                    <div class="card-content">
                                         <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\promociones-10.png" itemprop="" alt="Promocion 10"/>
                                     </div>
                                 </div>
@@ -124,11 +116,6 @@
                                 </div>
                             </div>
 
-                        </div>
-
-
-                        <div class="row match-height">
-
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
@@ -136,6 +123,13 @@
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+
+
+                        <div class="row match-height">
+
+                        
 
                             <div class="col-md-3 col-6">
                                 <div class="card">
