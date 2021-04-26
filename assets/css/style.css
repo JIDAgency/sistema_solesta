@@ -160,3 +160,13 @@ ul, li, a, p{
 .btn {
     border:0;
 }
+
+#resultados {
+    display:none;
+    z-index:-10;
+    position: absolute;
+    min-height: 100px;
+    width: 75%;
+    margin: 0 auto;
+    background:red;
+}
