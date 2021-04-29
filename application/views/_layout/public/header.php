@@ -10,6 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="description" content="En Solesta creemos en el valor de la familia, es por eso que hemos diseñado un concepto en donde cada uno de los espacios está pensado para disfrutar con la seguridad y tranquilidad que tu familia merece.">
         <meta name="keywords" content="Plaza comercial, centro comercial, Puebla, Solesta, Plaza comercial Solesta, Centro comercial Solesta, Tiendas solesta, Plaza comercial Solesta Puebla, Centro comercial Solesta Puebla, Centros comerciales en puebla">
         <meta name="author" content="JID Agency">
+        <meta name="facebook-domain-verification" content="ac3j4ma880edronrj5q57l07rl96gy" />
         <title><?php echo isset($pagina_titulo) ? $pagina_titulo." | " : ""; ?><?php echo titulo(); ?></title>
         <link rel="apple-touch-icon" href="<?php echo base_url(); ?>app-assets/images/ico/apple-icon-120.png">
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>app-assets/images/ico/favicon.ico">
