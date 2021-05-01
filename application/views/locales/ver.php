@@ -50,7 +50,7 @@
 
                 <?php endif; ?>
 
-                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Mar - Sab | 11:00am - 20:00pm - Dom | 11:00am - 18:00pm</p>
+                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Lun - Jue | 11:00a.m. - 8:00p.m., Vie - Sáb | 11:00a.m. - 9:00p.m. y Dom | 11:00a.m. - 8:00p.m.</p>
                 </div>
 
                 </div>

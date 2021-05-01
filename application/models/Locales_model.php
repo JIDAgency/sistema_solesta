@@ -94,6 +94,7 @@ class Locales_model extends CI_Model {
     {
         $query = $this->db
             ->where("t1.estatus", "activo")
+            ->where("t2.estatus", "activo")
             ->select("
                 t1.*,
                 t3.nombre as categorias_nombre,

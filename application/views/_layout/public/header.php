@@ -9,10 +9,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
         <meta name="description" content="En Solesta creemos en el valor de la familia, es por eso que hemos diseñado un concepto en donde cada uno de los espacios está pensado para disfrutar con la seguridad y tranquilidad que tu familia merece.">
         <meta name="keywords" content="Plaza comercial, centro comercial, Puebla, Solesta, Plaza comercial Solesta, Centro comercial Solesta, Tiendas solesta, Plaza comercial Solesta Puebla, Centro comercial Solesta Puebla, Centros comerciales en puebla">
-        <meta name="author" content="JID Agency">
+        <meta name="author" content="JID Agency | Estrategias digitales poderosas">
         <meta name="facebook-domain-verification" content="ac3j4ma880edronrj5q57l07rl96gy" />
+
+        <meta property="og:url"                content="https://solesta.mx/"/>
+        <meta property="og:type"               content="Website" />
+        <meta property="og:title"              content="Solesta, Centro comercial en Puebla" />
+        <meta property="og:description"        content="En Solesta creemos en el valor de la familia, es por eso que hemos diseñado un concepto en donde cada uno de los espacios está pensado para disfrutar con la seguridad y tranquilidad que tu familia merece."/>
+        <meta property="og:image"              content="https://solesta.mx/almacenamiento/header/logo.jpg"/>
+
         <title><?php echo isset($pagina_titulo) ? $pagina_titulo." | " : ""; ?><?php echo titulo(); ?></title>
-        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>app-assets/images/ico/apple-icon-120.png">
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>app-assets/images/ico/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- BEGIN VENDOR CSS-->
