@@ -80,39 +80,17 @@
                             <div class="col-md-3 col-6">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\las_alitas\promocion-1.jpg" itemprop="" alt="Promocion Las Alitas"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row match-height">
-
-                            <div class="col-md-3 col-6">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\las_alitas\promocion-2.jpg" itemprop="" alt="Promocion Las Alitas"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\las_alitas\promocion-3.jpg" itemprop="" alt="Promocion Las Alitas"/>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3 col-6">
-                                <div class="card">
-                                    <div class="card-content">
                                         <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\forever_21\promocion-1.jpg" itemprop="" alt="Promocion 16"/>
                                     </div>
                                 </div>
                             </div>
+
+                         
+
+                        </div>
+
+                        <div class="row match-height">
+                          
 
                             <div class="col-md-3 col-6">
                                 <div class="card">
