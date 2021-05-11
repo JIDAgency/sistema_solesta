@@ -131,6 +131,21 @@ class Locales_model extends CI_Model {
         return $query;
     }
 
+    /** Este método se usa para dar de alta los horarios y toma los locales activos y suspendidos de la base de datos. */
+    public function get_locales_por_categoria_para_horarios($categorias)
+    {
+        $query = $this->db
+            ->where_in('t2.categoria_id', $categorias)
+            ->select("
+                t1.*,
+            ")
+            ->from("locales t1")
+            ->join("relacion_locales_categorias t2", "t1.id = t2.local_id", "left")
+            ->get();
+        
+        return $query;
+    }
+
     function buscador_locales($busqueda = null, $categoria = null)
     {
         $this->db->where('t2.estatus', 'activo');

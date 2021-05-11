@@ -11,6 +11,7 @@ class Locales extends MY_Controller {
 		$this->load->model("locales_model");
 		$this->load->model("locales_imagenes_model");
 		$this->load->model("relacion_locales_categorias_model");
+		$this->load->model("locales_horarios_model");
     }
 
 	public function index()
@@ -92,7 +93,8 @@ class Locales extends MY_Controller {
 		$imagenes_promociones_list = $this->locales_imagenes_model->get_promociones_por_local_id($local_row->id)->result();
 		$imagenes_eventos_list = $this->locales_imagenes_model->get_eventos_por_local_id($local_row->id)->result();
 		$etiquetas_list = $this->etiquetas_model->get_etiqueta_por_local_id($local_row->id)->result();
-		
+		$horarios_list = $this->locales_horarios_model->get_horario_de_local_por_local_id($local_row->id)->result();
+
 		$data['local_row'] = $local_row;
 		$data['categorias_list'] = $categorias_list;
 		$data['imagen_banner_principal'] = $imagen_banner_principal;
@@ -103,6 +105,7 @@ class Locales extends MY_Controller {
 		$data['imagenes_promociones_list'] = $imagenes_promociones_list;
 		$data['imagenes_eventos_list'] = $imagenes_eventos_list;
 		$data['etiquetas_list'] = $etiquetas_list;
+		$data['horarios_list'] = $horarios_list;
 
 		$this->construir_public_ui('locales/ver' ,$data);
 	}
@@ -198,6 +201,81 @@ class Locales extends MY_Controller {
 		//$output .= '</table>';
 
 		//echo $output;
+	}
+
+	public function dar_de_alta_horarios()
+	{
+		//$restaurantes = array('4', '5', '10');
+		$tiendas = array('1', '2', '3', '6', '7', '9');
+		/** Quitar tecnologia [8] por que repite locales */
+		$locales_list = $this->locales_model->get_locales_por_categoria_para_horarios($tiendas)->result();
+
+		$cont = 1;
+		$data_horarios = array();
+
+		foreach ($locales_list as $local_row) {
+
+			/** Horario de restaurantes */
+			/*
+			$data_horarios[] = array(
+                'local_id' => $local_row->id,
+                'dia_inicio' => "Lun",
+                'dia_fin' => "Jue",
+                'hora_inicio' => "13:00",
+                'hora_fin' => "21:00",
+				'estatus' => "activo",
+            );
+			*/
+			/** Horario de restaurantes */
+			/*
+			$data_horarios[] = array(
+                'local_id' => $local_row->id,
+                'dia_inicio' => "Vie",
+                'dia_fin' => "Dom",
+                'hora_inicio' => "13:00",
+                'hora_fin' => "22:00",
+				'estatus' => "activo",
+            );
+			*/
+			/** Horario de tiendas */
+			$data_horarios[] = array(
+                'local_id' => $local_row->id,
+                'dia_inicio' => "Lun",
+                'dia_fin' => "Jue",
+                'hora_inicio' => "11:00",
+                'hora_fin' => "20:00",
+				'estatus' => "activo",
+            );
+			/** Horario de tiendas */
+			$data_horarios[] = array(
+                'local_id' => $local_row->id,
+                'dia_inicio' => "Vie",
+                'dia_fin' => "Sab",
+                'hora_inicio' => "11:00",
+                'hora_fin' => "21:00",
+				'estatus' => "activo",
+            );
+			/** Horario de tiendas */
+			$data_horarios[] = array(
+                'local_id' => $local_row->id,
+                'dia_inicio' => "Dom",
+                'dia_fin' => "Dom",
+                'hora_inicio' => "11:00",
+                'hora_fin' => "20:00",
+				'estatus' => "activo",
+            );
+
+			echo $cont;
+			echo " ";
+			echo $local_row->nombre;
+			echo "<br>";
+
+			$cont++;
+		}
+		echo "<br>";
+		print_r($data_horarios);
+
+		//$this->locales_horarios_model->insert_matriz_horarios_de_locales($data_horarios);
 	}
 
 	public function dar_de_alta_imagenes_por_local()
