@@ -89,21 +89,7 @@
 
                         </div>
 
-                        <div class="row match-height">
-                          
-
-                            <div class="col-md-3 col-6">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\opticas_america\promocion-1.jpg" itemprop="" alt="Promocion 16"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
-
                     
 
                 </form>
