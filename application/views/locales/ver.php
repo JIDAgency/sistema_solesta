@@ -13,48 +13,51 @@
                     <div class="row align-items-end">
                         <div class="col">
 
-                        <div class="contenedor-principal-local">
-                <?php foreach ($categorias_list as $categoria_row): ?>
-                    <a class="btn btn-primary btn-min-width mr-1 mb-1 bg-purple bg-darken-3" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
-                <?php endforeach; ?>
+                            <div class="contenedor-principal-local">
 
-                <?php if (isset($local_row->nombre)): ?>
-                    <h1><?php echo $local_row->nombre; ?></h1>
-                <?php endif; ?>
+                                <?php foreach ($categorias_list as $categoria_row): ?>
+                                    <a class="btn btn-primary btn-min-width mr-1 mb-1 bg-purple bg-darken-3" href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
+                                <?php endforeach; ?>
 
-                
+                                <?php if (isset($local_row->nombre)): ?>
+                                    <h1><?php echo $local_row->nombre; ?></h1>
+                                <?php endif; ?>
 
-                <?php if (isset($local_row->telefono_1)): ?>
-                    <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?>
-                    </a>
-                <?php endif; ?>
+                                
 
-                <?php if (isset($local_row->telefono_2)): ?>
-                    <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?>
-                    </a>
-                <?php endif; ?>
+                                <?php if (isset($local_row->telefono_1)): ?>
+                                    <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
+                                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?>
+                                    </a>
+                                <?php endif; ?>
 
-                <?php if (isset($local_row->correo_electronico)): ?>
-                    <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
-                        <i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?>
-                    </a>
-                <?php endif; ?>
+                                <?php if (isset($local_row->telefono_2)): ?>
+                                    <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
+                                        <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?>
+                                    </a>
+                                <?php endif; ?>
 
-                </br>
-                <?php if (isset($local_row->ubicacion)): ?>
-                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                        <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
-                    </a>
+                                <?php if (isset($local_row->correo_electronico)): ?>
+                                    <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
+                                        <i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?>
+                                    </a>
+                                <?php endif; ?>
 
-                <?php endif; ?>
+                                </br>
+                                <?php if (isset($local_row->ubicacion)): ?>
+                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
+                                        <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
+                                    </a>
 
-                <p><i class="teal lighten-3 fa fa-clock-o info"></i> Lun - Jue | 11:00a.m. - 8:00p.m., Vie - Sáb | 11:00a.m. - 9:00p.m. y Dom | 11:00a.m. - 8:00p.m.</p>
-                </div>
-
-                </div>
-                </div>
+                                <?php endif; ?>
+                                
+                                <?php foreach ($horarios_list as $horario_row): ?>
+                                    <span><i class="teal lighten-3 fa fa-clock-o info"></i> <?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? "<b>".$horario_row->dia_inicio." - ".$horario_row->dia_fin."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin))."" : "<b>".$horario_row->dia_inicio."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin)).""; ?></span><br>
+                                <?php endforeach; ?>
+                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
