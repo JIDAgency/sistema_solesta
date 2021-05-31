@@ -23,12 +23,28 @@
                                     <h1><?php echo $local_row->nombre; ?></h1>
                                 <?php endif; ?>
 
+                                </br>
+
+                                <?php foreach ($horarios_list as $horario_row): ?>
+                                    <span><i class="teal lighten-3 fa fa-clock-o info"></i> <?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? "<b>".$horario_row->dia_inicio." - ".$horario_row->dia_fin."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin))."" : "<b>".$horario_row->dia_inicio."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin)).""; ?></span><br>
+                                <?php endforeach; ?>
                                 
+                                <?php if (isset($local_row->ubicacion)): ?>
+                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
+                                        <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
+                                    </a>
+                                <?php endif; ?>
+
+                                <br>
 
                                 <?php if (isset($local_row->telefono_1)): ?>
                                     <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
                                         <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?>
                                     </a>
+                                <?php endif; ?>
+                                
+                                <?php if (isset($local_row->telefono_1) AND isset($local_row->telefono_2)): ?>
+                                    <?php echo "&nbsp;&nbsp;&nbsp;&nbsp;"; ?>
                                 <?php endif; ?>
 
                                 <?php if (isset($local_row->telefono_2)): ?>
@@ -36,24 +52,16 @@
                                         <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?>
                                     </a>
                                 <?php endif; ?>
+                                
+                                <?php if (isset($local_row->telefono_1) OR isset($local_row->telefono_2) AND isset($local_row->telefono_2)): ?>
+                                    <?php echo "&nbsp;&nbsp;&nbsp;&nbsp;"; ?>
+                                <?php endif; ?>
 
                                 <?php if (isset($local_row->correo_electronico)): ?>
                                     <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
                                         <i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?>
                                     </a>
                                 <?php endif; ?>
-
-                                </br>
-                                <?php if (isset($local_row->ubicacion)): ?>
-                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                                        <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
-                                    </a>
-
-                                <?php endif; ?>
-                                
-                                <?php foreach ($horarios_list as $horario_row): ?>
-                                    <span><i class="teal lighten-3 fa fa-clock-o info"></i> <?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? "<b>".$horario_row->dia_inicio." - ".$horario_row->dia_fin."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin))."" : "<b>".$horario_row->dia_inicio."</b> | ".date('g:i a', strtotime($horario_row->hora_inicio))." - ".date('g:i a', strtotime($horario_row->hora_fin)).""; ?></span><br>
-                                <?php endforeach; ?>
                             
                             </div>
                         </div>
