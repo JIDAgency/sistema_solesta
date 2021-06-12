@@ -151,4 +151,21 @@ class Locales_imagenes_model extends CI_Model {
         return $query;
     }
 
+    /** Promociones Index */
+
+    public function get_promociones()
+    {
+        $query = $this->db
+            ->where('t1.estatus', 'activo')
+            ->where('tipo', 'promocion')
+            ->select("
+                t1.*,
+                t2.url as local_url,
+            ")
+            ->from("locales_imagenes t1")
+            ->join("locales t2", "t1.local_id = t2.id")
+            ->get();
+        
+        return $query;
+    }
 }

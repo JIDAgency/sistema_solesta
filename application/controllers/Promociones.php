@@ -6,6 +6,8 @@ class Promociones extends MY_Controller {
 	public function __construct()
     {
 		parent::__construct();
+
+		$this->load->model("locales_imagenes_model");
     }
 
 	public function index()
@@ -22,7 +24,11 @@ class Promociones extends MY_Controller {
 		$data['scripts'] = array(
 			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
 		);
+
+		$promociones_list = $this->locales_imagenes_model->get_promociones()->result();
 		
+		$data["promociones_list"] = $promociones_list;
+
 		$this->construir_public_ui('promociones/index' ,$data);
     }
     
