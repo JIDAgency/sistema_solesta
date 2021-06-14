@@ -278,8 +278,12 @@ class Locales extends MY_Controller {
 		//$this->locales_horarios_model->insert_matriz_horarios_de_locales($data_horarios);
 	}
 
-	public function dar_de_alta_imagenes_por_local()
+	public function dar_de_alta_imagenes_por_local_id()
 	{
+		$local_id = 102;
+
+		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
+
 		$data_imagen = array();
 
 		/** Logotipo */
@@ -382,6 +386,26 @@ class Locales extends MY_Controller {
 			'estatus' => 'activo',
 		);
 
+		/** Promoción 2 */
+		$data_imagen[] = array(
+			'local_id' => $local_row->id,
+			'url' => 'promocion-2.jpg',
+			'alt' => ucwords(mb_strtolower(trim('Promoción 2 de '.$local_row->nombre))),
+			'tipo' => 'promocion',
+			'caduca' => 'no',
+			'estatus' => 'suspendido',
+		);
+
+		/** Promoción 3 */
+		$data_imagen[] = array(
+			'local_id' => $local_row->id,
+			'url' => 'promocion-3.jpg',
+			'alt' => ucwords(mb_strtolower(trim('Promoción 3 de '.$local_row->nombre))),
+			'tipo' => 'promocion',
+			'caduca' => 'no',
+			'estatus' => 'suspendido',
+		);
+
 		/** Evento 1 */
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
@@ -401,6 +425,17 @@ class Locales extends MY_Controller {
 			'caduca' => 'no',
 			'estatus' => 'activo',
 		);
+
+		print_r($data_imagen);
+
+		echo "<br>";
+		echo "<br>";
+
+		/*if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
+			echo "OK <br>";
+		} else {
+			echo "BAD <br>";
+		}*/
 	}
 
 	/** funciones de desarrollador */
