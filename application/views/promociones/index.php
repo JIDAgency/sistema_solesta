@@ -30,6 +30,14 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="col-md-3 col-6">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\index\promocion-4.jpg" itemprop="" alt="Promocion Sunglass Hut"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!--div class="row match-height">
