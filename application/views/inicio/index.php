@@ -23,17 +23,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="carousel-item">
-			<div class="row text-center">
-				<div class="col-md-12">
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-03.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-03-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
-				</div>
-			</div>
-		</div>
-
-
 	</div>
 	<a class="carousel-control-prev" href="#carousel-banner" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
