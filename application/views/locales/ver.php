@@ -197,6 +197,7 @@
 							</div>
 						</div>
 
+
                         <div class="card bg-transparent">
 							<div class="card-content">
 								<div class="card-body p-0">
@@ -208,6 +209,7 @@
 								</div>
 							</div>
 						</div>
+                       
 
                         <div class="card bg-transparent">
 							<div class="card-content">
