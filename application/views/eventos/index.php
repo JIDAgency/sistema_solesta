@@ -23,13 +23,13 @@
 
                             <div class="row mt-3">
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-01.png"; ?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-01.jpg"; ?>" alt="">
                                 </div>
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-02.png"; ?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-02.jpg"; ?>" alt="">
                                 </div>
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-03.png"; ?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url()."almacenamiento/eventos/evento-03.jpg"; ?>" alt="">
                                 </div>
                             </div>
 
