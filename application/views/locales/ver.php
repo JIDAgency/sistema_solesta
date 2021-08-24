@@ -91,7 +91,7 @@
 							</div>
 						</div>
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
 							<div class="card-content">
 								<div class="card-body p-0">
                                     <?php foreach (array_slice($imagenes_galeria_list, 0, 1) as $imagen_galeria_row): ?>
@@ -101,7 +101,7 @@
 							</div>
 						</div>
 
-                        <div class="card bg-transparent">
+                        <div class="card">
 							<div class="card-content">
 								<div class="card-body">
                                     <?php if (isset($local_row->nombre)): ?>
@@ -114,110 +114,57 @@
 							</div>
 						</div>
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
 							<div class="card-content">
-                            
-                                <div class="card-body  my-gallery p-0" itemscope itemtype="http://schema.org/ImageGallery">
+                                        
+                                <div class="card-body my-gallery mb-2 p-0">
                                     <div class="row">
                                         <?php foreach ($imagenes_galeria_list as $imagen_galeria_row): ?>                                            
-                                            <figure class="col-lg-3 col-md-6 col-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                                <a href="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" itemprop="contentUrl" data-size="480x360">
-                                                    <img class="img-thumbnail img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_galeria_row->alt; ?>" />
+                                            <figure class="col-lg-6 col-md-6 col-12 mb-2">
+                                                <a href="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" itemprop="contentUrl" data-size="1100x619">
+                                                    <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_galeria_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_galeria_row->alt; ?>"/>
                                                 </a>
                                             </figure>
                                         <?php endforeach; ?>
                                     </div>
 								</div>
 
-                                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-                                    <!-- Background of PhotoSwipe. 
-                                        It's a separate element as animating opacity is faster than rgba(). -->
-                                    <div class="pswp__bg"></div>
-
-                                    <!-- Slides wrapper with overflow:hidden. -->
-                                    <div class="pswp__scroll-wrap">
-
-                                        <!-- Container that holds slides. 
-                                            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                                            Don't modify these 3 pswp__item elements, data is added later on. -->
-                                        <div class="pswp__container">
-                                            <div class="pswp__item"></div>
-                                            <div class="pswp__item"></div>
-                                            <div class="pswp__item"></div>
-                                        </div>
-
-                                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                                        <div class="pswp__ui pswp__ui--hidden">
-
-                                            <div class="pswp__top-bar">
-
-                                                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                                                <div class="pswp__counter"></div>
-
-                                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                                <!-- element will get class pswp__preloader-active when preloader is running -->
-                                                <div class="pswp__preloader">
-                                                    <div class="pswp__preloader__icn">
-                                                    <div class="pswp__preloader__cut">
-                                                        <div class="pswp__preloader__donut"></div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                                <div class="pswp__share-tooltip"></div> 
-                                            </div>
-
-                                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                                            </button>
-
-                                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                                            </button>
-
-                                            <div class="pswp__caption">
-                                                <div class="pswp__caption__center"></div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
 							</div>
 						</div>
 
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
 							<div class="card-content">
-								<div class="card-body p-0">
+								<div class="card-body my-gallery mb-2 p-0">
                                     <?php if (isset($imagenes_promociones_list)): ?>
-                                        <?php foreach ($imagenes_promociones_list as $imagen_promocion_row): ?>
-                                            <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" alt="<?php echo $imagen_promocion_row->alt; ?>" width="250">
-                                        <?php endforeach; ?>
+                                        <div class="row">
+                                            <?php foreach ($imagenes_promociones_list as $imagen_promocion_row): ?>
+                                                <figure class="col-lg-4 col-md-6 col-12 mb-2">
+                                                    <a href="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" itemprop="contentUrl" data-size="1200x1200">
+                                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_promocion_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_promocion_row->alt; ?>"/>
+                                                    </a>
+                                                </figure>
+                                            <?php endforeach; ?>
+								        </div>
                                     <?php endif; ?>
 								</div>
 							</div>
 						</div>
                        
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
 							<div class="card-content">
-								<div class="card-body p-0">
+                                <div class="card-body my-gallery mb-2 p-0">
                                     <?php if (isset($imagenes_eventos_list)): ?>
-                                        <?php foreach ($imagenes_eventos_list as $imagen_evento_row): ?>
-                                            <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" alt="<?php echo $imagen_evento_row->alt; ?>" width="250">
-                                        <?php endforeach; ?>
+                                        <div class="row">
+                                            <?php foreach ($imagenes_eventos_list as $imagen_evento_row): ?>
+                                                <figure class="col-lg-6 col-md-6 col-12 mb-2">
+                                                    <a href="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" itemprop="contentUrl" data-size="1200x1200">
+                                                        <img class="img-fluid rounded" src="<?php echo base_url_locales().$local_row->url.'/'.$imagen_evento_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_evento_row->alt; ?>"/>
+                                                    </a>
+                                                </figure>
+                                            <?php endforeach; ?>
+								        </div>
                                     <?php endif; ?>
 								</div>
 							</div>
@@ -227,7 +174,7 @@
 
 					<div class="col-lg-4 col-md-12">
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
                             <div class="card-content">
                                 <div class="card-body p-0">
                                     <?php if (isset($imagen_logotipo)): ?>
@@ -237,7 +184,7 @@
                             </div>
                         </div>
 
-                        <!--div class="card bg-transparent">
+                        <!--div class="card no-border">
                             <div class="card-content">
                                 <div class="card-body">
                                     <h4 class="card-title text-uppercase purple">Rango de precios</h4>
@@ -248,7 +195,7 @@
                         </div-->
 
                         <?php if (isset($etiquetas_list) AND !empty($etiquetas_list)): ?>
-                            <div class="card bg-transparent">
+                            <div class="card no-border">
                                 <div class="card-content">
                                     <div class="card-body">
                                         <!--h4 class="card-title text-uppercase purple"></h4-->
@@ -260,7 +207,7 @@
                             </div>
                         <?php endif; ?>
 
-                        <div class="card bg-transparent">
+                        <div class="card">
                             <div class="card-content">
                                 <div class="card-body">
                                     <h4 class="card-title text-uppercase purple">Redes sociales</h4>
@@ -282,7 +229,7 @@
                             </div>
                         </div>
 
-                        <div class="card bg-transparent">
+                        <div class="card no-border">
                             <div class="card-content">
                                 <div class="card-body p-0">
                                     <?php if (isset($imagen_pickup)): ?>
@@ -297,5 +244,71 @@
             </div>
 
         </div>
+    </div>
+</div>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
     </div>
 </div>
