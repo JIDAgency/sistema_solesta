@@ -22,14 +22,6 @@
                                     </figure>
                                 </div>
                             <?php endforeach; ?>
-                            
-                            <div class="col-md-3 col-6 mb-2">
-                                <figure>
-                                    <a href="<?php echo base_url(); ?>almacenamiento\promociones\index\promocion-4.jpg" itemprop="contentUrl" data-size="1200x1200">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\promociones\index\promocion-4.jpg" alt="Promoción 4">
-                                    </a>
-                                </figure>
-                            </div>
 
                             <div class="col-md-3 col-6 mb-2">
                                 <figure>

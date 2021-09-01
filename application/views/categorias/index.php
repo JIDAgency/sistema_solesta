@@ -17,7 +17,7 @@
                             <?php foreach ($categorias_list as $categoria_row): ?>
                                 <div class="col-md-3 col-6">
                                     <a href="<?php echo site_url("categorias/ver/".$categoria_row->url); ?>" itemprop="" data-size="480x360">
-                                        <div class="card">
+                                        <div class="card no-border">
                                             <div class="card-content">
                                                 <img class="img-fluid rounded" src="<?php echo base_url_categorias().$categoria_row->url_imagen; ?>" alt="Imagen de <?php echo strtolower($categoria_row->nombre); ?>">
                                                 <!--img class="card-img-top img-fluid" src="<?php //echo base_url_categorias().$categoria_row->url_imagen; ?>" alt="Imagen de <?php //echo strtolower($categoria_row->nombre); ?>"-->
