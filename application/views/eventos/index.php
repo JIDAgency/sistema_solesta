@@ -22,35 +22,28 @@
                             </p>
 
                             <div class="row my-gallery mt-3">
-                                <div class="col-md-6 mb-2">
+                                <div class="col-md-4 mb-2">
                                     <figure>
                                         <a href="<?php echo base_url()."almacenamiento/eventos/evento-01.jpg"; ?>" itemprop="contentUrl" data-size="1200x1200">
                                             <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/eventos/evento-01.jpg"; ?>" alt="Evento 1">
                                         </a>
                                     </figure>
                                 </div>
-                                <div class="col-md-6 mb-2">
+                                <div class="col-md-4 mb-2">
                                     <figure>
                                         <a href="<?php echo base_url()."almacenamiento/eventos/evento-02.jpg"; ?>" itemprop="contentUrl" data-size="1200x1200">
                                             <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/eventos/evento-02.jpg"; ?>" alt="Evento 2">
                                         </a>
                                     </figure>
                                 </div>
-                                <div class="col-md-6 mb-2">
+                                <div class="col-md-4 mb-2">
                                     <figure>
                                         <a href="<?php echo base_url()."almacenamiento/eventos/evento-03.jpg"; ?>" itemprop="contentUrl" data-size="1200x1200">
                                             <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/eventos/evento-03.jpg"; ?>" alt="Evento 3">
                                         </a>
                                     </figure>
                                 </div>
-                                <div class="col-md-6 mb-2">
-                                    <figure>
-                                        <a href="<?php echo base_url()."almacenamiento/eventos/evento-04.jpg"; ?>" itemprop="contentUrl" data-size="1200x1200">
-                                            <img class="img-fluid rounded" src="<?php echo base_url()."almacenamiento/eventos/evento-04.jpg"; ?>" alt="Evento 4">
-                                        </a>
-                                    </figure>
-                                </div>
-
+            
                             </div>
 
                         </div>
