@@ -280,7 +280,7 @@ class Locales extends MY_Controller {
 
 	public function dar_de_alta_imagenes_por_local_id()
 	{
-		$local_id = 102;
+		$local_id = 106;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
