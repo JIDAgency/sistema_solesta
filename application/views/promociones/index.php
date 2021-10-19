@@ -23,37 +23,13 @@
                                 </div>
                             <?php endforeach; ?>
 
-                            <div class="col-md-3 col-6 mb-2">
+                            <!--div class="col-md-3 col-6 mb-2">
                                 <figure>
                                     <a href="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-1.jpg" itemprop="contentUrl" data-size="1200x1200">
                                         <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-1.jpg" alt="Promoción Dentalia">
                                     </a>
                                 </figure>
-                            </div>
-
-                            <div class="col-md-3 col-6 mb-2">
-                                <figure>
-                                    <a href="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-2.jpg" itemprop="contentUrl" data-size="1200x1200">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-2.jpg" alt="Promoción 4">
-                                    </a>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-3 col-6 mb-2">
-                                <figure>
-                                    <a href="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-3.jpg" itemprop="contentUrl" data-size="1200x1200">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-3.jpg" alt="Promoción 4">
-                                    </a>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-3 col-6 mb-2">
-                                <figure>
-                                    <a href="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-4.jpg" itemprop="contentUrl" data-size="1200x1200">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-4.jpg" alt="Promoción 4">
-                                    </a>
-                                </figure>
-                            </div>
+                            </div-->
 
                         </div>
 
