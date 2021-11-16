@@ -214,7 +214,7 @@
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\el_gran_rosticero\pick-up-1.jpg" alt="" width="100%">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
 										</div>
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\cabanna\pick-up-1.jpg" alt="" width="100%">
