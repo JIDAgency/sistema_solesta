@@ -16,15 +16,15 @@
 			</div>
 		</div>
 
-		<!--
+		
 		<div class="carousel-item">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
+					<a href="<?php echo base_url(); ?>eventos"><img src="almacenamiento\inicio\banner-navidenho.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
+					<a href="<?php echo base_url(); ?>eventos"><img src="almacenamiento\inicio\banner-navidenho-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
 				</div>
 			</div>
-		</div>-->
+		</div>
 
 		
 		<div class="carousel-item">
@@ -62,7 +62,7 @@
 							</div>
 							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>eventos">
-									<img class="rounded" src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
+									<img class="rounded" src="almacenamiento\inicio\banner-eventos.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
 							</div>
 						</div>
