@@ -10,8 +10,8 @@
 		<div class="carousel-item active">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-01.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-01-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
+					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-01.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
+					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-01-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
 				</div>
 			</div>
 		</div>
@@ -19,8 +19,8 @@
 		<div class="carousel-item">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
+					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-02.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
+					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-02-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
 				</div>
 			</div>
 		</div>
