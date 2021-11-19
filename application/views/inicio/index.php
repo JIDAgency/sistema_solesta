@@ -16,15 +16,15 @@
 			</div>
 		</div>
 
-		<!--
+		
 		<div class="carousel-item">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
-					<a href="<?php echo base_url(); ?>categorias/ver/mercado_solesta"><img src="almacenamiento\inicio\banner-index-02-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
+					<a href="<?php echo base_url(); ?>eventos"><img src="almacenamiento\inicio\banner-navidenho.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
+					<a href="<?php echo base_url(); ?>eventos"><img src="almacenamiento\inicio\banner-navidenho-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
 				</div>
 			</div>
-		</div>-->
+		</div>
 
 		
 		<div class="carousel-item">
@@ -62,7 +62,7 @@
 							</div>
 							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>eventos">
-									<img class="rounded" src="almacenamiento\inicio\banner-pickpu.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
+									<img class="rounded" src="almacenamiento\inicio\banner-eventos.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
 							</div>
 						</div>
@@ -121,30 +121,6 @@
 					</div>
 				</div-->
 			<?php //endforeach; ?>
-			
-			<br><br><br>
-			<h1 class="text-center purple darken-3">¡SOLESTA BUEN FIN!</h1>
-
-			<div class="row my-gallery match-height">
-				
-				<?php foreach ($promociones_list as $promocion_row) : ?>
-					<?php if ($promocion_row->temporada == "buen fin"): ?>
-						<div class="col-md-3 col-6 mb-2">
-							<figure>
-								<a href="<?php echo base_url_locales().$promocion_row->local_url.'/'.$promocion_row->url; ?>" itemprop="contentUrl" data-size="1200x1200">
-									<img class="img-fluid rounded" src="<?php echo base_url_locales().$promocion_row->local_url.'/'.$promocion_row->url; ?>" alt="<?php echo $promocion_row->alt; ?>">
-								</a>
-							</figure>
-						</div>
-					<?php endif; ?>
-				<?php endforeach; ?>
-
-			</div>
-			<div class="row text-center mt-5">
-				<div class="col">
-					<a class="btn btn-purple btn-darken-3 round btn-min-width mr-1 mb-1" href="<?php echo site_url("promociones"); ?>">Ver todos las promociones</a>
-				</div>
-			</div>
 
 			<div class="row">
 				<div class="col">
