@@ -66,7 +66,10 @@
 
 						<div class="row mb-3 mt-1 text-center">
 							<div class="col-md-6 mb-2">
-								<iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/lWq07JQuIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<!--iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/lWq07JQuIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+								<a href="<?php echo base_url(); ?>info/terminos_y_condiciones_viaje">
+									<img class="rounded" src="almacenamiento\inicio\terminos-y-condiciones-viaje.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
+								</a>
 							</div>
 							<div class="col-md-6 mb-2">
 								<a href="<?php echo base_url(); ?>eventos">

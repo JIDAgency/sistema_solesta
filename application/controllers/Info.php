@@ -188,6 +188,10 @@ class Info extends MY_Controller {
 		$data['regresar_a'] = 'info';
 		$controlador_js = "info/aviso_privacidad";
 
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
+
 		$data['styles'] = array(
 		);
 		$data['scripts'] = array(
@@ -217,6 +221,28 @@ class Info extends MY_Controller {
 		);
 		
 		$this->load->view('info/agradecimiento', $data);
+    }
+
+	public function terminos_y_condiciones_viaje()
+	{
+		$data['pagina_menu_info'] = true;
+		$data['pagina_titulo'] = 'Términos y condiciones del viaje';
+
+		$data['controlador'] = 'info/terminos_y_condiciones_viaje';
+		$data['regresar_a'] = 'info';
+		$controlador_js = "info/terminos_y_condiciones_viaje";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
+		
+		$data['styles'] = array(
+		);
+		$data['scripts'] = array(
+			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+		);
+		
+		$this->construir_public_ui('info/terminos_y_condiciones_viaje', $data);
     }
     
 }
