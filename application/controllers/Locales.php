@@ -83,6 +83,11 @@ class Locales extends MY_Controller {
 			$this->session->set_flashdata('MENSAJE_ERROR', '¡Oops! Al parecer ha ocurrido un error, por favor intentelo más tarde. (1)');
 			redirect($data['regresar_a']);
 		}
+
+		if ($local_row->estatus == "suspendido") {
+			$this->session->set_flashdata('MENSAJE_INFO', 'Lo sentimos. A no ser que tengas una máquina del tiempo, ese contenido no está disponible.');
+			redirect($data['regresar_a']);
+		}
 		
 		$categorias_list = $this->categorias_model->get_categorias_por_local($local_row->id)->result();
 		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
