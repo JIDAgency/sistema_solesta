@@ -148,9 +148,7 @@
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\tripoli\pick-up-1.jpg" alt="" width="100%">
-										</div>
+										
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\ocho30\pick-up-1.jpg" alt="" width="100%">
 										</div>
@@ -160,13 +158,14 @@
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
 										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
+										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\crepe_corner\pick-up-1.jpg" alt="" width="100%">
-										</div>
+										
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\sonora_grill\pick-up-1.jpg" alt="" width="100%">
 										</div>
@@ -176,13 +175,13 @@
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\seratta\pick-up-1.jpg" alt="" width="100%">
 										</div>
+										<div class="col-md-3">
+											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
+										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row mt-2 text-center">
-										<div class="col-md-3">
-											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\mochomos\pick-up-1.jpg" alt="" width="100%">
-										</div>
 										<div class="col-md-3">
 											<img class="rounded" src="<?php echo base_url(); ?>almacenamiento\locales\suntory\pick-up-1.jpg" alt="" width="100%">
 										</div>
