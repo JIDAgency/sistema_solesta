@@ -16,7 +16,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/oIFTFh9MioM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" class="rounded" height="315" src="https://www.youtube.com/embed/oIFTFh9MioM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/5eK5nvKQFr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/5eK5nvKQFr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/hHcbaJu3nQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/hHcbaJu3nQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/NBi_WCI75EM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/NBi_WCI75EM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ls3D6hY-qZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/Ls3D6hY-qZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z4_-voM0xSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/Z4_-voM0xSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -71,17 +71,11 @@
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
                                     <div class="card-content">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VwPZVLjbRxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/VwPZVLjbRxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
 
