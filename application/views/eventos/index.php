@@ -21,7 +21,7 @@
                                 ya que contamos con espacios abiertos para minimizar los riesgos.
                             </p>
 
-                            <div class="row my-gallery mt-3">
+                            <!--div class="row my-gallery mt-3">
                                 
                                 <div class="col-md-6 mb-2">
                                     <figure>
@@ -31,7 +31,7 @@
                                     </figure>
                                 </div>
                         
-                            </div>
+                            </div-->
 
                         </div>
                     </div>

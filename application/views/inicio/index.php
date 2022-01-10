@@ -16,14 +16,14 @@
 			</div>
 		</div>
 
-		<div class="carousel-item">
+		<!--div class="carousel-item">
 			<div class="row text-center">
 				<div class="col-md-12">
 					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-02.jpg" alt="" width="100%" class="d-none d-xl-block img-fluid"></a>
 					<a href="<?php echo base_url(); ?>"><img src="almacenamiento\inicio\banner-index-02-movil.jpg" alt="" width="100%" class="d-block d-sm-none img-flui"></a>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<div class="carousel-item">
 			<div class="row text-center">
@@ -64,9 +64,8 @@
 				<div class="col">
 					<section class="mt-5">
 
-						<div class="row mb-3 mt-1 text-center">
+						<!--div class="row mb-3 mt-1 text-center">
 							<div class="col-md-6 mb-2">
-								<!--iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/lWq07JQuIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
 								<a href="<?php echo base_url(); ?>info/terminos_y_condiciones_viaje">
 									<img class="rounded" src="almacenamiento\inicio\terminos-y-condiciones-viaje.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
@@ -76,7 +75,8 @@
 									<img class="rounded" src="almacenamiento\inicio\banner-eventos.jpg" alt="Pide desde Shopping to go en solesta" width="100%">
 								</a>
 							</div>
-						</div>
+						</div-->
+						<!--iframe class="rounded" width="100%" height="100%" src="https://www.youtube.com/embed/lWq07JQuIhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
 
 						<div class="text-center">
 							<h1 class="text-center purple darken-3">CONOCE SOLESTA</h1>
