@@ -11,7 +11,7 @@
                     <div class="form-body text-center mt-5">
                         <h1 class="text-bold-700 purple darken-3 mb-3"><strong>Promociones Solesta en las mejores tiendas</strong></h1>
 
-                        <div class="row match-height">
+                        <!--div class="row match-height">
 
                             <div class="col-md-3 col-6">
                                 <div class="card no-border">
@@ -21,64 +21,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/5eK5nvKQFr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/hHcbaJu3nQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/NBi_WCI75EM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-
-                        <div class="row match-height">
-
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                        <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/Ls3D6hY-qZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/Z4_-voM0xSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                    <iframe width="100%" height="315" class="rounded" src="https://www.youtube.com/embed/VwPZVLjbRxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
+                        </div-->
 
                         <div class="row my-gallery match-height">
                             

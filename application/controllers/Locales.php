@@ -213,7 +213,8 @@ class Locales extends MY_Controller {
 		//$restaurantes = array('4', '5', '10');
 		$tiendas = array('1', '2', '3', '6', '7', '9');
 		/** Quitar tecnologia [8] por que repite locales */
-		$locales_list = $this->locales_model->get_locales_por_categoria_para_horarios($tiendas)->result();
+		//$locales_list = $this->locales_model->get_locales_por_categoria_para_horarios($tiendas)->result();
+		$locales_list = $this->locales_model->get_local_por_id(109)->result();
 
 		$cont = 1;
 		$data_horarios = array();
@@ -285,7 +286,7 @@ class Locales extends MY_Controller {
 
 	public function dar_de_alta_imagenes_por_local_id()
 	{
-		$local_id = 106;
+		$local_id = 109;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
