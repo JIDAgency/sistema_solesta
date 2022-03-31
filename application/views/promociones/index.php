@@ -25,6 +25,22 @@
 
                         <div class="row my-gallery match-height">
                             
+                            <div class="col-md-3 col-6 mb-2">
+                                <figure>
+                                    <a href="<?php echo base_url(); ?>almacenamiento/locales/promo-01-1200x1200px-.jpg" itemprop="contentUrl" data-size="1200x1200">
+                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento/locales/promo-01-1200x1200px-.jpg" alt="Promoción">
+                                    </a>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-3 col-6 mb-2">
+                                <figure>
+                                    <a href="<?php echo base_url(); ?>almacenamiento/locales/promo-02-1200x1200px-.jpg" itemprop="contentUrl" data-size="1200x1200">
+                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento/locales/promo-02-1200x1200px-.jpg" alt="Promoción">
+                                    </a>
+                                </figure>
+                            </div>
+
                             <?php foreach ($promociones_list as $promocion_row) : ?>
                                 <div class="col-md-3 col-6 mb-2">
                                     <figure>
@@ -34,14 +50,6 @@
                                     </figure>
                                 </div>
                             <?php endforeach; ?>
-
-                            <!--div class="col-md-3 col-6 mb-2">
-                                <figure>
-                                    <a href="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-1.jpg" itemprop="contentUrl" data-size="1200x1200">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\dentalia\promocion-1.jpg" alt="Promoción Dentalia">
-                                    </a>
-                                </figure>
-                            </div-->
 
                         </div>
 
