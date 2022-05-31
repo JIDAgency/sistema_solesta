@@ -144,13 +144,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <div class="row">
 
-                    <div class="col-3">
+                    <div class="col-2">
                         <a href="<?php echo site_url("inicio"); ?>"><img src="<?php echo base_url(); ?>almacenamiento\header\solesta-oficial-blanco.png" class="img-fluid"></a>
                     </div>
 
-                    <div class="col-9">
+                    <div class="col-10">
                     
-                        <ul class="nav menu-principal">
+                        <ul class="nav menu-principal pull-right">
                             <li class="nav-item">
                                 <a class="nav-link white" href="<?php echo site_url("inicio"); ?>" data-toggle=""><strong>Inicio</strong></a>
                             </li>
@@ -180,6 +180,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li class="nav-item">
                                 <a class="nav-link white" href="<?php echo site_url("info/acerca"); ?>" data-toggle=""><strong>Nosotros</strong></a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link white" href="<?php echo site_url("locales/disponibles"); ?>" data-toggle=""><strong>Locales Disponibles</strong></a>
+                            </li>
+
 
                             <li class="nav-item">
                                 <a class="nav-link white" href="<?php echo site_url("info/contacto"); ?>" data-toggle=""><strong>Contacto</strong></a>
@@ -261,6 +266,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     
                                 <li class="nav-item">
                                     <a class="nav-link white" href="<?php echo site_url("info/acerca"); ?>" data-toggle=""><strong>Nosotros</strong></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link white" href="<?php echo site_url("locales/disponibles"); ?>" data-toggle=""><strong>Locales disponibles</strong></a>
                                 </li>
                     
                                 <li class="nav-item">

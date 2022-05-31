@@ -14,6 +14,7 @@ class Locales extends MY_Controller {
 		$this->load->model("locales_horarios_model");
     }
 
+
 	public function index()
 	{
 		$data['pagina_menu_inicio'] = true;
@@ -44,6 +45,31 @@ class Locales extends MY_Controller {
 
 		$this->construir_public_ui('locales/index' ,$data);
 	}
+
+	public function disponibles()
+	{
+		$data['pagina_menu_inicio'] = true;
+		$data['pagina_titulo'] = 'Locales Disponibles';
+
+		//revisar
+		$data['controlador'] = 'locales/disponibles';
+		$data['regresar_a'] = 'inicio';
+		$controlador_js = "locales/disponibles";
+
+		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
+        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
+		
+		$data['styles'] = array(
+		);
+		$data['scripts'] = array(
+			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+		);
+
+	
+		$this->construir_public_ui('locales/disponibles' ,$data);
+	}
+	
 	
 	public function ver($local = null)
 	{
@@ -2188,5 +2214,7 @@ class Locales extends MY_Controller {
 		//$resultado = $this->relacion_locales_categorias_model->insert_matriz_relacion_locales_categorias($data);
 		redirect("locales");
 	}
+
+
 	
 }
