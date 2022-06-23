@@ -237,10 +237,18 @@ class Locales extends MY_Controller {
 	public function dar_de_alta_horarios()
 	{
 		//$restaurantes = array('4', '5', '10');
-		$tiendas = array('1', '2', '3', '6', '7', '9');
+		//$tiendas = array('1', '2', '3', '6', '7', '9');
 		/** Quitar tecnologia [8] por que repite locales */
 		//$locales_list = $this->locales_model->get_locales_por_categoria_para_horarios($tiendas)->result();
-		$locales_list = $this->locales_model->get_local_por_id(110)->result();
+
+		//$local_id = 113;
+		//$local_id = 116;
+		//$local_id = 111;
+		//$local_id = 112;
+		//$local_id = 114;
+		//$local_id = 115;
+
+		$locales_list = $this->locales_model->get_local_por_id(116)->result();
 
 		$cont = 1;
 		$data_horarios = array();
@@ -312,7 +320,12 @@ class Locales extends MY_Controller {
 
 	public function dar_de_alta_imagenes_por_local_id()
 	{
-		$local_id = 110;
+		//$local_id = 113;
+		//$local_id = 116;
+		//$local_id = 111;
+		//$local_id = 112;
+		//$local_id = 114;
+		$local_id = 115;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
@@ -419,6 +432,7 @@ class Locales extends MY_Controller {
 		);
 
 		/** Promoción 2 */
+		/**
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'promocion-2.jpg',
@@ -427,8 +441,10 @@ class Locales extends MY_Controller {
 			'caduca' => 'no',
 			'estatus' => 'suspendido',
 		);
+		*/
 
 		/** Promoción 3 */
+		/**
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'promocion-3.jpg',
@@ -437,8 +453,10 @@ class Locales extends MY_Controller {
 			'caduca' => 'no',
 			'estatus' => 'suspendido',
 		);
+		*/
 
 		/** Evento 1 */
+		
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'evento-1.jpg',
@@ -447,6 +465,7 @@ class Locales extends MY_Controller {
 			'caduca' => 'no',
 			'estatus' => 'activo',
 		);
+		
 
 		/** Evento 1 */
 		$data_imagen[] = array(
@@ -463,11 +482,14 @@ class Locales extends MY_Controller {
 		echo "<br>";
 		echo "<br>";
 
-		/*if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
+		
+		/**
+		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
 			echo "OK <br>";
 		} else {
 			echo "BAD <br>";
-		}*/
+		}
+		 */
 	}
 
 	/** funciones de desarrollador */
