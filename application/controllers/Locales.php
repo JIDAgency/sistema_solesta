@@ -247,8 +247,9 @@ class Locales extends MY_Controller {
 		//$local_id = 112;
 		//$local_id = 114;
 		//$local_id = 115;
+		//$local_id = 117;
 
-		$locales_list = $this->locales_model->get_local_por_id(116)->result();
+		$locales_list = $this->locales_model->get_local_por_id(117)->result();
 
 		$cont = 1;
 		$data_horarios = array();
@@ -325,7 +326,8 @@ class Locales extends MY_Controller {
 		//$local_id = 111;
 		//$local_id = 112;
 		//$local_id = 114;
-		$local_id = 115;
+		//$local_id = 115;
+		$local_id = 117;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
