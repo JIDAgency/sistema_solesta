@@ -41,6 +41,14 @@
                                 </figure>
                             </div>
 
+                            <div class="col-md-3 col-6">
+                                <div class="card no-border">
+                                    <div class="card-content">
+                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\themins01.jpg" itemprop="" alt="Promocion Biancolatte"/>
+                                    </div>
+                                </div>
+                            </div>
+
                             <?php foreach ($promociones_list as $promocion_row) : ?>
                                 <div class="col-md-3 col-6 mb-2">
                                     <figure>
@@ -52,16 +60,6 @@
                             <?php endforeach; ?>
 
                         </div>
-
-                        <!--div class="row match-height">
-                            <div class="col-md-3 col-6">
-                                <div class="card no-border">
-                                    <div class="card-content">
-                                        <img class="img-fluid rounded" src="<?php echo base_url(); ?>almacenamiento\locales\biancolatte\promocion-1.jpg" itemprop="" alt="Promocion Biancolatte"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div-->
 
                         
                      
