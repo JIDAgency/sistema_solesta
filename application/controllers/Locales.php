@@ -249,7 +249,7 @@ class Locales extends MY_Controller {
 		//$local_id = 115;
 		//$local_id = 117;
 
-		$locales_list = $this->locales_model->get_local_por_id(117)->result();
+		$locales_list = $this->locales_model->get_local_por_id(118)->result();
 
 		$cont = 1;
 		$data_horarios = array();
@@ -327,7 +327,8 @@ class Locales extends MY_Controller {
 		//$local_id = 112;
 		//$local_id = 114;
 		//$local_id = 115;
-		$local_id = 117;
+		//$local_id = 117;
+		$local_id = 118;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
@@ -485,13 +486,14 @@ class Locales extends MY_Controller {
 		echo "<br>";
 
 		
-		/**
+		/*
 		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
 			echo "OK <br>";
 		} else {
 			echo "BAD <br>";
 		}
-		 */
+		*/
+		
 	}
 
 	/** funciones de desarrollador */
