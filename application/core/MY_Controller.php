@@ -8,6 +8,7 @@ class MY_Controller extends CI_Controller {
         parent::__construct();
     }
     
+    
     protected function construir_public_ui($contenido, $data = null)
     {
 		$this->load->view('_layout/public/header', $data);

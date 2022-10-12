@@ -12,7 +12,7 @@
                     <p>
                     Para mayor información te pedimos mandar un<br>
                     
-                    correo a <strong>adriana.estrada@solesta.mx</strong> con la siguiente información:
+                    correo a <strong>adriana.decisneros@solesta.mx</strong> con la siguiente información:
                     </p>   
                     
                     
