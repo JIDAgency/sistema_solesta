@@ -50,9 +50,9 @@
                                         </div>
                                         <div class="col-12 text-center pt-2">
                                             <p class="socialIcon card-text">
-                                                <a href="#"><i class="fa fa-facebook-square white"></i></a>
-                                                <a href="#"><i class="fa fa-instagram white"></i></a>
-                                                <a href="#"><i class="fa fa-twitter-square white"></i></a>
+                                                <a href="https://www.facebook.com/SolestaPuebla/"><i class="fa fa-facebook-square white"></i></a>
+                                                <a href="https://www.instagram.com/solestapuebla/"><i class="fa fa-instagram white"></i></a>
+                                                <!--a href="#"><i class="fa fa-twitter-square white"></i></a-->
                                             </p>
                                         </div>
                                     </div>

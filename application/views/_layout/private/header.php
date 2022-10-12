@@ -198,8 +198,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </br>
                                 <ul class="list-inline">
                                     <li class="white">Síguenos en:</li><br>
-                                    <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a></li>
-                                    <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a></li>
+                                    <li><a href="https://www.facebook.com/SolestaPuebla/" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-facebook-square"></span></a></li>
+                                    <li><a href="https://www.instagram.com/solestapuebla/" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-instagram"></span></a></li>
                                     <li><a href="" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="fa white fa-twitter-square"></span></a></li>
                                 </ul><li>
 
