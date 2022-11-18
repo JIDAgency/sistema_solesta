@@ -156,6 +156,7 @@ class Locales_imagenes_model extends CI_Model {
     public function get_promociones()
     {
         $query = $this->db
+            ->order_by('t1.temporada', 'desc')
             ->where('t1.estatus', 'activo')
             ->where('tipo', 'promocion')
             ->select("
