@@ -22,8 +22,19 @@
                             </div>
 
                         </div-->
-
                         <div class="row my-gallery match-height">
+                            <?php
+                            $path = base_url().'almacenamiento'.DIRECTORY_SEPARATOR.'promociones'.DIRECTORY_SEPARATOR.'promos'.DIRECTORY_SEPARATOR;
+                            foreach (glob("almacenamiento/promociones/promos/*.jpg") as $nombre_fichero) : ?>
+                                <div class="col-md-3 col-6 mb-2">
+                                    <figure>
+                                        <a href="<?php echo $nombre_fichero; ?>" itemprop="contentUrl" data-size="1200x1200">
+                                            <img class="img-fluid rounded" src="<?php echo $nombre_fichero; ?>" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                            <?php endforeach; 
+                            ?>
 
                             <?php foreach ($promociones_list as $promocion_row) : ?>
                                 <div class="col-md-3 col-6 mb-2">
