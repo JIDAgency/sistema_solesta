@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -78,7 +78,7 @@ $db['default'] = array(
 	'hostname' => '166.62.43.6',
 	//'hostname' => 'localhost',
 	'username' => 'solesta_root',
-	'password' => 'dzvhdw6t0ho02cr',
+	'password' => 'm92a6eak8f57',
 	'database' => 'solesta_prod',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
