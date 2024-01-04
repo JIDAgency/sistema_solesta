@@ -1,10 +1,11 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Locales extends MY_Controller {
+class Locales extends MY_Controller
+{
 
 	public function __construct()
-    {
+	{
 		parent::__construct();
 		$this->load->model("categorias_model");
 		$this->load->model("etiquetas_model");
@@ -12,7 +13,7 @@ class Locales extends MY_Controller {
 		$this->load->model("locales_imagenes_model");
 		$this->load->model("relacion_locales_categorias_model");
 		$this->load->model("locales_horarios_model");
-    }
+	}
 
 
 	public function index()
@@ -26,13 +27,12 @@ class Locales extends MY_Controller {
 		$controlador_js = "locales/index";
 
 		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
-        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
-		
-		$data['styles'] = array(
-		);
+
+		$data['styles'] = array();
 		$data['scripts'] = array(
-			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
 		);
 
 		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
@@ -43,7 +43,7 @@ class Locales extends MY_Controller {
 		$data['locales_list'] = $locales_list;
 		$data['switch'] = $switch;
 
-		$this->construir_public_ui('locales/index' ,$data);
+		$this->construir_public_ui('locales/index', $data);
 	}
 
 	public function disponibles()
@@ -57,37 +57,36 @@ class Locales extends MY_Controller {
 		$controlador_js = "locales/disponibles";
 
 		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
-        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
-		
-		$data['styles'] = array(
-		);
+
+		$data['styles'] = array();
 		$data['scripts'] = array(
-			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
 		);
 
-	
-		$this->construir_public_ui('locales/disponibles' ,$data);
+
+		$this->construir_public_ui('locales/disponibles', $data);
 	}
-	
-	
+
+
 	public function ver($local = null)
 	{
 		if ($this->input->post()) {
 			$local = $this->input->post('local');
 		}
-		
+
 		$local_row = $this->locales_model->get_local_por_url($local)->row();
 
 		$data['pagina_menu_inicio'] = true;
 		$data['pagina_titulo'] = ucfirst(mb_strtolower($local_row->nombre));
 
-		$data['controlador'] = 'locales/ver/'.$local.'';
+		$data['controlador'] = 'locales/ver/' . $local . '';
 		$data['regresar_a'] = 'locales';
 		$controlador_js = "locales/ver";
 
 		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
-        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
 
 		$data['styles'] = array(
@@ -102,7 +101,7 @@ class Locales extends MY_Controller {
 			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/photoswipe.min.js'),
 			array('es_rel' => false, 'src' => base_url() . 'app-assets/vendors/js/gallery/photo-swipe/photoswipe-ui-default.min.js'),
 			array('es_rel' => false, 'src' => base_url() . 'app-assets/js/scripts/gallery/photo-swipe/photoswipe-script.js'),
-			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
 		);
 
 		if (!$local_row) {
@@ -114,7 +113,7 @@ class Locales extends MY_Controller {
 			$this->session->set_flashdata('MENSAJE_INFO', 'Lo sentimos. A no ser que tengas una máquina del tiempo, ese contenido no está disponible.');
 			redirect($data['regresar_a']);
 		}
-		
+
 		$categorias_list = $this->categorias_model->get_categorias_por_local($local_row->id)->result();
 		$imagen_banner_principal = $this->locales_imagenes_model->get_banner_principal_por_local_id($local_row->id)->row();
 		$imagen_banner_principal_movil = $this->locales_imagenes_model->get_banner_principal_movil_por_local_id($local_row->id)->row();
@@ -138,7 +137,7 @@ class Locales extends MY_Controller {
 		$data['etiquetas_list'] = $etiquetas_list;
 		$data['horarios_list'] = $horarios_list;
 
-		$this->construir_public_ui('locales/ver' ,$data);
+		$this->construir_public_ui('locales/ver', $data);
 	}
 
 	public function todos()
@@ -152,13 +151,12 @@ class Locales extends MY_Controller {
 		$controlador_js = "locales/index";
 
 		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
-        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
-		
-		$data['styles'] = array(
-		);
+
+		$data['styles'] = array();
 		$data['scripts'] = array(
-			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
 		);
 
 		$categorias_list = $this->categorias_model->get_lista_de_categorias_activas()->result();
@@ -169,7 +167,7 @@ class Locales extends MY_Controller {
 		$data['locales_list'] = $locales_list;
 		$data['switch'] = $switch;
 
-		$this->construir_public_ui('locales/todos' ,$data);
+		$this->construir_public_ui('locales/todos', $data);
 	}
 
 	public function resultados()
@@ -186,22 +184,21 @@ class Locales extends MY_Controller {
 		$controlador_js = "locales/resultados";
 
 		$data['mensaje_exito'] = $this->session->flashdata('MENSAJE_EXITO');
-        $data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
+		$data['mensaje_info'] = $this->session->flashdata('MENSAJE_INFO');
 		$data['mensaje_error'] = $this->session->flashdata('MENSAJE_ERROR');
-		
-		$data['styles'] = array(
-		);
+
+		$data['styles'] = array();
 		$data['scripts'] = array(
-			array('es_rel' => true, 'src' => ''.$controlador_js.'.js'),
+			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
 		);
 
-		$this->construir_public_ui('locales/resultados' ,$data);
+		$this->construir_public_ui('locales/resultados', $data);
 	}
 
 	public function buscar($busqueda = null)
 	{
 		$categoria = null;
-	
+
 		$data = $this->locales_model->buscador_locales($busqueda, $categoria)->result();
 
 		/*if ($locales_list->num_rows() > 0) {
@@ -226,7 +223,7 @@ class Locales extends MY_Controller {
 				No se ha encontrado ningún resultado...
 			';
 		}*/
-		
+
 		echo json_encode($data);
 
 		//$output .= '</table>';
@@ -280,31 +277,31 @@ class Locales extends MY_Controller {
 			*/
 			/** Horario de tiendas */
 			$data_horarios[] = array(
-                'local_id' => $local_row->id,
-                'dia_inicio' => "Lun",
-                'dia_fin' => "Jue",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "20:00",
+				'local_id' => $local_row->id,
+				'dia_inicio' => "Lun",
+				'dia_fin' => "Jue",
+				'hora_inicio' => "11:00",
+				'hora_fin' => "20:00",
 				'estatus' => "activo",
-            );
+			);
 			/** Horario de tiendas */
 			$data_horarios[] = array(
-                'local_id' => $local_row->id,
-                'dia_inicio' => "Vie",
-                'dia_fin' => "Sab",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "21:00",
+				'local_id' => $local_row->id,
+				'dia_inicio' => "Vie",
+				'dia_fin' => "Sab",
+				'hora_inicio' => "11:00",
+				'hora_fin' => "21:00",
 				'estatus' => "activo",
-            );
+			);
 			/** Horario de tiendas */
 			$data_horarios[] = array(
-                'local_id' => $local_row->id,
-                'dia_inicio' => "Dom",
-                'dia_fin' => "Dom",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "20:00",
+				'local_id' => $local_row->id,
+				'dia_inicio' => "Dom",
+				'dia_fin' => "Dom",
+				'hora_inicio' => "11:00",
+				'hora_fin' => "20:00",
 				'estatus' => "activo",
-            );
+			);
 
 			echo $cont;
 			echo " ";
@@ -330,7 +327,7 @@ class Locales extends MY_Controller {
 		//$local_id = 117;
 		//$local_id = 118;
 		//$local_id = 119;
-		$local_id = 120;
+		$local_id = 123;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
@@ -340,7 +337,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'logotipo.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Logotipo de ' . $local_row->nombre))),
 			'tipo' => 'logotipo',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -350,7 +347,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'logotipo.png',
-			'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Logotipo de ' . $local_row->nombre))),
 			'tipo' => 'logotipo_png',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -360,7 +357,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'banner-principal.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Banner principal de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Banner principal de ' . $local_row->nombre))),
 			'tipo' => 'banner_principal',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -370,7 +367,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'banner-principal-movil.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Banner principal de móvil de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Banner principal de móvil de ' . $local_row->nombre))),
 			'tipo' => 'banner_principal_movil',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -380,7 +377,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'galeria-1.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Galería 1 de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Galería 1 de ' . $local_row->nombre))),
 			'tipo' => 'galeria',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -390,7 +387,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'galeria-2.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Galería 2 de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Galería 2 de ' . $local_row->nombre))),
 			'tipo' => 'galeria',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -400,7 +397,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'galeria-3.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Galería 3 de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Galería 3 de ' . $local_row->nombre))),
 			'tipo' => 'galeria',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -410,7 +407,7 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'galeria-4.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Galería 4 de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Galería 4 de ' . $local_row->nombre))),
 			'tipo' => 'galeria',
 			'caduca' => 'no',
 			'estatus' => 'activo',
@@ -420,64 +417,8 @@ class Locales extends MY_Controller {
 		$data_imagen[] = array(
 			'local_id' => $local_row->id,
 			'url' => 'galeria-5.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Galería 5 de '.$local_row->nombre))),
+			'alt' => ucwords(mb_strtolower(trim('Galería 5 de ' . $local_row->nombre))),
 			'tipo' => 'galeria',
-			'caduca' => 'no',
-			'estatus' => 'activo',
-		);
-
-		/** Promoción 1 */
-		$data_imagen[] = array(
-			'local_id' => $local_row->id,
-			'url' => 'promocion-1.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Promoción 1 de '.$local_row->nombre))),
-			'tipo' => 'promocion',
-			'caduca' => 'no',
-			'estatus' => 'activo',
-		);
-
-		/** Promoción 2 */
-		/**
-		$data_imagen[] = array(
-			'local_id' => $local_row->id,
-			'url' => 'promocion-2.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Promoción 2 de '.$local_row->nombre))),
-			'tipo' => 'promocion',
-			'caduca' => 'no',
-			'estatus' => 'suspendido',
-		);
-		*/
-
-		/** Promoción 3 */
-		/**
-		$data_imagen[] = array(
-			'local_id' => $local_row->id,
-			'url' => 'promocion-3.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Promoción 3 de '.$local_row->nombre))),
-			'tipo' => 'promocion',
-			'caduca' => 'no',
-			'estatus' => 'suspendido',
-		);
-		*/
-
-		/** Evento 1 */
-		
-		$data_imagen[] = array(
-			'local_id' => $local_row->id,
-			'url' => 'evento-1.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Evento 1 de '.$local_row->nombre))),
-			'tipo' => 'evento',
-			'caduca' => 'no',
-			'estatus' => 'activo',
-		);
-		
-
-		/** Evento 1 */
-		$data_imagen[] = array(
-			'local_id' => $local_row->id,
-			'url' => 'pick-up-1.jpg',
-			'alt' => ucwords(mb_strtolower(trim('Pick Up de '.$local_row->nombre))),
-			'tipo' => 'evento',
 			'caduca' => 'no',
 			'estatus' => 'activo',
 		);
@@ -487,14 +428,11 @@ class Locales extends MY_Controller {
 		echo "<br>";
 		echo "<br>";
 
-		
-		/*
-		if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
-			echo "OK <br>";
-		} else {
-			echo "BAD <br>";
-		}
-		*/
+		// if ($this->locales_model->insert_matriz_locales_imagenes($data_imagen)) {
+		// 	echo "OK <br>";
+		// } else {
+		// 	echo "BAD <br>";
+		// }
 	}
 
 	/** funciones de desarrollador */
@@ -512,7 +450,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'logotipo.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Logotipo de ' . $local_row->nombre))),
 				'tipo' => 'logotipo',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -522,7 +460,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'logotipo.png',
-				'alt' => ucwords(mb_strtolower(trim('Logotipo de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Logotipo de ' . $local_row->nombre))),
 				'tipo' => 'logotipo_png',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -532,7 +470,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'banner-principal.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Banner principal de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Banner principal de ' . $local_row->nombre))),
 				'tipo' => 'banner_principal',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -542,7 +480,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'banner-principal-movil.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Banner principal de móvil de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Banner principal de móvil de ' . $local_row->nombre))),
 				'tipo' => 'banner_principal_movil',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -552,7 +490,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'galeria-1.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 1 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Galería 1 de ' . $local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -562,7 +500,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'galeria-2.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 2 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Galería 2 de ' . $local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -572,7 +510,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'galeria-3.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 3 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Galería 3 de ' . $local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -582,7 +520,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'galeria-4.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 4 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Galería 4 de ' . $local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -592,7 +530,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'galeria-5.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Galería 5 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Galería 5 de ' . $local_row->nombre))),
 				'tipo' => 'galeria',
 				'caduca' => 'no',
 				'estatus' => 'suspendido',
@@ -602,7 +540,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'promocion-1.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Promoción 1 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Promoción 1 de ' . $local_row->nombre))),
 				'tipo' => 'promocion',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -612,7 +550,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'evento-1.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Evento 1 de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Evento 1 de ' . $local_row->nombre))),
 				'tipo' => 'evento',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -622,7 +560,7 @@ class Locales extends MY_Controller {
 			$data_imagen[] = array(
 				'local_id' => $local_row->id,
 				'url' => 'pick-up-1.jpg',
-				'alt' => ucwords(mb_strtolower(trim('Pick Up de '.$local_row->nombre))),
+				'alt' => ucwords(mb_strtolower(trim('Pick Up de ' . $local_row->nombre))),
 				'tipo' => 'pickup',
 				'caduca' => 'no',
 				'estatus' => 'activo',
@@ -691,9 +629,9 @@ class Locales extends MY_Controller {
 		*/
 	}
 
-    public function dar_de_alta_locales()
-    {
-        $data = array(
+	public function dar_de_alta_locales()
+	{
+		$data = array(
 			/*array(
 				'nombre' => '' ,
 				'descripcion' => NULL,
@@ -713,7 +651,7 @@ class Locales extends MY_Controller {
 			*/
 			// MERCADO SOLESTA
 			array(
-				'nombre' => 'CARBÓN CENTRAL DE HAMBURGUESAS' ,
+				'nombre' => 'CARBÓN CENTRAL DE HAMBURGUESAS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -729,7 +667,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'EL GRAN ROSTICERO' ,
+				'nombre' => 'EL GRAN ROSTICERO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -745,7 +683,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'EL TEAPANECO' ,
+				'nombre' => 'EL TEAPANECO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -761,7 +699,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LE MACARON' ,
+				'nombre' => 'LE MACARON',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -777,7 +715,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'OCHO30' ,
+				'nombre' => 'OCHO30',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -793,7 +731,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'PIANO' ,
+				'nombre' => 'PIANO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -809,7 +747,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SANTITO MAÍZ & AGAVE' ,
+				'nombre' => 'SANTITO MAÍZ & AGAVE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -825,7 +763,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SHIRUSHI' ,
+				'nombre' => 'SHIRUSHI',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -841,7 +779,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TRIPOLI' ,
+				'nombre' => 'TRIPOLI',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -858,7 +796,7 @@ class Locales extends MY_Controller {
 			),
 			// RESTAURANTES
 			array(
-				'nombre' => 'AUGURIO' ,
+				'nombre' => 'AUGURIO',
 				'descripcion' => 'Adéntrate en los sabores de México y de la cocina poblana de la mano del chef Ángel Vázquez, que ofrece una experiencia culinaria que no sólo se degusta, sino que especialmente se siente.',
 				'telefono_1' => '2222272909',
 				'telefono_2' => NULL,
@@ -874,7 +812,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BIANCOLATTE' ,
+				'nombre' => 'BIANCOLATTE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -890,7 +828,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CABANNA' ,
+				'nombre' => 'CABANNA',
 				'descripcion' => 'Un lugar para disfrutar y compartir entre amigos en un ambiente relajado que te transporta a la playa, logrando de tu visita un alegre recuerdo y un paladar satisfecho.',
 				'telefono_1' => '2222146736',
 				'telefono_2' => NULL,
@@ -906,7 +844,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CITY MARKET CAFÉ' ,
+				'nombre' => 'CITY MARKET CAFÉ',
 				'descripcion' => 'Descubre y prueba en un solo lugar 36 variedades de los más finos granos de café, servidos por baristas profesionales a una temperatura exacta para extraer los mejores sabores y aromas de este ‘oro negro’.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -922,7 +860,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CREPE CORNER' ,
+				'nombre' => 'CREPE CORNER',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -938,7 +876,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'EL FUEGO DULCE' ,
+				'nombre' => 'EL FUEGO DULCE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -954,7 +892,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'GUXI' ,
+				'nombre' => 'GUXI',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -970,7 +908,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LA CHICATANA' ,
+				'nombre' => 'LA CHICATANA',
 				'descripcion' => 'Cantina contemporánea, sibarita, sofisticada, ecléctica. Punto de encuentro y hermandad. Cultura, gastronomía y memoria. Orgullo de tacos, salsas, ceviches, tequilas, vinos y mezcales.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -986,7 +924,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LAS ALITAS' ,
+				'nombre' => 'LAS ALITAS',
 				'descripcion' => 'Innovación y desarrollo de nuevos productos, bebidas, salsas, aderezos, rituales, en fin, todo lo que hace vivas en Las Alitas una experiencia única.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1002,7 +940,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MOCHOMOS' ,
+				'nombre' => 'MOCHOMOS',
 				'descripcion' => 'Contemporáneo, distinguido y amigable, Mochomos moderniza el arte culinario de la comida sonorense fusionando su riqueza gastronómica en un ambiente agradable y un atento servicio.',
 				'telefono_1' => '2222146728',
 				'telefono_2' => '2222146743',
@@ -1018,7 +956,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MOYO' ,
+				'nombre' => 'MOYO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1034,7 +972,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SANTA CLARA' ,
+				'nombre' => 'SANTA CLARA',
 				'descripcion' => 'Lácteos deliciosos y una tradición que se conserva desde 1924. Siempre que pruebes Santa Clara te darás cuenta de los ingredientes de la más alta calidad y del trabajo y cuidado a los detalles.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1050,7 +988,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SERATTA' ,
+				'nombre' => 'SERATTA',
 				'descripcion' => 'Restaurante, Cafetería, Bar, Arguilería. Seratta Solesta es un café - restaurante que brinda el mejor servicio y alta calidad en sus productos.',
 				'telefono_1' => '2222839501',
 				'telefono_2' => NULL,
@@ -1066,7 +1004,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SONORA GRILL' ,
+				'nombre' => 'SONORA GRILL',
 				'descripcion' => 'Steakhouse mexicano que fusiona lo moderno con lo acogedor, ideal para degustar exquisitos cortes de carne con calidad Sterling Silver Y sorprendente mixología que combina sensaciones y sabores.',
 				'telefono_1' => '2222146782',
 				'telefono_2' => '2222146783',
@@ -1082,7 +1020,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'STARBUCKS' ,
+				'nombre' => 'STARBUCKS',
 				'descripcion' => 'Punto de referencia para los amantes del café en todo el mundo. Recibe un servicio genuino, un ambiente acogedor y una magnífica taza de café tostado preparado con esmero por manos expertas.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1098,7 +1036,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SUNTORY' ,
+				'nombre' => 'SUNTORY',
 				'descripcion' => 'Saborear una gran variedad de platillos de la auténtica comida japonesa; finas carnes, mariscos y verduras, preparados a tu vista por nuestros chefs.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1114,7 +1052,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TARLETS COFFEE' ,
+				'nombre' => 'TARLETS COFFEE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1130,7 +1068,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TOKS' ,
+				'nombre' => 'TOKS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1146,7 +1084,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'VERDE MATCHA' ,
+				'nombre' => 'VERDE MATCHA',
 				'descripcion' => 'Primer Matcha Bar en Puebla. Cocina consciente, listos para ofrecerte una experiencia única.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1163,7 +1101,7 @@ class Locales extends MY_Controller {
 			),
 			// FUN
 			array(
-				'nombre' => 'ALBOA' ,
+				'nombre' => 'ALBOA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1179,7 +1117,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'ARENA' ,
+				'nombre' => 'ARENA',
 				'descripcion' => 'La introducción de los videojuegos como nunca antes lo has experimentado. Cientos de títulos en videojuegos y opciones para todos los gustos, sumérgete en el mundo gamer y forma parte de la experiencia Arena.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1195,7 +1133,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CINEMEX' ,
+				'nombre' => 'CINEMEX',
 				'descripcion' => 'Disfrutar La Magia del Cine en salas con butacas más grandes que te proporcionarán mayor comodidad y con mayor privacidad entre butaca y butaca, únicas en México y un concepto exclusivo de Cinemex.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1211,7 +1149,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'GAMERS' ,
+				'nombre' => 'GAMERS',
 				'descripcion' => 'Si te encantan los videojuegos, no te pierdas las promociones, preventas, lanzamientos, noticias, tops y más. Juega con Gamers, juega más.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1227,7 +1165,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'HOBBIES' ,
+				'nombre' => 'HOBBIES',
 				'descripcion' => 'Tienda de rompecabezas y juegos de mesa en la ciudad de Puebla. Juegos didácticos, cubo de Rubik, rompecabezas, juegos de mesa y toda la diversión.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1243,7 +1181,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'JUGUETRÓN' ,
+				'nombre' => 'JUGUETRÓN',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1259,7 +1197,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'KID\'S UNIVERSE' ,
+				'nombre' => 'KID\'S UNIVERSE',
 				'descripcion' => 'Centro de entretenimiento con múltiples atracciones aptas para las diferentes edades, excelente música ambiental, cafetería y 6 certificaciones de seguridad que garantizan la mejor diversión y tranquilidad en un solo lugar.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1276,7 +1214,7 @@ class Locales extends MY_Controller {
 			),
 			// SHOPPING
 			array(
-				'nombre' => 'ADIDAS ORIGINALS' ,
+				'nombre' => 'ADIDAS ORIGINALS',
 				'descripcion' => 'Descubre la variedad de tenis y ropa de última moda en adidas Originals, creados para darle a tu look casual, un toque único, versátil e imponente.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1292,7 +1230,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'AMORISSIMI' ,
+				'nombre' => 'AMORISSIMI',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1308,7 +1246,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BABY MINK BOUTIQUE' ,
+				'nombre' => 'BABY MINK BOUTIQUE',
 				'descripcion' => 'Baby Mink Boutique. 393 likes. Baby Mink Boutique: Accesorios, Ropa Española, skip hop, calcetines, carters, avent, tomee teeppee, Relojes Pomo, Baby mink y Cobertores de adulto.',
 				'telefono_1' => '2222907723',
 				'telefono_2' => NULL,
@@ -1324,7 +1262,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BOBOIS' ,
+				'nombre' => 'BOBOIS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1340,7 +1278,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BONNET Á POMPON' ,
+				'nombre' => 'BONNET Á POMPON',
 				'descripcion' => 'Marca de moda infantil española con inspiración francesa. El espíritu del “bohemian chic” renace para dar lugar al exclusivo estilo Bonnet à Pompon. Elegancia de inspiración francesa, con una marcada autenticidad que conecta con los niños y cuya máxima es la excelencia en la calidad y el cuidado por el detalle. Un carácter dulce, relajado y atractivo que favorece a los niños gracias a sus diseño de cortes impecables y colores exclusivos.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1356,7 +1294,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CUIDADO CON EL PERRO' ,
+				'nombre' => 'CUIDADO CON EL PERRO',
 				'descripcion' => 'En Cuidado con el Perro, el espíritu de juventud es nuestra fuente de inspiración y principal objetivo. Desde su creación en 2006, en Cuidado con el Perro hemos sabido adaptarnos a las necesidades de los jóvenes para ser hoy en día un claro referente de moda casual y desenfrenada en México.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1372,7 +1310,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'EL COLUMPIO' ,
+				'nombre' => 'EL COLUMPIO',
 				'descripcion' => '​Somos una empresa 100% mexicana dedicada a la venta de recuerdos artesanales, ropones, vestidos y accesorios para todo tipo de eventos sociales. <br>Productos: Recuerdos, centros de mesa, ropones, vestidos, accesorios para bautizo y primera comunión.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1388,7 +1326,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'FLEXI' ,
+				'nombre' => 'FLEXI',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1404,7 +1342,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'FOREVER 21' ,
+				'nombre' => 'FOREVER 21',
 				'descripcion' => 'Un cliente en Toronto, nombró a su hija Tiev Forever Golding porque estuvo a punto de dar a luz en una tienda Forever 21; una vez que expire su pasaporte solicitarán legalmente nombrarla "FOREVER". <br>El promedio de espacio de una tienda Forever 21 es de 3,500 metros cuadrados, la tienda más grande cuenta con 15,000 metros cuadrados, mientras que la primera tienda "FASHION 21" sólo cuenta con 83 metros cuadrados. <br>FASHION 21 logró ventas por $700,000 dólares en su primer año de operación mientras que los tres negocios previos que abrieron en ese local quebraron antes de cumplir su primer año. <br>Aún cuando la compañía se encuentra en una etapa de enorme crecimiento, el negocio se mantiene familiar.​',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1420,7 +1358,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LEADS' ,
+				'nombre' => 'LEADS',
 				'descripcion' => 'La moda, el diseño y la inspiración deportiva en sneakers y el lifestyle. <br>Inspirar el sneaker lifestyle, ofreciendo artículos de la más alta calidad brindando siempre un servicio extraordinario y así contribuir con momentos felices en nuestros clientes.',
 				'telefono_1' => '2222146721',
 				'telefono_2' => NULL,
@@ -1436,7 +1374,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LOB' ,
+				'nombre' => 'LOB',
 				'descripcion' => '​​En LOB nos dedicamos a ofrecer moda y calidad al mejor precio a través de nuestras colecciones inspiradas en las tendencias mundiales. El principal objetivo es inspirar nuestro cliente, facilitarle su compra y que siempre pueda encontrar la mejor opción de moda. Nuestra diversa gama de colecciones les permite vestir con un estilo propio; y de esta forma les brindamos la vanguardia en tendencias que reúnen tres características principales: Moda, Calidad y Precio.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1452,7 +1390,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LUBECK' ,
+				'nombre' => 'LUBECK',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1468,7 +1406,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MORAZUL' ,
+				'nombre' => 'MORAZUL',
 				'descripcion' => 'Morazul es una marca exclusiva dirigida a jóvenes que les guste la moda.​ <br>Tienda boutique de calzado y accesorios, donde puedes encontrar las últimas tendencias y estilos para dama, caballero y el resto de la familia.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1484,7 +1422,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'ON RUNNING' ,
+				'nombre' => 'ON RUNNING',
 				'descripcion' => 'On nació en los Alpes suizos con un objetivo: revolucionar la sensación al correr. Todo se basa en una idea radical. Aterrizajes suaves y despegues explosivos. O, como lo llamamos, correr sobre las nubes.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1500,7 +1438,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SOLÉ' ,
+				'nombre' => 'SOLÉ',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1516,7 +1454,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SOUL' ,
+				'nombre' => 'SOUL',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1532,7 +1470,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SPORT MASTER' ,
+				'nombre' => 'SPORT MASTER',
 				'descripcion' => 'Somos la mejor opción para la adquisición de tu ropa y calzado deportivo. Contamos con una amplia variedad de productos. ¡Conócenos!',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1548,7 +1486,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TAF\'S' ,
+				'nombre' => 'TAF\'S',
 				'descripcion' => 'TAF es la cadena de sneakers más grande en México y Latinoamérica. Más de 100 tiendas donde creamos e inspiramos la cultura de los sneakers en México. Únete a la comunidad #SneakerLover.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1564,7 +1502,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'URBAN STORE' ,
+				'nombre' => 'URBAN STORE',
 				'descripcion' => 'Las mejores marcas a los mejores precios: Levis, Aeropostale, Roxy, Quiksilver, REWIND y más.Las mejores marcas, al mejor precio. Ven y arma tu #UrbanStyle.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1580,7 +1518,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'VIANCI' ,
+				'nombre' => 'VIANCI',
 				'descripcion' => '​Venta de lencería y trajes de baño para dama , multimarcas exclusivas de importación , principalmente de origen Colombiano y Español.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1597,7 +1535,7 @@ class Locales extends MY_Controller {
 			),
 			// WELLNESS
 			array(
-				'nombre' => 'ANEL ET CHUY' ,
+				'nombre' => 'ANEL ET CHUY',
 				'descripcion' => 'Somos una cadena de salones de belleza con más de 30 años de experiencia. Constantemente nos estamos actualizando en tendencias de moda.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1613,7 +1551,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'EUROPIEL' ,
+				'nombre' => 'EUROPIEL',
 				'descripcion' => 'Europiel es una empresa 100 % mexicana dedicada al cuidado de la piel especializada en depilación láser. Somos los pioneros en México –y uno de los pocos a nivel mundial– en usar el más nuevo, eficiente y seguro láser diodo.Somos la única empresa en el país que ofrece una garantía de eliminación de vello de hasta el 95 % en las zonas seleccionadas.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1629,7 +1567,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'GNC' ,
+				'nombre' => 'GNC',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1645,7 +1583,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'ICYCLE' ,
+				'nombre' => 'ICYCLE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1661,7 +1599,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'LINFOLAB' ,
+				'nombre' => 'LINFOLAB',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1677,7 +1615,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MOOR SPA' ,
+				'nombre' => 'MOOR SPA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1693,7 +1631,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'REMATCH' ,
+				'nombre' => 'REMATCH',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1709,7 +1647,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'SMART FIT' ,
+				'nombre' => 'SMART FIT',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1725,7 +1663,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'STUDIO BY SOCO' ,
+				'nombre' => 'STUDIO BY SOCO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1741,7 +1679,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'THE BARBER PLACE' ,
+				'nombre' => 'THE BARBER PLACE',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1757,7 +1695,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'VINE VERA' ,
+				'nombre' => 'VINE VERA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1774,7 +1712,7 @@ class Locales extends MY_Controller {
 			),
 			// ACCESORIOS
 			array(
-				'nombre' => 'BIZARRO' ,
+				'nombre' => 'BIZARRO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1790,7 +1728,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'JOYERÍA CINCO ESTRELLAS' ,
+				'nombre' => 'JOYERÍA CINCO ESTRELLAS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1806,7 +1744,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'JOYERÍA FANCY' ,
+				'nombre' => 'JOYERÍA FANCY',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1822,7 +1760,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'ÓPTICAS AMÉRICA' ,
+				'nombre' => 'ÓPTICAS AMÉRICA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1838,7 +1776,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'OPTIKAL' ,
+				'nombre' => 'OPTIKAL',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1854,7 +1792,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'RAY-BAN' ,
+				'nombre' => 'RAY-BAN',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1870,7 +1808,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TODO MODA' ,
+				'nombre' => 'TODO MODA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1886,7 +1824,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'VICTORINOX' ,
+				'nombre' => 'VICTORINOX',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1903,7 +1841,7 @@ class Locales extends MY_Controller {
 			),
 			// TECNOLOGÍA / SERVICIOS
 			array(
-				'nombre' => 'AT&T' ,
+				'nombre' => 'AT&T',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1919,7 +1857,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BBVA' ,
+				'nombre' => 'BBVA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1935,7 +1873,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BERLITZ CENTRO DE IDIOMAS' ,
+				'nombre' => 'BERLITZ CENTRO DE IDIOMAS',
 				'descripcion' => 'Berlitz es un centro de idiomas con 140 años de experiencia con presencia en más de 70 países del mundo con más de 600 centros en cada uno, es la escuela líder de idiomas.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1951,7 +1889,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BEST BUY' ,
+				'nombre' => 'BEST BUY',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1967,7 +1905,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'DJI' ,
+				'nombre' => 'DJI',
 				'descripcion' => 'Inspírate desde una nueva perspectiva. DJI te invita a ver, tocar y aprender sobre sus innovadoras y creativas plataformas.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -1983,7 +1921,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'FIBARO' ,
+				'nombre' => 'FIBARO',
 				'descripcion' => 'FIBARO es un fabricante líder de sistemas de casas inteligentes y una compañía con crecimiento más rápido en el sector domótico en Europa. Presentes en 6 continentes y más de 100 países.',
 				'telefono_1' => '2222907738',
 				'telefono_2' => NULL,
@@ -1999,7 +1937,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MOBO SHOP' ,
+				'nombre' => 'MOBO SHOP',
 				'descripcion' => 'MOBO es una marca que se dedica a la fabricación y distribución de accesorios celulares, ofreciendo a nuestros clientes calidad, innovación y variedad en nuestros productos.',
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2015,7 +1953,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MOVISTAR' ,
+				'nombre' => 'MOVISTAR',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2031,7 +1969,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'OFFICE MAX' ,
+				'nombre' => 'OFFICE MAX',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2047,7 +1985,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'PRESSTO' ,
+				'nombre' => 'PRESSTO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2063,7 +2001,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'TELCEL' ,
+				'nombre' => 'TELCEL',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2080,7 +2018,7 @@ class Locales extends MY_Controller {
 			),
 			// HOGAR
 			array(
-				'nombre' => 'ASHLEY' ,
+				'nombre' => 'ASHLEY',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2096,7 +2034,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'BED BATH & BEYOND' ,
+				'nombre' => 'BED BATH & BEYOND',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2112,7 +2050,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'CITY MARKET' ,
+				'nombre' => 'CITY MARKET',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2128,7 +2066,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'DUPUIS' ,
+				'nombre' => 'DUPUIS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2144,7 +2082,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'GAIA' ,
+				'nombre' => 'GAIA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2160,7 +2098,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'IKARUS' ,
+				'nombre' => 'IKARUS',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2176,7 +2114,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MARTHA SOPHIA' ,
+				'nombre' => 'MARTHA SOPHIA',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2192,7 +2130,7 @@ class Locales extends MY_Controller {
 				'estatus' => 'activo',
 			),
 			array(
-				'nombre' => 'MUMUSO' ,
+				'nombre' => 'MUMUSO',
 				'descripcion' => NULL,
 				'telefono_1' => NULL,
 				'telefono_2' => NULL,
@@ -2214,7 +2152,7 @@ class Locales extends MY_Controller {
 		//$resultado = $this->locales_model->insert_matriz_locales($data); 
 		redirect("locales");
 	}
-	
+
 	public function dar_de_alta_relaciones_locales_categorias()
 	{
 		$locales_list = $this->locales_model->get_locales()->result();
@@ -2224,7 +2162,7 @@ class Locales extends MY_Controller {
 		foreach ($locales_list as $local_row) {
 
 			if ($local_row->id > 85) {
-				echo $local_row->nombre." #".$local_row->id;
+				echo $local_row->nombre . " #" . $local_row->id;
 				echo "<br>";
 
 				$data[] = array(
@@ -2233,7 +2171,6 @@ class Locales extends MY_Controller {
 					"estatus" => "activo",
 				);
 			}
-
 		}
 		echo "<br>";
 		//print_r($data);
@@ -2241,7 +2178,4 @@ class Locales extends MY_Controller {
 		//$resultado = $this->relacion_locales_categorias_model->insert_matriz_relacion_locales_categorias($data);
 		redirect("locales");
 	}
-
-
-	
 }
