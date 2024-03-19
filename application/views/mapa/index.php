@@ -5,7 +5,7 @@
         <div class="content-body">
             <!-- INICIA CONTENIDO  -->
 
-            <img class="img-fluid" src="almacenamiento\vistas\solesta-web-escritorio-mapa.jpg" alt="">
+            <img class="img-fluid" src="almacenamiento\vistas\solesta-mapa-web.jpg" alt="">
 
         </div>
     </div>
