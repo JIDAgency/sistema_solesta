@@ -75,11 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '166.62.43.6',
-	//'hostname' => 'localhost',
-	'username' => 'solesta_root',
-	'password' => 'm92a6eak8f57',
-	'database' => 'solesta_prod',
+	'hostname' => 'localhost',
+	'username' => 'solestamx_root',
+	'password' => 'Kq(%uWJnN#rKqn(',
+	'database' => 'solestamx_prod',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
