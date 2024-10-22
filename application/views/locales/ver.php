@@ -232,9 +232,16 @@
                             </div>
                         </div>
 
-                        
-                        
-                  
+                        <div class="card no-border">
+                            <div class="card-content">
+                                <div class="card-body p-0">
+                                    <?php if (isset($imagen_pickup)) : ?>
+                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_pickup->url; ?>" alt="<?php echo $imagen_pickup->alt; ?>">
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

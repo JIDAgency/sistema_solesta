@@ -14,7 +14,7 @@
 
             <section id="">
 
-                    <div class="mt-5">
+                    <div class=mt-5">
                         <div class="pb-0">
                             <fieldset class="form-group position-relative mb-0">                
                                 <input type="text" name="buscador" id="buscador" class="form-control form-control-xl input-xl" placeholder="Buscar...">

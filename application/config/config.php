@@ -23,8 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8888/sistema_solesta/';
-//$config['base_url'] = 'https://solesta.mx/';
+$config['base_url'] = 'https://solesta.mx/';
 
 /*
 |--------------------------------------------------------------------------

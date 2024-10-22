@@ -232,7 +232,7 @@ class Locales extends MY_Controller
 
 	public function dar_de_alta_horarios()
 	{
-		$local_id = 105;
+		$local_id = 128;
 
 		$locales_list = $this->locales_model->get_local_por_id($local_id)->result();
 
@@ -241,7 +241,7 @@ class Locales extends MY_Controller
 
 		foreach ($locales_list as $local_row) {
 
-			/** Horario de locales */
+			/** Horario de restaurantes */
 			/*
 			$data_horarios[] = array(
                 'local_id' => $local_row->id,
@@ -250,9 +250,9 @@ class Locales extends MY_Controller
                 'hora_inicio' => "13:00",
                 'hora_fin' => "21:00",
 				'estatus' => "activo",
-            );*/
-		
-			/** Horario de locales */
+            );
+			*/
+			/** Horario de restaurantes */
 			/*
 			$data_horarios[] = array(
                 'local_id' => $local_row->id,
@@ -263,8 +263,7 @@ class Locales extends MY_Controller
 				'estatus' => "activo",
             );
 			*/
-			/** Horario de restaurantes */
-			
+			/** Horario de tiendas */
 			$data_horarios[] = array(
 				'local_id' => $local_row->id,
 				'dia_inicio' => "Lun",
@@ -273,8 +272,7 @@ class Locales extends MY_Controller
 				'hora_fin' => "20:00",
 				'estatus' => "activo",
 			);
-			/** Horario de restaurantes */
-			
+			/** Horario de tiendas */
 			$data_horarios[] = array(
 				'local_id' => $local_row->id,
 				'dia_inicio' => "Vie",
@@ -283,8 +281,7 @@ class Locales extends MY_Controller
 				'hora_fin' => "21:00",
 				'estatus' => "activo",
 			);
-			/** Horario de restaurantes */
-			
+			/** Horario de tiendas */
 			$data_horarios[] = array(
 				'local_id' => $local_row->id,
 				'dia_inicio' => "Dom",
@@ -304,12 +301,12 @@ class Locales extends MY_Controller
 		echo "<br>";
 		print_r($data_horarios);
 
-		/*$this->locales_horarios_model->insert_matriz_horarios_de_locales($data_horarios);*/
+		//$this->locales_horarios_model->insert_matriz_horarios_de_locales($data_horarios);
 	}
 
 	public function dar_de_alta_imagenes_por_local_id()
 	{
-		$local_id = 132;
+		$local_id = 121;
 
 		$local_row = $this->locales_model->get_local_por_id($local_id)->row();
 
@@ -767,7 +764,6 @@ class Locales extends MY_Controller
 				"categoria_id" => 2,
 				"estatus" => "activo",
 			),
-			
 		);
 
 		print_r($data);
