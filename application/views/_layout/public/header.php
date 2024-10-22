@@ -71,9 +71,9 @@
 
                                 <div class="social-icons-movil d-block d-sm-none">
                                     <span class="text-white">Síguenos:</span>
-                                    <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
-                                    <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
-                                    <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
+                                    <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
+                                    <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
+                                    <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
                                 </div>
                                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -81,10 +81,10 @@
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link <?php echo $nav_inicio ? 'active' : null; ?>" href="<?php echo site_url(); ?>">Inicio</a>
+                                            <a class="nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(); ?>">Inicio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Directorio</a>
+                                            <a class="nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Mapa</a>
@@ -98,9 +98,9 @@
                                     </ul>
                                     <div class="social-icons ms-lg-3 d-none d-sm-block">
                                         <span class="text-white">Sígueno:</span>
-                                        <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
-                                        <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
-                                        <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
+                                        <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
+                                        <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
+                                        <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
                                     </div>
                                 </div>
                             </div>

@@ -105,6 +105,20 @@ if (!function_exists('twitter')) {
     }
 }
 
+if (!function_exists('tiktok')) {
+    function tiktok()
+    {
+        return get_instance()->config->item('tiktok');
+    }
+}
+
+if (!function_exists('google_maps')) {
+    function google_maps()
+    {
+        return get_instance()->config->item('google_maps');
+    }
+}
+
 /*
 |--------------------------------------------------------------------------
 | Funciones de Open Graph y Twitter

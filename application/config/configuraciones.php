@@ -44,11 +44,21 @@ $config['email_contacto'] = 'contacto@solesta.mx';
 */
 
 $config['whatsapp'] = 'https://wa.me/522211234567';
-$config['facebook'] = 'https://facebook.com/solesta';
-$config['instagram'] = 'https://instagram.com/solesta';
+$config['facebook'] = 'https://facebook.com/SolestaPuebla';
+$config['instagram'] = 'https://instagram.com/solestapuebla';
 $config['linkedin'] = 'https://linkedin.com/company/solesta';
 $config['twitter'] = 'https://twitter.com/solesta';
+$config['tiktok'] = 'https://www.tiktok.com/@solestapuebla';
 $config['twitter_site'] = '@solesta'; // Nombre de usuario de Twitter
+
+/*
+|--------------------------------------------------------------------------
+| API de Google Maps
+|--------------------------------------------------------------------------
+|
+*/
+$config['google_maps'] = 'https://maps.app.goo.gl/2wprgfckPPSRnsqc9';
+$config['google_maps_api_key'] = 'TU_CLAVE_API_GOOGLE_MAPS';
 
 /*
 |--------------------------------------------------------------------------
