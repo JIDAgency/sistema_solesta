@@ -6,28 +6,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JID Agency - Innovación en estrategias digitales para mejorar la interacción entre empresas y consumidores.">
-    <meta name="keywords" content="Estrategias digitales, Branding, Producción audiovisual, Marketing digital, JID Agency">
-    <meta name="author" content="JID Agency">
+    <meta name="description" content="<?php echo descripcion(); ?>">
+    <meta name="keywords" content="<?php echo palabras_clave(); ?>">
+    <meta name="author" content="<?php echo autor(); ?>">
 
     <!-- Title and Favicon -->
-    <title>SOLESTA</title>
-    <link rel="icon" href="assets/images/logos/logo.png" type="image/png" sizes="16x16">
+    <title><?php echo isset($pagina_titulo) ? $pagina_titulo . " | " : ""; ?><?php echo titulo() ? titulo() : ""; ?></title>
+    <link rel="icon" href="assets/images/icon.png" type="image/png" sizes="16x16">
 
     <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
-    <meta property="og:title" content="SOLESTA Poderosas">
-    <meta property="og:description" content="Agencia de estrategias digitales con más de 15 años de experiencia en branding, producción audiovisual y marketing digital.">
-    <meta property="og:image" content="assets/images/og-image.png">
-    <meta property="og:url" content="https://jid.agency/">
+    <meta property="og:title" content="<?php echo og_title(); ?>">
+    <meta property="og:description" content="<?php echo og_description(); ?>">
+    <meta property="og:image" content="<?php echo og_image(); ?>">
+    <meta property="og:url" content="<?php echo og_url(); ?>">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_MX">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SOLESTA">
-    <meta name="twitter:description" content="Descubre cómo JID Agency puede ayudarte a crecer tu marca con estrategias digitales poderosas.">
-    <meta name="twitter:image" content="assets/images/og-image.png">
-    <meta name="twitter:site" content="@jidagency">
+    <meta name="twitter:title" content="<?php echo twitter_title(); ?>">
+    <meta name="twitter:description" content="<?php echo twitter_description(); ?>">
+    <meta name="twitter:image" content="<?php echo twitter_image(); ?>">
+    <meta name="twitter:site" content="<?php echo twitter_site(); ?>">
 
     <!-- Additional SEO Meta Tags -->
     <meta name="robots" content="index, follow">
@@ -39,8 +39,15 @@
     <link href="app-assets/css/swiper.css" rel="stylesheet" type="text/css">
     <link href="app-assets/css/coloring.css" rel="stylesheet" type="text/css">
     <link id="colors" href="app-assets/css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
     <!-- Consulta los estilos del tema en app-assets/css/style.css -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <?php if (isset($styles) && is_array($styles)) : ?>
+        <?php foreach ($styles as $style) : ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo !$style['es_rel'] ? $style['href'] : base_url() . 'assets/css/' . $style['href']; ?>">
+        <?php endforeach; ?>
+    <?php endif; ?>
 </head>
 
 <body>
