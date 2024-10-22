@@ -1,0 +1,122 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar-brand .img-movil {
+    height: 50px;
+}
+
+.social-icons {
+    background-color: #ff867c;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.social-icons-movil {
+    font-size: small;
+    background-color: #ff867c;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.social-icons-movil2 {
+    font-size: small;
+    background-color: #ff867c;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.btn-explora {
+    background-color: #26BDBD;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.btn-llegar {
+    background-color: #D9D0C7;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.btn-llegar2 {
+    background-color: #26BDBD;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-explora:hover {
+    background-color: #26BDBD;
+    color: #967FA7;
+    border-radius: 15px;
+}
+
+.btn-llegar:hover {
+    background-color: #D9D0C7;
+    color: #FF9687;
+    border-radius: 15px;
+}
+
+.btn-llegar2:hover {
+    background-color: #D9D0C7;
+    color: #967FA7;
+    border-radius: 10px;
+}
+
+.btn-explora-movil {
+    background-color: #26BDBD;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.btn-llegar-movil {
+    background-color: #D9D0C7;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.btn-explora-movil:hover {
+    background-color: #26BDBD;
+    color: #967FA7;
+    border-radius: 15px;
+}
+
+.btn-llegar-movil:hover {
+    background-color: #D9D0C7;
+    color: #FF9687;
+    border-radius: 15px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-explora,
+.btn-llegar {
+    position: absolute;
+    bottom: 120px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.btn-llegar {
+    bottom: 120px;
+    left: 26%;
+}
+
+/* Aqui cambio el ícono de hamburguesa */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('../../almacenamiento/recursos/menu.png');
+    background-position: center !important;
+    height: 50px;
+}
