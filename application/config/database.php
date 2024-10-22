@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '198.12.250.34',
 	'username' => 'solestamx_root',
 	'password' => 'Kq(%uWJnN#rKqn(',
 	'database' => 'solestamx_prod',

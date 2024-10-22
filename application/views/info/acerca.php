@@ -1,2 +1,0 @@
-<img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\acerca\banner-acercade.jpg" alt="">
-<img class="img-fluid" src="<?php echo base_url(); ?>almacenamiento\acerca\info-acercade.jpg" alt="">
