@@ -1,4 +1,4 @@
-<section>
+<section class="banner">
     <div class="container d-none d-sm-block">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -22,7 +22,7 @@
     </div>
 </section>
 
-<section>
+<section class="shop">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-5 col-sm-12">
@@ -35,10 +35,10 @@
                         tiendas, restaurantes y entretenimiento para <br> todas las edades.</p>
 
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-5 d-none d-sm-block mt-11">
                             <button type="button" class="btn btn-llegar2 px-5 py-1">Cómo llegar</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 d-none d-sm-block mt-11">
                             <div class="social-icons-movil2 text-center float-start">
                                 <span class="text-white">Síguenos:</span>
                                 <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
@@ -52,7 +52,64 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <img src="assets/images/recursos/locales.png" alt="locales" class="img-fluid mt-5">
+
+                <div class="row mt-20">
+                    <div class="col-12 d-none d-sm-block text-center">
+                        <button type="button" class="btn btn-locales px-5 py-1">Explorar todos los locales</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="explora">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="row col-lg-5 col-md-5 col-sm-12">
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">RESTAURANTES</button>
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">Ver mas</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">DIVERSION</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">WELLNESS</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">ACCESORIOS</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">SERVICIOS</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">SHOPPING</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-llegar2 px-5 py-1">HOGAR</button>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <img src="assets/images/recursos/explora.png" alt="locales" class="img-fluid mt-5">
+
+                <div class="row mt-20">
+                    <div class="col-12 d-none d-sm-block text-center">
+                        <button type="button" class="btn btn-locales px-5 py-1">Explorar todos los locales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

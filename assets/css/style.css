@@ -1,5 +1,13 @@
-body{
+body {
     overflow-x: hidden;
+}
+
+.mt-20 {
+    margin-top: 23%;
+}
+
+.mt-11 {
+    margin-top: 7em;
 }
 
 .navbar-brand .img-movil {
@@ -16,7 +24,7 @@ body{
     font-size: small;
     background-color: #ff867c;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 40%;
 }
 
@@ -24,7 +32,7 @@ body{
     font-size: small;
     background-color: #ff867c;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .social-icons a {
@@ -51,7 +59,13 @@ body{
 .btn-llegar2 {
     background-color: #26BDBD;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+.btn-locales {
+    background-color: #D9D0C7;
+    color: #FFFFFF;
+    border-radius: 15px;
 }
 
 .btn-explora:hover {
@@ -62,14 +76,21 @@ body{
 
 .btn-llegar:hover {
     background-color: #D9D0C7;
-    color: #FF9687;
+    color: #967FA7;
     border-radius: 15px;
 }
 
 .btn-llegar2:hover {
+    background-color: #26BDBD;
+    color: #967FA7;
+    border-radius: 15px;
+}
+
+.btn-locales:hover {
     background-color: #D9D0C7;
     color: #967FA7;
     border-radius: 10px;
+    border-radius: 15px;
 }
 
 .btn-explora-movil {
@@ -116,7 +137,11 @@ body{
 
 /* Aqui cambio el ícono de hamburguesa */
 .custom-toggler .navbar-toggler-icon {
-    background-image: url('../../almacenamiento/recursos/menu.png');
+    background-image: url('../images/recursos/menu.png');
     background-position: center !important;
     height: 50px;
+}
+
+.explora {
+    background-image: url('../images/recursos/beige.jpg') ;
 }
