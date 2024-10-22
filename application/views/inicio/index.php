@@ -89,9 +89,9 @@
 </section>
 
 <section class="explora">
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
-            <div class="row col-lg-5 col-md-5 col-sm-12 mt-negativo">
+            <div class="row col-lg-5 col-md-5 col-sm-12 mt-negativo mb-12">
                 <div class="col-5 me-2 px-3 pb-5 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
                     <a href="" class="text-white">Ver mas</a>
@@ -124,7 +124,7 @@
                     <button type="button" class="btn btn-locales2 px-5 py-1">Explorar todos los locales</button>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block">
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block mb-12">
                 <img src="assets/images/recursos/explora.png" alt="locales" class="img-fluid mb-3">
 
                 <h2>Explora Solesta</h2>
@@ -132,6 +132,42 @@
                 <p>Con una arquitectura abierta y moderna, <br> Solesta te invita a recorrer sus amplios <br>
                     espacios llenos de luz. Desde tiendas <br> exclusivas hasta áreas de entretenimiento, <br>
                     cada rincón está diseñado para brindar una <br> experiencia inolvidable a toda la familia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="petfrien">
+    <div class="container">
+        <div class="row justify-content-center mt-negativopet">
+            <div class="col-12">
+                <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="" class="img-fluid d-none d-sm-block">
+                <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="" class="img-fluid d-block d-sm-none mt-neg">
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12 mt-5">
+                <h2>¡Tus mascotas <br>
+                    son bienvenidas!</h2>
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12 mt-5">
+                <p>En Solesta Shop & Fun Puebla, sabemos que tu mascota es <br> parte de la familia. Por eso, somos un espacio Pet Friendly, <br>
+                    donde puedes disfrutar de un día de compras, paseos y <br> diversión sin dejar a tu mejor amigo en casa. Ven con tu <br>
+                    mascota y vive juntos la experiencia Solesta.</p>
+
+                <div class="row col-12 mt-5">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-llegar2 px-5 py-1 d-none d-sm-block">Cómo llegar</button>
+                        <button type="button" class="btn btn-llegar2 px-4 py-1 d-block d-sm-none">Cómo llegar</button>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="social-icons-movil2 text-center float-start">
+                            <span class="text-white">Síguenos: </span>
+                            <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                            <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                            <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

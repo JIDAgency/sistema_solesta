@@ -349,7 +349,15 @@ a.a-underline:hover span {
 }
 
 .mt-negativo {
- margin-top: -5%;
+    margin-top: -5%;
+}
+
+.mt-negativopet {
+    margin-top: -10%;
+}
+
+.mt-neg {
+    margin-top: -40%;
 }
 
 .marys {
@@ -364,6 +372,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .diversion {
     color: #F1EFE3;
     background-color: #967FA7;
@@ -372,6 +381,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .wellness {
     color: #F1EFE3;
     background-color: #91AFDC;
@@ -380,6 +390,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .accesorios {
     color: #F1EFE3;
     background-color: #69A399;
@@ -388,6 +399,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .servicios {
     color: #F1EFE3;
     background-color: #A6D7DE;
@@ -396,6 +408,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .shopping {
     color: #F1EFE3;
     background-color: #EDD98B;
@@ -404,6 +417,7 @@ a.a-underline:hover span {
     height: 20%;
     width: 47%;
 }
+
 .hogar {
     color: #F1EFE3;
     background-color: #FF9687;
@@ -418,4 +432,5 @@ a.a-underline:hover span {
     color: #FFFFFF;
     border-radius: 15px;
 }
+
 /* ESTILOS DE SECCION EXPLORA END */
