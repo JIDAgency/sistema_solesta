@@ -45,7 +45,6 @@
                                 <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
                                 <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
                             </div>
-
                         </div>
                     </div>
                 </div>

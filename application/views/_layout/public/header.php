@@ -51,49 +51,62 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <div id="de-loader"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand d-none d-sm-block" href="#">
-                <img src="assets/images/logos/logo-negro.png" alt="Logo" width="60%" class="img-fluid">
-            </a>
-            <a class="navbar-brand d-block d-sm-none" href="#">
-                <img src="assets/images/logos/logo-negro.png" alt="Logo" class="img-fluid img-movil">
-            </a>
+        <!-- header begin -->
+        <header class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
 
-            <div class="social-icons-movil d-block d-sm-none">
-                <span class="text-white">Síguenos:</span>
-                <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
-                <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
-                <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
-            </div>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Directorio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mapa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-                <div class="social-icons ms-lg-3 d-none d-sm-block">
-                    <span class="text-white">Sígueno:</span>
-                    <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
-                    <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
-                    <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <div class="container">
+                                <a class="navbar-brand d-none d-sm-block" href="<?php echo site_url(); ?>">
+                                    <img src="assets/images/logos/logo-negro.png" alt="Logo" width="60%" class="img-fluid">
+                                </a>
+                                <a class="navbar-brand d-block d-sm-none" href="<?php echo site_url(); ?>">
+                                    <img src="assets/images/logos/logo-negro.png" alt="Logo" class="img-fluid img-movil">
+                                </a>
+
+                                <div class="social-icons-movil d-block d-sm-none">
+                                    <span class="text-white">Síguenos:</span>
+                                    <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
+                                    <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
+                                    <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
+                                </div>
+                                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo $nav_inicio ? 'active' : null; ?>" href="<?php echo site_url(); ?>">Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Directorio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Mapa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Nosotros</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contacto</a>
+                                        </li>
+                                    </ul>
+                                    <div class="social-icons ms-lg-3 d-none d-sm-block">
+                                        <span class="text-white">Sígueno:</span>
+                                        <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
+                                        <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
+                                        <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </header>
