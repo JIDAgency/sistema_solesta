@@ -33,30 +33,10 @@
                     <p>Lo mejor de Puebla converge en un solo <br> lugar. Ubicado en la zona más vibrante de <br>
                         Puebla, te ofrecemos un centro comercial <br> moderno y familiar con una amplia gama de <br>
                         tiendas, restaurantes y entretenimiento para <br> todas las edades.</p>
-
-                    <!-- <div class="row">
-                        <div class="col-5 d-none d-sm-block mt-11">
-                            <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-llegar2 px-5 py-1">¿Cómo llegar?</a>
-                        </div>
-                        <div class="col-6 d-none d-sm-block mt-11">
-                            <div class="social-icons-movil2 text-center float-start">
-                                <span class="text-white">Síguenos:</span>
-                                <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
-                                <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
-                                <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <img src="assets/images/recursos/locales.png" alt="locales" class="img-fluid mt-5">
-
-                <!-- <div class="row mt-20">
-                    <div class="col-12 d-none d-sm-block text-center">
-                        <button type="button" class="btn btn-locales px-5 py-1">Explorar todos los locales</button>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -141,8 +121,8 @@
     <div class="container">
         <div class="row justify-content-center mt-negativopet">
             <div class="col-12">
-                <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="" class="img-fluid d-none d-sm-block">
-                <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="" class="img-fluid d-block d-sm-none mt-neg">
+                <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block">
+                <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none mt-neg">
             </div>
             <div class="row col-lg-5 col-md-5 col-sm-12 mt-5">
                 <h2>¡Tus mascotas <br>
@@ -168,6 +148,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ubicacion">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12">
+                <div class="mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6678443789233!2d-98.231855424685!3d19.034352682161686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729639047944!5m2!1ses-419!2smx" width="100%" height="100%" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12 bg-ubicacion">
+                <h2>¡Estamos en el corazón <br>
+                    de Puebla!</h2>
+                <p>Solesta Shop & Fun Puebla se encuentra en <br> la mejor zona turística y comercial de la <br>
+                    ciudad, cerca de la Estrella de Puebla y <br> vialidades principales como la Vía Atlixcáyotl <br>
+                    y el Boulevard del Niño Poblano. Ven y <br> disfruta de un día lleno de compras, <br> diversión y sabores.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lugar">
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="row col-lg-5 col-md-5 col-sm-12 mb-4 d-block d-sm-none">
+                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12 bg-lugar">
+                <h2>Todo lo que buscas <br>
+                    en un solo lugar</h2>
+                <p>Más que un centro comercial, Solesta es una <br> experiencia. Saborea la diversidad culinaria <br>
+                    de nuestros restaurantes, disfruta del <br> entretenimiento en nuestros cines y boliche, <br>
+                    y recorre espacios llenos de estilo y <br> comodidad.</p>
+            </div>
+            <div class="row col-lg-5 col-md-5 col-sm-12 d-none d-sm-block">
+                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
             </div>
         </div>
     </div>

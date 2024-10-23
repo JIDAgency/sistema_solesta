@@ -226,7 +226,7 @@ a.a-underline:hover span {
     background-color: #ff867c;
     padding: 5px 10px;
     border-radius: 15px;
-    width: 40%;
+    width: 30%;
 }
 
 .social-icons-movil2 {
@@ -434,3 +434,28 @@ a.a-underline:hover span {
 }
 
 /* ESTILOS DE SECCION EXPLORA END */
+
+.bg-ubicacion {
+    background-image: url('../images/recursos/ubicacion.png');
+}
+
+.lugar {
+    background-image: url('../images/recursos/bg-lugar.png');
+}
+
+.footer {
+    background-image: url('../images/recursos/bg-footer.jpg');
+}
+
+.btn-localesdisponibles {
+    background-color: #90C14E;
+    color: #FFFFFF;
+    border-radius: 15px;
+    font-size: small;
+}
+
+.btn-localesdisponibles:hover {
+    background-color: #90C14E;
+    color: #967FA7;
+    border-radius: 15px;
+}
