@@ -1,0 +1,136 @@
+/* Estilos específicos para el directorio */
+
+/* Estilos para las imágenes y superposiciones */
+.locales-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    /* Mantiene la proporción cuadrada */
+    background-color: #f8f9fa;
+    /* Color de fondo mientras carga la imagen */
+}
+
+.local-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.locales-image-container:hover .local-image {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.7);
+    /* Ajusta el color según tu paleta */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 50%;
+}
+
+.locales-image-container:hover .overlay {
+    opacity: 1;
+}
+
+.local-name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    /* Para ajustar nombres largos */
+}
+
+.local-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.local-link:hover .local-name {
+    color: #fff;
+}
+
+/* Estilos para los enlaces de categoría */
+.category-buttons .category-link {
+    margin: 0.25rem;
+}
+
+.category-buttons .category-link.active {
+    /* Puedes agregar estilos adicionales para el enlace activo si es necesario */
+}
+
+/* Estilos para los enlaces de letra */
+.alphabet-navigation .alphabet-link {
+    margin: 0.25rem;
+}
+
+.alphabet-navigation .alphabet-link.active {
+    /* Puedes agregar estilos adicionales para el enlace activo si es necesario */
+}
+
+/* Estilos para el mensaje de no resultados */
+#no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff0000;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767.98px) {
+    .local-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .local-name {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes adicionales */
+.col-md-2.col-sm-4.col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Estilos para asegurar que los enlaces tengan un foco visible (accesibilidad) */
+.category-buttons .category-link:focus,
+.alphabet-navigation .alphabet-link:focus,
+.local-link:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Estilos para el placeholder de la barra de búsqueda */
+#searchBar::placeholder {
+    color: #6c757d;
+    opacity: 1;
+    /* Firefox */
+}
+
+#searchBar:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #6c757d;
+}
+
+#searchBar::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #6c757d;
+}

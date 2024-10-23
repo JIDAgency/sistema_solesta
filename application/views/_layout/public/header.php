@@ -62,47 +62,47 @@
 
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                             <!-- <div class="container"> -->
-                                <a class="navbar-brand d-none d-sm-block" href="<?php echo site_url(); ?>">
-                                    <img src="assets/images/logos/logo-negro.png" alt="Logo" width="60%" class="img-fluid">
-                                </a>
-                                <a class="navbar-brand d-block d-sm-none" href="<?php echo site_url(); ?>">
-                                    <img src="assets/images/logos/logo-negro.png" alt="Logo" class="img-fluid img-movil">
-                                </a>
+                            <a class="navbar-brand d-none d-sm-block" href="<?php echo site_url(); ?>">
+                                <img src="assets/images/logos/logo-negro.png" alt="Logo" width="60%" class="img-fluid">
+                            </a>
+                            <a class="navbar-brand d-block d-sm-none" href="<?php echo site_url(); ?>">
+                                <img src="assets/images/logos/logo-negro.png" alt="Logo" class="img-fluid img-movil">
+                            </a>
 
-                                <div class="social-icons-movil d-block d-sm-none">
-                                    <span class="text-white">Síguenos:</span>
-                                    <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
-                                    <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
-                                    <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
+                            <div class="social-icons-movil d-block d-sm-none">
+                                <span class="text-white">Síguenos:</span>
+                                <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
+                                <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
+                                <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
+                            </div>
+                            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse me-6" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(); ?>">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contacto</a>
+                                    </li>
+                                </ul>
+                                <div class="social-icons ms-lg-3 d-none d-sm-block">
+                                    <span class="text-white">Sígueno:</span>
+                                    <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
+                                    <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
+                                    <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
                                 </div>
-                                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse me-6" id="navbarNav">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(); ?>">Inicio</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Contacto</a>
-                                        </li>
-                                    </ul>
-                                    <div class="social-icons ms-lg-3 d-none d-sm-block">
-                                        <span class="text-white">Sígueno:</span>
-                                        <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid"></a>
-                                        <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid"></a>
-                                        <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
-                                    </div>
-                                </div>
+                            </div>
                             <!-- </div> -->
                         </nav>
 
