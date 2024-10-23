@@ -458,6 +458,13 @@ a.a-underline:hover span {
     font-size: small;
 }
 
+.btn-localesdisponibles-movil {
+    background-color: #90C14E;
+    color: #FFFFFF;
+    border-radius: 15px;
+    font-size: 73%;
+}
+
 .btn-localesdisponibles:hover {
     background-color: #90C14E;
     color: #967FA7;

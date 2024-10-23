@@ -11,7 +11,6 @@
                     <div class="row col-12">
                         <div class="col-6">
                             <button type="button" class="btn btn-localesdisponibles px-5 py-2 d-none d-sm-block float-end">Locales disponibles</button>
-                            <button type="button" class="btn btn-localesdisponibles px-4 py-1 d-block d-sm-none">Locales disponibles</button>
                         </div>
 
                         <div class="col-6">
@@ -49,7 +48,7 @@
             </div>
             <div class="row col-12 my-5">
                 <div class="col-6">
-                    <button type="button" class="btn btn-localesdisponibles px-4 py-1 d-block d-sm-none">Locales disponibles</button>
+                    <button type="button" class="btn btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none">Locales disponibles</button>
                 </div>
 
                 <div class="col-6">
