@@ -1,5 +1,4 @@
-<?php
-defined('BASEPATH') or exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
 class Directorio extends MY_Controller
 {
@@ -14,6 +13,9 @@ class Directorio extends MY_Controller
 
 	public function index()
 	{
+		$categoria_slug = $this->input->get('categoria');
+		$letra = $this->input->get('letra');
+
 		// Variables de configuración
 		$data['nav_directorio'] = true;
 		$data['pagina_titulo'] = 'Directorio';
@@ -78,8 +80,17 @@ class Directorio extends MY_Controller
 		$data['locales_por_letra'] = $locales_por_letra;
 		$data['letras_con_locales'] = $letras_con_locales;
 
+		// **Agregar estas líneas para pasar los parámetros a la vista**
+		$data['categoria_slug'] = $categoria_slug;
+		$data['letra'] = $letra;
+
 		$switch = true;
 		$data['switch'] = $switch;
+
+		$colores = ['#FF9687', '#967FA7', '#A6D7DE', '#EDD98B', '#91AFDC', '#69A399'];
+		$color_index = 0;
+		$data['colores'] = $colores;
+		$data['color_index'] = $color_index;
 
 		// Cargar la vista
 		$this->construir_public_ui('directorio/index', $data);

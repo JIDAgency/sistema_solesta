@@ -3,46 +3,79 @@ document.addEventListener('DOMContentLoaded', function () {
     var categoryLinks = document.querySelectorAll('.category-link');
     var alphabetLinks = document.querySelectorAll('.alphabet-link');
     var localLinks = document.querySelectorAll('.local-link');
-    var headings = document.querySelectorAll('h5[id^="letter-"]');
+    var headings = document.querySelectorAll('h2[id^="letter-"]');
     var noResults = document.getElementById('no-results');
-
-    var selectedCategory = 'all';
-    var selectedLetter = null;
+    var selectedCategory = window.selectedCategory || 'all';
+    var selectedLetter = window.selectedLetter || null;
 
     searchBar.addEventListener('input', filterStores);
 
     categoryLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevenir comportamiento predeterminado del enlace
+            event.preventDefault();
 
-            // Remover clase activa de todos los enlaces y agregarla al enlace seleccionado
-            categoryLinks.forEach(function (lnk) {
-                lnk.classList.remove('active');
-            });
-            this.classList.add('active');
+            // Obtener la categoría seleccionada
+            var category = this.getAttribute('data-category');
 
-            selectedCategory = this.getAttribute('data-category');
-            selectedLetter = null; // Reiniciar letra seleccionada
-            // Remover clase activa de los enlaces de letra
+            // Si la categoría ya está seleccionada, la deseleccionamos
+            if (selectedCategory === category) {
+                selectedCategory = 'all';
+                categoryLinks.forEach(function (lnk) {
+                    lnk.classList.remove('active');
+                });
+                document.querySelector('.category-link[data-category="all"]').classList.add('active');
+            } else {
+                selectedCategory = category;
+                categoryLinks.forEach(function (lnk) {
+                    lnk.classList.remove('active');
+                });
+                this.classList.add('active');
+            }
+
+            // Reiniciar letra seleccionada
+            selectedLetter = null;
             alphabetLinks.forEach(function (lnk) {
                 lnk.classList.remove('active');
             });
+            document.querySelector('.alphabet-link[data-letter="all"]').classList.add('active');
+
             filterStores();
+            updateURL();
         });
     });
 
     alphabetLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevenir comportamiento predeterminado del enlace
+            event.preventDefault();
 
-            // Remover clase activa de todos los enlaces y agregarla al enlace seleccionado
-            alphabetLinks.forEach(function (lnk) {
-                lnk.classList.remove('active');
-            });
-            this.classList.add('active');
+            var letter = this.getAttribute('data-letter');
 
-            selectedLetter = this.textContent.trim();
+            // Si la letra es "all", reiniciamos la selección de letras
+            if (letter === 'all') {
+                selectedLetter = null;
+                alphabetLinks.forEach(function (lnk) {
+                    lnk.classList.remove('active');
+                });
+                this.classList.add('active');
+            } else {
+                // Si la letra ya está seleccionada, la deseleccionamos
+                if (selectedLetter === letter) {
+                    selectedLetter = null;
+                    alphabetLinks.forEach(function (lnk) {
+                        lnk.classList.remove('active');
+                    });
+                    document.querySelector('.alphabet-link[data-letter="all"]').classList.add('active');
+                } else {
+                    selectedLetter = letter;
+                    alphabetLinks.forEach(function (lnk) {
+                        lnk.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            }
+
             filterStores();
+            updateURL();
         });
     });
 
@@ -68,10 +101,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Ocultar encabezados de letras si no hay locales visibles en esa sección
+        // Mostrar u ocultar encabezados de letras según los locales visibles
         headings.forEach(function (heading) {
             var letter = heading.getAttribute('data-letter');
-            var section = heading.nextElementSibling;
+            var section = heading.parentElement;
             var anyVisibleInSection = false;
 
             var linksInSection = section.querySelectorAll('.local-link');
@@ -90,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Mostrar o ocultar el mensaje de no resultados
+        // Mostrar u ocultar el mensaje de no resultados
         if (!anyVisible) {
             noResults.style.display = 'block';
         } else {
@@ -102,28 +135,68 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateAlphabetNavigation(visibleLetters) {
-        // Mostrar u ocultar los enlaces de letra
         alphabetLinks.forEach(function (link) {
-            var letter = link.textContent.trim();
+            var letter = link.getAttribute('data-letter');
+            if (letter === 'all') {
+                link.style.display = ''; // Siempre mostramos el botón "Todas"
+                return;
+            }
             if (visibleLetters.has(letter)) {
                 link.style.display = '';
             } else {
                 link.style.display = 'none';
             }
         });
-
-        // Si la letra seleccionada ya no tiene locales visibles, reiniciamos la selección
-        if (selectedLetter && !visibleLetters.has(selectedLetter)) {
-            selectedLetter = null;
-            alphabetLinks.forEach(function (lnk) {
-                lnk.classList.remove('active');
-            });
-        }
     }
 
-    // Inicializar la categoría "Todas" como activa
-    document.querySelector('.category-link[data-category="' + selectedCategory + '"]').classList.add('active');
+    function updateURL() {
+        var params = new URLSearchParams(window.location.search);
 
-    // Ejecutar el filtrado inicial
-    filterStores();
+        if (selectedCategory && selectedCategory !== 'all') {
+            params.set('categoria', selectedCategory);
+        } else {
+            params.delete('categoria');
+        }
+
+        if (selectedLetter) {
+            params.set('letra', selectedLetter);
+        } else {
+            params.delete('letra');
+        }
+
+        var newURL = window.location.pathname + '?' + params.toString();
+        history.replaceState({}, '', newURL);
+    }
+
+    // Inicializar la categoría y letra seleccionadas al cargar la página
+    function initializeFilters() {
+        if (selectedCategory && selectedCategory !== 'all') {
+            var categoryLink = document.querySelector('.category-link[data-category="' + selectedCategory + '"]');
+            if (categoryLink) {
+                categoryLink.classList.add('active');
+            }
+        } else {
+            var allCategoryLink = document.querySelector('.category-link[data-category="all"]');
+            if (allCategoryLink) {
+                allCategoryLink.classList.add('active');
+            }
+        }
+
+        if (selectedLetter) {
+            var letterLink = document.querySelector('.alphabet-link[data-letter="' + selectedLetter + '"]');
+            if (letterLink) {
+                letterLink.classList.add('active');
+            }
+        } else {
+            var allLetterLink = document.querySelector('.alphabet-link[data-letter="all"]');
+            if (allLetterLink) {
+                allLetterLink.classList.add('active');
+            }
+        }
+
+        filterStores();
+        updateURL();
+    }
+
+    initializeFilters();
 });

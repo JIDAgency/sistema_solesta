@@ -1,7 +1,41 @@
 /* Estilos específicos para el directorio */
+#directorio .directory-category-btn {
+    /* Agrega aquí los estilos personalizados para los botones de categoría si los necesitas */
+}
 
-/* Estilos para las imágenes y superposiciones */
-.locales-image-container {
+#directorio .directory-category-btn.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#directorio .directory-alphabet-btn {
+    /* Agrega aquí los estilos personalizados para los botones de letras si los necesitas */
+}
+
+#directorio .directory-alphabet-btn.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Estilos para los encabezados de letras y separadores */
+#directorio .letter-section h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+#directorio .letter-section hr {
+    border-top: 2px solid #ccc;
+    margin-bottom: 1em;
+}
+
+#directorio .letter-section {
+    margin-bottom: 2em;
+}
+
+/* Estilos para los locales */
+#directorio .locales-image-container {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -13,7 +47,7 @@
     /* Color de fondo mientras carga la imagen */
 }
 
-.local-image {
+#directorio .local-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,28 +57,27 @@
     transition: transform 0.3s;
 }
 
-.locales-image-container:hover .local-image {
+#directorio .locales-image-container:hover .local-image {
     transform: scale(1.1);
 }
 
-.overlay {
+#directorio .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 123, 255, 0.7);
-    /* Ajusta el color según tu paleta */
     opacity: 0;
     transition: opacity 0.3s;
     border-radius: 50%;
 }
 
-.locales-image-container:hover .overlay {
+#directorio .locales-image-container:hover .overlay {
     opacity: 1;
 }
 
-.local-name {
+#directorio .local-name {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -52,68 +85,42 @@
     /* Para ajustar nombres largos */
 }
 
-.local-link {
+#directorio .local-link {
     text-decoration: none;
     color: inherit;
 }
 
-.local-link:hover .local-name {
+#directorio .local-link:hover .local-name {
     color: #fff;
-}
-
-/* Estilos para los enlaces de categoría */
-.category-buttons .category-link {
-    margin: 0.25rem;
-}
-
-.category-buttons .category-link.active {
-    /* Puedes agregar estilos adicionales para el enlace activo si es necesario */
-}
-
-/* Estilos para los enlaces de letra */
-.alphabet-navigation .alphabet-link {
-    margin: 0.25rem;
-}
-
-.alphabet-navigation .alphabet-link.active {
-    /* Puedes agregar estilos adicionales para el enlace activo si es necesario */
-}
-
-/* Estilos para el mensaje de no resultados */
-#no-results {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #ff0000;
-    margin-top: 20px;
 }
 
 /* Estilos responsivos */
 @media (max-width: 767.98px) {
-    .local-name {
+    #directorio .local-name {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 575.98px) {
-    .local-name {
+    #directorio .local-name {
         font-size: 0.8rem;
     }
 }
 
 /* Ajustes adicionales */
-.col-md-2.col-sm-4.col-6 {
+#directorio .col-md-2.col-sm-4.col-6 {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.mt-4 {
+#directorio .mt-4 {
     margin-top: 1.5rem !important;
 }
 
 /* Estilos para asegurar que los enlaces tengan un foco visible (accesibilidad) */
-.category-buttons .category-link:focus,
-.alphabet-navigation .alphabet-link:focus,
-.local-link:focus {
+#directorio .category-buttons .category-link:focus,
+#directorio .alphabet-navigation .alphabet-link:focus,
+#directorio .local-link:focus {
     outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
@@ -126,11 +133,102 @@
 }
 
 #searchBar:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #6c757d;
+    /* Internet Explorer 10-11 */
 }
 
 #searchBar::-ms-input-placeholder {
-    /* Microsoft Edge */
     color: #6c757d;
+    /* Microsoft Edge */
+}
+
+/* Estilos para el botón activo en categorías */
+#directorio .category-link.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Estilos para el botón activo en la navegación alfabética */
+#directorio .alphabet-link.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Contenedor de categorías - Ajustes para compactar el espacio y evitar corte de texto */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    /* Reducir el espacio entre los botones */
+}
+
+.category-link {
+    flex: 1 1 20%;
+    /* Reducir el tamaño a 20% del ancho del contenedor */
+    min-width: 80px;
+    /* Asegura que los botones no sean demasiado pequeños */
+    padding: 6px 10px;
+    /* Ajustar el relleno interno del botón */
+    font-size: 0.85rem;
+    /* Ajustar el tamaño del texto */
+    text-align: center;
+    white-space: nowrap;
+    /* Evitar que el texto se rompa en varias líneas */
+    overflow: hidden;
+    /* Ocultar el desbordamiento de texto */
+    text-overflow: ellipsis;
+    /* Añadir puntos suspensivos si el texto es demasiado largo */
+}
+
+/* Contenedor de letras del alfabeto - Ajustes para compactar */
+.alphabet-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    /* Reducir el espacio entre los botones */
+}
+
+.alphabet-link {
+    flex: 1 1 15%;
+    /* Reducir el tamaño a 15% del ancho del contenedor */
+    min-width: 40px;
+    /* Asegura que los botones no sean demasiado pequeños */
+    padding: 5px 8px;
+    /* Reducir el relleno (padding) interno del botón */
+    font-size: 0.75rem;
+    /* Reducir el tamaño del texto */
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+    .category-link,
+    .alphabet-link {
+        flex: 1 1 22%;
+        /* Los botones ocuparán menos espacio en pantallas más pequeñas */
+        font-size: 0.8rem;
+        /* Ajustar el tamaño de texto */
+        padding: 5px 8px;
+        /* Ajustar el relleno interno */
+        white-space: normal;
+        /* Permitir que el texto se divida en varias líneas si es necesario */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .category-link,
+    .alphabet-link {
+        flex: 1 1 28%;
+        /* Los botones ocuparán menos espacio en pantallas muy pequeñas */
+        font-size: 0.75rem;
+        /* Ajustar el tamaño de texto para pantallas pequeñas */
+        padding: 4px 6px;
+        /* Ajustar el relleno interno */
+        white-space: normal;
+        /* Permitir que el texto se divida en varias líneas si es necesario */
+    }
 }
