@@ -10,7 +10,7 @@ class Mapa extends MY_Controller {
 
 	public function index()
 	{
-		$data['pagina_menu_inicio'] = true;
+		$data['nav_mapa'] = true;
 		$data['pagina_titulo'] = 'Mapa';
 
 		$data['controlador'] = 'index';

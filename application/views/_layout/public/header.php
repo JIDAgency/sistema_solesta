@@ -61,7 +61,7 @@
                     <div class="col-md-12">
 
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                            <div class="container">
+                            <!-- <div class="container"> -->
                                 <a class="navbar-brand d-none d-sm-block" href="<?php echo site_url(); ?>">
                                     <img src="assets/images/logos/logo-negro.png" alt="Logo" width="60%" class="img-fluid">
                                 </a>
@@ -78,7 +78,7 @@
                                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="collapse navbar-collapse me-6" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
                                             <a class="nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(); ?>">Inicio</a>
@@ -87,10 +87,10 @@
                                             <a class="nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Mapa</a>
+                                            <a class="nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Nosotros</a>
+                                            <a class="nav-link <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Contacto</a>
@@ -103,7 +103,7 @@
                                         <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid"></a>
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </nav>
 
                     </div>

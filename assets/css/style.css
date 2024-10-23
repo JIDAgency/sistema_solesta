@@ -211,6 +211,10 @@ a.a-underline:hover span {
     margin-bottom: 10em;
 }
 
+.me-6 {
+    margin-right: 4em;
+}
+
 .navbar-brand .img-movil {
     height: 50px;
 }
@@ -226,7 +230,7 @@ a.a-underline:hover span {
     background-color: #ff867c;
     padding: 5px 10px;
     border-radius: 15px;
-    width: 30%;
+    width: 40%;
 }
 
 .social-icons-movil2 {
@@ -459,3 +463,52 @@ a.a-underline:hover span {
     color: #967FA7;
     border-radius: 15px;
 }
+
+
+/* VISTA MAPA  */
+.text-mapa {
+    font-family: 'Block Marys', sans-serif;
+    color: #69A399;
+    font-size: 5em;
+}
+
+.text-mapa-movil {
+    font-family: 'Block Marys', sans-serif;
+    color: #69A399;
+    font-size: 3em;
+}
+
+/* VISTA MAPA END */
+
+/* VISTA NOSOTROS  */
+.comercial {
+    background-color: #967FA7;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 40%;
+    left: 80%;
+    width: 20%;
+    height: auto;
+    z-index: 1;
+}
+
+.overlay-image-movil {
+    position: absolute;
+    bottom: 54%;
+    left: 64%;
+    width: 39%;
+    height: auto;
+    z-index: 1;
+}
+
+.correo {
+    color: #967FA7;
+}
+
+.titulo-info {
+    color: #91AFDC;
+}
+
+/* VISTA NOSOTROS END */
