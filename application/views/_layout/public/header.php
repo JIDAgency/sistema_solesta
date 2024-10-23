@@ -93,7 +93,7 @@
                                         <a class="nav-link <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contacto</a>
+                                        <a class="nav-link <?php echo isset($nav_contacto) ? 'active' : ''; ?>" href="<?php echo site_url('contacto'); ?>">Contacto</a>
                                     </li>
                                 </ul>
                                 <div class="social-icons ms-lg-3 d-none d-sm-block">
