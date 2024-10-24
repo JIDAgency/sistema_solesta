@@ -14,7 +14,7 @@
                         </div>
 
                         <div class="col-6">
-                            <div class="social-icons-movil2 text-center">
+                            <div class="social-icons text-center">
                                 <span class="text-white">Síguenos: </span>
                                 <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
                                 <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>

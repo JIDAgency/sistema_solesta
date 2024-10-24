@@ -223,7 +223,14 @@ a.a-underline:hover span {
 .social-icons {
     background-color: #ff867c;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+.social-icons2 {
+    background-color: #ff867c;
+    padding: 6px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-radius: 15px;
 }
 
 .social-icons-movil {
@@ -237,7 +244,9 @@ a.a-underline:hover span {
 .social-icons-movil2 {
     font-size: small;
     background-color: #ff867c;
-    padding: 2px 10px;
+    padding: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-radius: 15px;
 }
 

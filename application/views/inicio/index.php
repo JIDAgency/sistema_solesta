@@ -47,11 +47,11 @@
         <div class="row">
             <div class="row col-6">
                 <div class="col-6">
-                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar2 px-5 py-1 float-end">Cómo llegar</a>
+                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar2 px-5 py-2 float-end">Cómo llegar</a>
                 </div>
 
                 <div class="col-6">
-                    <div class="social-icons-movil2 text-center">
+                    <div class="social-icons text-center">
                         <span class="text-white me-2">Síguenos: </span>
                         <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
                         <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
@@ -62,7 +62,7 @@
             </div>
 
             <div class="col-6 d-none d-sm-block text-center">
-                <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales px-5 py-1">Explorar todos los locales</a>
+                <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales px-5 py-2">Explorar todos los locales</a>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <section class="explora">
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
-            <div class="row col-lg-5 col-md-5 col-sm-12 mt-negativo mb-12">
+            <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo mb-12">
                 <div class="col-5 me-2 px-3 pb-5 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
                     <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white">Ver mas</a>
@@ -101,7 +101,7 @@
                     <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-12 text-center">
-                    <a href="<?php echo site_url('directorio'); ?>" class="btn-locales2 px-5 py-1">Explorar todos los locales</a>
+                    <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2">Explorar todos los locales</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block mb-12">
@@ -128,20 +128,28 @@
                 <h2>¡Tus mascotas <br>
                     son bienvenidas!</h2>
             </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12 mt-5">
+            <div class="row col-lg-6 col-md-6 col-sm-12 mt-5">
                 <p>En Solesta Shop & Fun Puebla, sabemos que tu mascota es <br> parte de la familia. Por eso, somos un espacio Pet Friendly, <br>
                     donde puedes disfrutar de un día de compras, paseos y <br> diversión sin dejar a tu mejor amigo en casa. Ven con tu <br>
                     mascota y vive juntos la experiencia Solesta.</p>
 
                 <div class="row col-12 mt-5">
                     <div class="col-6 text-center">
-                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-5 py-1 d-none d-sm-block">Cómo llegar</a>
-                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-4 py-1 d-block d-sm-none">Cómo llegar</a>
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-5 py-2 d-none d-sm-block">Cómo llegar</a>
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-4 py-2 d-block d-sm-none">Cómo llegar</a>
                     </div>
 
-                    <div class="col-6">
-                        <div class="social-icons-movil2 text-center float-start">
-                            <span class="text-white">Síguenos: </span>
+                    <div class="col-6 d-none d-sm-block">
+                        <div class="social-icons2 text-center">
+                            <span class="text-white me-2">Síguenos: </span>
+                            <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                            <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                            <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-block d-sm-none">
+                        <div class="social-icons-movil2">
+                            <span class="text-white me-2">Síguenos: </span>
                             <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
                             <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
                             <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
@@ -163,7 +171,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6678443789233!2d-98.231855424685!3d19.034352682161686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729639047944!5m2!1ses-419!2smx" width="100%" height="100%" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12 bg-ubicacion">
+            <div class="row col-lg-6 col-md-6 col-sm-12 bg-ubicacion">
                 <h2>¡Estamos en el corazón <br>
                     de Puebla!</h2>
                 <p>Solesta Shop & Fun Puebla se encuentra en <br> la mejor zona turística y comercial de la <br>
@@ -187,7 +195,7 @@
                     de nuestros restaurantes, disfruta del <br> entretenimiento en nuestros cines y boliche, <br>
                     y recorre espacios llenos de estilo y <br> comodidad.</p>
             </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12 d-none d-sm-block">
+            <div class="row col-lg-6 col-md-6 col-sm-12 d-none d-sm-block">
                 <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
             </div>
         </div>
