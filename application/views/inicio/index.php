@@ -25,7 +25,7 @@
 <section class="shop">
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="col-lg-6 col-md-5 col-sm-12">
                 <div class="ms-2">
                     <h2>Solesta</h2>
                     <h2>Shop & Fun Puebla</h2>
@@ -36,7 +36,20 @@
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <img src="assets/images/recursos/locales.png" alt="locales" class="img-fluid mt-5">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="assets/images/recursos/bed.png" alt="locales" class="img-fluid mt-5">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/recursos/cinemex.png" alt="locales" class="img-fluid mt-5">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/recursos/alboa.png" alt="locales" class="img-fluid mt-5">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/recursos/smartfit.png" alt="locales" class="img-fluid mt-5">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
