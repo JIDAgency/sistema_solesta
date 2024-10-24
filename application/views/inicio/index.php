@@ -15,8 +15,8 @@
         <div class="row">
             <div class="col-12 text-center">
                 <img src="assets/images/recursos/banner-movil.png" alt="banner" class="img-fluid mb-3">
-                <a href="<?php echo site_url('directorio'); ?>" class="btn-explora-movil">Explora las categorías</a>
-                <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil">¿Cómo llegar?</a>
+                <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-explora-movil px-3 py-1">Explora las categorías</a>
+                <a href="<?php echo google_maps(); ?>" type="button" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil px-3 py-1">¿Cómo llegar?</a>
             </div>
         </div>
     </div>
@@ -162,10 +162,10 @@
                     </div>
                     <div class="col-6 d-block d-sm-none">
                         <div class="social-icons-movil2">
-                            <span class="text-white me-2">Síguenos: </span>
-                            <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                            <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                            <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                            <span class="text-white">Síguenos:</span>
+                            <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
+                            <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
+                            <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="14%"></a>
                         </div>
                     </div>
                 </div>
