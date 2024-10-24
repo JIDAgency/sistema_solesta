@@ -65,7 +65,7 @@
                 <div class="row">
                     <?php foreach ($locales_por_letra[$letra_item] as $local_row) : ?>
                         <div class="col-md-2 col-sm-4 col-6 mb-4 text-center shadow-sm">
-                            <a href="<?php echo site_url('locales/ver/' . $local_row->url); ?>" class="local-link" data-name="<?php echo strtolower(convert_accented_characters($local_row->nombre)); ?>" data-category="<?php echo $local_row->categoria_slug; ?>" aria-label="Ver <?php echo htmlspecialchars($local_row->nombre); ?>">
+                            <a href="<?php echo site_url('locales/' . $local_row->url); ?>" class="local-link" data-name="<?php echo strtolower(convert_accented_characters($local_row->nombre)); ?>" data-category="<?php echo $local_row->categoria_slug; ?>" aria-label="Ver <?php echo htmlspecialchars($local_row->nombre); ?>">
                                 <div class="locales-image-container position-relative">
                                     <img src="<?php echo base_url('almacenamiento/locales/' . $local_row->url . '/logotipo.jpg'); ?>" class="local-image img-fluid" alt="<?php echo htmlspecialchars($local_row->nombre); ?>" loading="lazy">
                                     <div class="overlay d-flex align-items-center justify-content-center">

@@ -54,9 +54,9 @@
                 <div class="col-6">
                     <div class="social-icons-movil2 text-center">
                         <span class="text-white">Síguenos: </span>
-                        <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                        <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                        <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo tiktok(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/tiktok.png'); ?>" alt="tiktok" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo facebook(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/facebook.png'); ?>" alt="facebook" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo instagram(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/instagram.png'); ?>" alt="instagram" class="img-fluid" width="13%"></a>
                     </div>
                 </div>
             </div>
@@ -79,12 +79,12 @@
 </div>
 
 <!-- Javascript Files -->
-<script src="app-assets/js/plugins.js" type="text/javascript"></script>
-<script src="app-assets/js/designesia.js" type="text/javascript"></script>
-<script src="app-assets/js/swiper.js" type="text/javascript"></script>
-<script src="app-assets/js/custom-marquee.js" type="text/javascript"></script>
-<script src="app-assets/js/custom-swiper-1.js" type="text/javascript"></script>
-<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="<?php echo base_url('app-assets/js/plugins.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url('app-assets/js/designesia.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url('app-assets/js/swiper.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url('app-assets/js/custom-marquee.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url('app-assets/js/custom-swiper-1.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/main.js'); ?>" type="text/javascript"></script>
 
 <?php if (isset($scripts) && is_array($scripts)) : ?>
     <?php foreach ($scripts as $script) : ?>
