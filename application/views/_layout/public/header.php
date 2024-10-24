@@ -78,8 +78,8 @@
                                 <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/facebook.png'); ?>" alt="facebook" class="img-fluid" width="14%"></a>
                                 <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/instagram.png'); ?>" alt="instagram" class="img-fluid" width="14%"></a>
                             </div>
-                            <button class="navbar-toggler custom-toggler no-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon no-border"></span>
+                            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse me-6" id="navbarNav">
                                 <ul class="navbar-nav">

@@ -85,31 +85,31 @@
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo mb-12">
-                <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white col-5 me-2 px-3 pb-5 restaurante">
+                <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white me-2 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
                     <p> Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white col-5 me-2 px-3 pb-5 diversion">
+                <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white me-2 diversion">
                     <h2 class="marys">DIVER <br>SION</h2>
                     <p>Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white col-5 me-2 px-3 pb-5 wellness">
+                <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white me-2 wellness">
                     <h2 class="marys">WELL <br>NESS</h2>
                     <p>Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white col-5 me-2 px-3 pb-5 accesorios">
+                <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white me-2 accesorios">
                     <h2 class="marys">ACCE <br>SORIOS</h2>
                     <p>Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white col-5 me-2 px-3 pb-5 servicios">
+                <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white me-2 servicios">
                     <h2 class="marys">SERVI <br>CIOS</h2>
                     <p>Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white col-5 me-2 px-3 pb-5 shopping">
+                <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white me-2 shopping">
                     <h2 class="marys">SHOPP <br>ING</h2>
                     <p>Ver mas</p>
                 </a>
-                <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white col-5 me-2 px-3 pb-5 hogar">
+                <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white me-2 hogar">
                     <h2 class="marys">HO <br>GAR</h2>
                     <p>Ver mas</p>
                 </a>
@@ -137,11 +137,11 @@
                 <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block">
                 <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none mt-neg">
             </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12 mt-5">
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
                 <h2>¡Tus mascotas <br>
                     son bienvenidas!</h2>
             </div>
-            <div class="row col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
                 <p>En Solesta Shop & Fun Puebla, sabemos que tu mascota es parte de la familia. Por eso, somos un espacio Pet Friendly,
                     donde puedes disfrutar de un día de compras, paseos y diversión sin dejar a tu mejor amigo en casa. Ven con tu
                     mascota y vive juntos la experiencia Solesta.</p>
@@ -177,14 +177,12 @@
 <section class="ubicacion">
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12">
-            </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12">
+            <div class="col-lg-6 col-md-5 col-sm-12">
                 <div class="mb-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5449.204147781762!2d-98.22845251274519!3d19.033874520507364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729790315014!5m2!1ses-419!2smx" width="100%" height="100%" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5449.204147781762!2d-98.22845251274519!3d19.033874520507364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729790315014!5m2!1ses-419!2smx" width="100%" height="450" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="row col-lg-6 col-md-6 col-sm-12 bg-ubicacion">
+            <div class="col-lg-5 col-md-6 col-sm-12 bg-ubicacion">
                 <h2>¡Estamos en el corazón <br>
                     de Puebla!</h2>
                 <p>Solesta Shop & Fun Puebla se encuentra en la mejor zona turística y comercial de la

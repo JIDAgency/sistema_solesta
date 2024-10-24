@@ -22,7 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="list-inline footer-list text-end me-4 my-4">
+                    <ul class="list-inline footer-list text-end me-2 my-4">
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Inicio</a></li>
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Directorio</a></li>
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Mapa</a></li>
@@ -30,7 +30,7 @@
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Contacto</a></li>
                     </ul>
 
-                    <ul class="list-inline footer-list text-end me-4 mb-4">
+                    <ul class="list-inline footer-list me-1 mb-4">
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Solesta shop & fun Puebla</a></li>
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Todos los derechos reservados</a></li>
                         <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Aviso de privacidad</a></li>
