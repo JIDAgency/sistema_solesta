@@ -12,14 +12,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12 py-5">
-                <div class="col-lg-6 col-md-6 col-8 my-5">
-                    <h2 class="text-white">CENTRO COMERCIAL PARA TI Y TODA TU FAMILIA</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-8 my-5">
+                        <h2 class="text-white">CENTRO COMERCIAL PARA TI Y TODA TU FAMILIA</h2>
 
-                    <p class="text-white mt-5">Un lugar para todos, momentos únicos para cada uno. En Solesta, cada persona encuentra su espacio ideal, y cada visita se transforma en una experiencia irrepetible, donde coleccionas recuerdos inolvidables junto a quienes más quieres.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-4">
-                    <img src="<?php echo base_url('assets/images/recursos/vectores.png')?>" alt="Vectores decorativos" class="overlay-image img-fluid d-none d-sm-block">
-                    <img src="<?php echo base_url('assets/images/recursos/vectores-movil.png')?>" alt="Vectores decorativos" class="overlay-image-movil img-fluid d-block d-sm-none">
+                        <p class="text-white mt-5">Un lugar para todos, momentos únicos para cada uno. En Solesta, cada persona encuentra su espacio ideal, y cada visita se transforma en una experiencia irrepetible, donde coleccionas recuerdos inolvidables junto a quienes más quieres.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-4">
+                        <img src="<?php echo base_url('assets/images/recursos/vectores.png') ?>" alt="Vectores decorativos" class="overlay-image img-fluid d-none d-sm-block">
+                        <img src="<?php echo base_url('assets/images/recursos/vectores-movil.png') ?>" alt="Vectores decorativos" class="overlay-image-movil img-fluid d-block d-sm-none">
+                    </div>
                 </div>
             </div>
         </div>
