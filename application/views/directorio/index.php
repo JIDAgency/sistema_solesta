@@ -3,9 +3,6 @@
         <!-- Filtros de Búsqueda y Categorías -->
         <div class="row mb-4">
             <div class="col-md-12">
-                <input type="text" id="searchBar" class="form-control mb-3" placeholder="Buscar locales...">
-            </div>
-            <div class="col-md-12">
                 <div class="category-buttons text-center">
                     <a href="javascript:void(0);" class="btn-main m-1 category-link directory-category-btn" data-category="all" style="background-color: <?php echo $colores[$color_index % count($colores)]; ?>;">Todas</a>
                     <?php $color_index++; ?>
@@ -31,6 +28,12 @@
             <?php endforeach; ?>
         </div>
 
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <input type="search" id="searchBar" class="form-control mb-3" placeholder="Buscar locales...">
+            </div>
+        </div>
+
 
         <!-- Mensaje de No Resultados -->
         <div id="no-results" style="display: none;">
@@ -44,15 +47,15 @@
                 <hr>
                 <div class="row">
                     <?php foreach ($locales_por_letra[$letra_item] as $local_row) : ?>
-                        <div class="col-md-2 col-sm-4 col-6 mb-4 text-center">
+                        <div class="col-md-2 col-sm-4 col-6 mb-4 text-center shadow-sm">
                             <a href="<?php echo site_url('locales/ver/' . $local_row->url); ?>" class="local-link" data-name="<?php echo strtolower(convert_accented_characters($local_row->nombre)); ?>" data-category="<?php echo $local_row->categoria_slug; ?>" aria-label="Ver <?php echo htmlspecialchars($local_row->nombre); ?>">
                                 <div class="locales-image-container position-relative">
                                     <img src="<?php echo base_url('almacenamiento/locales/' . $local_row->url . '/logotipo.jpg'); ?>" class="local-image img-fluid" alt="<?php echo htmlspecialchars($local_row->nombre); ?>" loading="lazy">
                                     <div class="overlay d-flex align-items-center justify-content-center">
-                                        <span class="local-name text-white px-2"><?php echo $local_row->nombre; ?></span>
+                                        <span class="local-name text-white px-2"><?php echo mb_strtoupper($local_row->nombre); ?></span>
                                     </div>
                                 </div>
-                                <p class="text-muted"><?php echo $local_row->nombre; ?></p>
+                                <p class="text-muted"><?php echo mb_strtoupper($local_row->nombre); ?></p>
                             </a>
                         </div>
                     <?php endforeach; ?>
