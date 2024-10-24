@@ -74,31 +74,31 @@
             <div class="row col-lg-5 col-md-5 col-sm-12 mt-negativo mb-12">
                 <div class="col-5 me-2 px-3 pb-5 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=restaurantes')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 diversion">
                     <h2 class="marys">DIVER <br>SION</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=fun')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 wellness">
                     <h2 class="marys">WELL <br>NESS</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=wellness')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 accesorios">
                     <h2 class="marys">ACCE <br>SORIOS</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=accesorios')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 servicios">
                     <h2 class="marys">SERVI <br>CIOS</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=servicios')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 shopping">
                     <h2 class="marys">SHOPP <br>ING</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=shopping')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 hogar">
                     <h2 class="marys">HO <br>GAR</h2>
-                    <a href="" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=hogar')?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-locales2 px-5 py-1">Explorar todos los locales</button>
