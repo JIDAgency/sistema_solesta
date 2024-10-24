@@ -244,7 +244,7 @@ a.a-underline:hover span {
 .social-icons-movil2 {
     font-size: small;
     background-color: #ff867c;
-    padding: 6px;
+    padding: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 15px;
@@ -360,7 +360,7 @@ a.a-underline:hover span {
 
 /* ESTILOS DE SECCION EXPLORA */
 .explora {
-    background-image: url('../images/recursos/beige.jpg');
+    background-image: url('../images/recursos/beige.png');
 }
 
 .mt-negativo {

@@ -48,7 +48,7 @@
             </div>
             <div class="row col-12 my-5">
                 <div class="col-6">
-                    <a type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none">Locales disponibles</a>
+                    <a type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none text-center">Locales disponibles</a>
                 </div>
 
                 <div class="col-6">

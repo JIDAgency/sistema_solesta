@@ -40,22 +40,22 @@
 </section>
 
 <section class="locales-info">
-    <div class="container-fluid mb-5">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12 mb-5 text-center">
-                <h2>Para mayor información <br>
-                    te pedimos mandar un correo a <br>
-                    <span class="correo">francisco.castillo@solesta.mx</span> <br>
+                <h2>Para mayor información
+                    te pedimos mandar un correo a
+                    <span class="correo">francisco.castillo@solesta.mx</span>
                     con la siguiente información:
                 </h2>
                 <br>
                 <h2 class="titulo-info">LOCALES</h2>
-                <p><b>Presentación con tu marca y producto <br>
+                <p><b>Presentación con tu marca y producto
                         m2 que necesitas</b>
                 </p>
                 <br>
                 <h2 class="titulo-info">ISLAS</h2>
-                <p><b>Presentación con tu marca y producto <br>
+                <p><b>Presentación con tu marca y producto
                         m2 que necesitas
                         Render</b></p>
             </div>

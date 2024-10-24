@@ -30,9 +30,9 @@
                     <h2>Solesta</h2>
                     <h2>Shop & Fun Puebla</h2>
                     <br>
-                    <p>Lo mejor de Puebla converge en un solo <br> lugar. Ubicado en la zona más vibrante de <br>
-                        Puebla, te ofrecemos un centro comercial <br> moderno y familiar con una amplia gama de <br>
-                        tiendas, restaurantes y entretenimiento para <br> todas las edades.</p>
+                    <p>Lo mejor de Puebla converge en un solo lugar. Ubicado en la zona más vibrante de
+                        Puebla, te ofrecemos un centro comercial moderno y familiar con una amplia gama de
+                        tiendas, restaurantes y entretenimiento para todas las edades.</p>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="row col-6">
                 <div class="col-6">
-                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar2 px-5 py-2 float-end">Cómo llegar</a>
+                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar2 px-5 py-2 float-end">¿Cómo llegar?</a>
                 </div>
 
                 <div class="col-6">
@@ -122,9 +122,9 @@
 
                 <h2>Explora Solesta</h2>
                 <br>
-                <p>Con una arquitectura abierta y moderna, <br> Solesta te invita a recorrer sus amplios <br>
-                    espacios llenos de luz. Desde tiendas <br> exclusivas hasta áreas de entretenimiento, <br>
-                    cada rincón está diseñado para brindar una <br> experiencia inolvidable a toda la familia</p>
+                <p>Con una arquitectura abierta y moderna, Solesta te invita a recorrer sus amplios
+                    espacios llenos de luz. Desde tiendas exclusivas hasta áreas de entretenimiento,
+                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia</p>
             </div>
         </div>
     </div>
@@ -142,14 +142,14 @@
                     son bienvenidas!</h2>
             </div>
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-5">
-                <p>En Solesta Shop & Fun Puebla, sabemos que tu mascota es <br> parte de la familia. Por eso, somos un espacio Pet Friendly, <br>
-                    donde puedes disfrutar de un día de compras, paseos y <br> diversión sin dejar a tu mejor amigo en casa. Ven con tu <br>
+                <p>En Solesta Shop & Fun Puebla, sabemos que tu mascota es parte de la familia. Por eso, somos un espacio Pet Friendly,
+                    donde puedes disfrutar de un día de compras, paseos y diversión sin dejar a tu mejor amigo en casa. Ven con tu
                     mascota y vive juntos la experiencia Solesta.</p>
 
                 <div class="row col-12 mt-5">
                     <div class="col-6 text-center">
-                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-5 py-2 d-none d-sm-block">Cómo llegar</a>
-                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-4 py-2 d-block d-sm-none">Cómo llegar</a>
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-5 py-2 d-none d-sm-block">¿Cómo llegar?</a>
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-6 py-2 d-block d-sm-none">¿Cómo llegar?</a>
                     </div>
 
                     <div class="col-6 d-none d-sm-block">
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-6 d-block d-sm-none">
-                        <div class="social-icons-movil2">
+                        <div class="social-icons-movil2 text-center">
                             <span class="text-white">Síguenos:</span>
                             <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="14%"></a>
                             <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="14%"></a>
@@ -187,9 +187,9 @@
             <div class="row col-lg-6 col-md-6 col-sm-12 bg-ubicacion">
                 <h2>¡Estamos en el corazón <br>
                     de Puebla!</h2>
-                <p>Solesta Shop & Fun Puebla se encuentra en <br> la mejor zona turística y comercial de la <br>
-                    ciudad, cerca de la Estrella de Puebla y <br> vialidades principales como la Vía Atlixcáyotl <br>
-                    y el Boulevard del Niño Poblano. Ven y <br> disfruta de un día lleno de compras, <br> diversión y sabores.</p>
+                <p>Solesta Shop & Fun Puebla se encuentra en la mejor zona turística y comercial de la
+                    ciudad, cerca de la Estrella de Puebla y vialidades principales como la Vía Atlixcáyotl
+                    y el Boulevard del Niño Poblano. Ven y disfruta de un día lleno de compras, diversión y sabores.</p>
             </div>
         </div>
     </div>
@@ -198,17 +198,18 @@
 <section class="lugar">
     <div class="container mt-3">
         <div class="row justify-content-center">
-            <div class="row col-lg-5 col-md-5 col-sm-12 mb-4 d-block d-sm-none">
+            <div class="col-lg-5 col-md-5 col-sm-12 mb-4 d-block d-sm-none">
                 <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
             </div>
-            <div class="row col-lg-5 col-md-5 col-sm-12 bg-lugar">
+            <div class="col-lg-5 col-md-5 col-sm-12 bg-lugar">
                 <h2>Todo lo que buscas <br>
                     en un solo lugar</h2>
-                <p>Más que un centro comercial, Solesta es una <br> experiencia. Saborea la diversidad culinaria <br>
-                    de nuestros restaurantes, disfruta del <br> entretenimiento en nuestros cines y boliche, <br>
-                    y recorre espacios llenos de estilo y <br> comodidad.</p>
+                <br>
+                <p>Más que un centro comercial, Solesta es una experiencia. Saborea la diversidad culinaria
+                    de nuestros restaurantes, disfruta del entretenimiento en nuestros cines y boliche,
+                    y recorre espacios llenos de estilo y comodidad.</p>
             </div>
-            <div class="row col-lg-6 col-md-6 col-sm-12 d-none d-sm-block">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block">
                 <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
             </div>
         </div>
