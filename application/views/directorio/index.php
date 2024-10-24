@@ -1,45 +1,15 @@
 <section class="bg-beige-solesta">
     <div class="container">
         <div class="row pb-5">
-            <!-- Usamos pb-5 en lugar de mb-5 -->
-            <div class="col-lg-6 col-md-12 col-sm-12 text-lg-start">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-lg-start">
                 <h1 class="text-contacto d-none d-sm-block">DIREC <br>TORIO</h1>
                 <h1 class="text-contacto-movil d-block d-sm-none">DIREC <br>TORIO</h1>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 text-center position-relative">
-                <img src="assets/images/recursos/directorio-titulo.png" alt="directorio-titulo" class="img-fluid fuera-del-margen">
-            </div>
         </div>
     </div>
 </section>
 
-<style>
-    .fuera-del-margen {
-        position: relative;
-        right: -35%;
-    }
-
-    :root {
-        --beige-solesta: #F1EFE3;
-    }
-
-    .bg-beige-solesta {
-        background-color: var(--beige-solesta);
-    }
-</style>
-
-
-<section class="bg-beige-solesta">
-    <div class="content">
-        <div class="row pb-5">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="assets/images/recursos/directorio-banner.jpg" alt="directorio-banner" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="no-top no-bottom bg-beige-solesta" id="content-directorio">
+<section class="no-top no-bottom" id="content-directorio">
     <div class="container" id="directorio">
 
         <!-- Filtros de Búsqueda y Categorías -->
