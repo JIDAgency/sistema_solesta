@@ -448,6 +448,11 @@ a.a-underline:hover span {
     border-radius: 15px;
 }
 
+.btn-locales2:hover {
+    background-color: #505050;
+    color: #967FA7;
+    border-radius: 15px;
+}
 /* ESTILOS DE SECCION EXPLORA END */
 
 .bg-ubicacion {

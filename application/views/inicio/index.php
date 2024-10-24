@@ -72,34 +72,34 @@
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo mb-12">
-                <div class="col-5 me-2 px-3 pb-5 restaurante">
+                <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white col-5 me-2 px-3 pb-5 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
-                    <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 diversion">
+                    <p> Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white col-5 me-2 px-3 pb-5 diversion">
                     <h2 class="marys">DIVER <br>SION</h2>
-                    <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 wellness">
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white col-5 me-2 px-3 pb-5 wellness">
                     <h2 class="marys">WELL <br>NESS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 accesorios">
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white col-5 me-2 px-3 pb-5 accesorios">
                     <h2 class="marys">ACCE <br>SORIOS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 servicios">
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white col-5 me-2 px-3 pb-5 servicios">
                     <h2 class="marys">SERVI <br>CIOS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 shopping">
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white col-5 me-2 px-3 pb-5 shopping">
                     <h2 class="marys">SHOPP <br>ING</h2>
-                    <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white">Ver mas</a>
-                </div>
-                <div class="col-5 me-2 px-3 pb-5 hogar">
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white col-5 me-2 px-3 pb-5 hogar">
                     <h2 class="marys">HO <br>GAR</h2>
-                    <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white">Ver mas</a>
-                </div>
+                    <p>Ver mas</p>
+                </a>
                 <div class="col-12 text-center">
                     <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2">Explorar todos los locales</a>
                 </div>
@@ -168,7 +168,7 @@
             </div>
             <div class="row col-lg-5 col-md-5 col-sm-12">
                 <div class="mb-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6678443789233!2d-98.231855424685!3d19.034352682161686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729639047944!5m2!1ses-419!2smx" width="100%" height="100%" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5449.204147781762!2d-98.22845251274519!3d19.033874520507364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc730cc904b2b%3A0xb530f1deb31d3a3b!2sSolesta!5e0!3m2!1ses-419!2smx!4v1729790315014!5m2!1ses-419!2smx" width="100%" height="100%" style="border: 0; border-radius: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="row col-lg-6 col-md-6 col-sm-12 bg-ubicacion">
