@@ -15,6 +15,7 @@ body {
     padding: 0;
     margin: 0;
     background: var(--bg-dark-1);
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -462,7 +463,7 @@ a.a-underline:hover span {
     background-color: #90C14E;
     color: #FFFFFF;
     border-radius: 15px;
-    font-size: 73%;
+    font-size: 70%;
 }
 
 .btn-localesdisponibles:hover {
@@ -519,6 +520,19 @@ a.a-underline:hover span {
 }
 
 /* VISTA NOSOTROS END */
+
+/* VISTA CONTACTO */
+.text-contacto {
+    font-family: 'Block Marys', sans-serif;
+    color: #91AFDC;
+    font-size: 5em;
+}
+.text-contacto-movil {
+    font-family: 'Block Marys', sans-serif;
+    color: #91AFDC;
+    font-size: 3em;
+}
+/* VISTA CONTACTO END */
 
 /* ------------------------------ */
 /* button and link */
