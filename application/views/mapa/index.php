@@ -9,7 +9,7 @@
                     <h1 class="text-mapa-movil">MAPA <br> UBICACIÓN</h1>
                 </div>
                 <div class="col-12 my-5">
-                    <img src="<?php echo base_url('assets/images/recursos/mapa.png') ?>" alt="mapa" class="img-fluid">
+                    <img src="<?php echo base_url('assets/images/recursos/mapa.png') ?>" alt="mapa" class="img-fluid rounded">
                 </div>
             </div>
         </div>
