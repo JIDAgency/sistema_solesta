@@ -10,15 +10,15 @@
                 <div class="col-6">
                     <div class="row col-12">
                         <div class="col-6">
-                            <button type="button" class="btn btn-localesdisponibles px-5 py-2 d-none d-sm-block float-end">Locales disponibles</button>
+                            <a type="button" class="btn-localesdisponibles px-5 py-2 d-none d-sm-block float-end">Locales disponibles</a>
                         </div>
 
                         <div class="col-6">
                             <div class="social-icons-movil2 text-center">
                                 <span class="text-white">Síguenos: </span>
-                                <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                                <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                                <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
                             </div>
                         </div>
                     </div>
@@ -48,15 +48,15 @@
             </div>
             <div class="row col-12 my-5">
                 <div class="col-6">
-                    <button type="button" class="btn btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none">Locales disponibles</button>
+                    <a type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none">Locales disponibles</a>
                 </div>
 
                 <div class="col-6">
                     <div class="social-icons-movil2 text-center">
                         <span class="text-white">Síguenos: </span>
-                        <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                        <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                        <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
                     </div>
                 </div>
             </div>

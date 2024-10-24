@@ -4,8 +4,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="image-container">
                     <img src="assets/images/recursos/banner2.png" alt="banner" class="img-fluid">
-                    <a href="<?php echo site_url('directorio'); ?>" class="btn btn-explora px-4 py-2">Explora las categorías</a>
-                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-llegar px-5 py-2">¿Cómo llegar?</a>
+                    <a href="<?php echo site_url('directorio'); ?>" class="btn-explora px-4 py-2">Explora las categorías</a>
+                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar px-5 py-2 me-5">¿Cómo llegar?</a>
                 </div>
             </div>
         </div>
@@ -15,8 +15,8 @@
         <div class="row">
             <div class="col-12 text-center">
                 <img src="assets/images/recursos/banner-movil.png" alt="banner" class="img-fluid mb-3">
-                <a href="<?php echo site_url('directorio'); ?>" class="btn btn-explora-movil">Explora las categorías</a>
-                <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-llegar-movil">¿Cómo llegar?</a>
+                <a href="<?php echo site_url('directorio'); ?>" class="btn-explora-movil">Explora las categorías</a>
+                <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil">¿Cómo llegar?</a>
             </div>
         </div>
     </div>
@@ -47,22 +47,22 @@
         <div class="row">
             <div class="row col-6">
                 <div class="col-6">
-                    <button type="button" class="btn btn-llegar2 px-5 py-2 float-end">Cómo llegar</button>
+                    <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar2 px-5 py-1 float-end">Cómo llegar</a>
                 </div>
 
                 <div class="col-6">
                     <div class="social-icons-movil2 text-center">
                         <span class="text-white me-2">Síguenos: </span>
-                        <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                        <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                        <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                        <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
                     </div>
 
                 </div>
             </div>
 
             <div class="col-6 d-none d-sm-block text-center">
-                <button type="button" class="btn btn-locales px-5 py-1">Explorar todos los locales</button>
+                <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales px-5 py-1">Explorar todos los locales</a>
             </div>
         </div>
     </div>
@@ -74,34 +74,34 @@
             <div class="row col-lg-5 col-md-5 col-sm-12 mt-negativo mb-12">
                 <div class="col-5 me-2 px-3 pb-5 restaurante">
                     <h2 class="marys">RESTAU <br>RANTES</h2>
-                    <a href="<?php echo base_url('directorio?categoria=restaurantes')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 diversion">
                     <h2 class="marys">DIVER <br>SION</h2>
-                    <a href="<?php echo base_url('directorio?categoria=fun')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 wellness">
                     <h2 class="marys">WELL <br>NESS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=wellness')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 accesorios">
                     <h2 class="marys">ACCE <br>SORIOS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=accesorios')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 servicios">
                     <h2 class="marys">SERVI <br>CIOS</h2>
-                    <a href="<?php echo base_url('directorio?categoria=servicios')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 shopping">
                     <h2 class="marys">SHOPP <br>ING</h2>
-                    <a href="<?php echo base_url('directorio?categoria=shopping')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-5 me-2 px-3 pb-5 hogar">
                     <h2 class="marys">HO <br>GAR</h2>
-                    <a href="<?php echo base_url('directorio?categoria=hogar')?>" class="text-white">Ver mas</a>
+                    <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white">Ver mas</a>
                 </div>
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-locales2 px-5 py-1">Explorar todos los locales</button>
+                    <a href="<?php echo site_url('directorio'); ?>" class="btn-locales2 px-5 py-1">Explorar todos los locales</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block mb-12">
@@ -134,17 +134,17 @@
                     mascota y vive juntos la experiencia Solesta.</p>
 
                 <div class="row col-12 mt-5">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-llegar2 px-5 py-1 d-none d-sm-block">Cómo llegar</button>
-                        <button type="button" class="btn btn-llegar2 px-4 py-1 d-block d-sm-none">Cómo llegar</button>
+                    <div class="col-6 text-center">
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-5 py-1 d-none d-sm-block">Cómo llegar</a>
+                        <a href="<?php echo google_maps(); ?>" target="_blank" class="btn-llegar2 px-4 py-1 d-block d-sm-none">Cómo llegar</a>
                     </div>
 
                     <div class="col-6">
                         <div class="social-icons-movil2 text-center float-start">
                             <span class="text-white">Síguenos: </span>
-                            <a href="#"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                            <a href="#"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                            <a href="#"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                            <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
+                            <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
+                            <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
                         </div>
                     </div>
                 </div>
