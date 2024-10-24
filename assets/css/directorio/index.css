@@ -1,6 +1,7 @@
-/* Estilos específicos para el directorio */
+/* Estilos para la Sección de Filtros (#directorio) */
+
 #directorio .directory-category-btn {
-    /* Agrega aquí los estilos personalizados para los botones de categoría si los necesitas */
+    /* Puedes agregar estilos personalizados para los botones de categoría si lo deseas */
 }
 
 #directorio .directory-category-btn.active {
@@ -9,7 +10,7 @@
 }
 
 #directorio .directory-alphabet-btn {
-    /* Agrega aquí los estilos personalizados para los botones de letras si los necesitas */
+    /* Puedes agregar estilos personalizados para los botones de letras si lo deseas */
 }
 
 #directorio .directory-alphabet-btn.active {
@@ -17,110 +18,87 @@
     color: #fff;
 }
 
-/* Estilos para los encabezados de letras y separadores */
-#directorio .letter-section h2 {
-    font-size: 2em;
-    margin-top: 1.5em;
-    font-weight: bold;
-    color: #333;
+/* Contenedor de categorías - Ajustes para compactar el espacio y evitar corte de texto */
+#directorio .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    /* Reducir el espacio entre los botones */
 }
 
-#directorio .letter-section hr {
-    border-top: 2px solid #ccc;
-    margin-bottom: 1em;
-}
-
-#directorio .letter-section {
-    margin-bottom: 2em;
-}
-
-/* Estilos para los locales */
-#directorio .locales-image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    /* Mantiene la proporción cuadrada */
-    background-color: #f8f9fa;
-    /* Color de fondo mientras carga la imagen */
-}
-
-#directorio .local-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-#directorio .locales-image-container:hover .local-image {
-    transform: scale(1.1);
-}
-
-#directorio .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 123, 255, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 50%;
-}
-
-#directorio .locales-image-container:hover .overlay {
-    opacity: 1;
-}
-
-#directorio .local-name {
-    font-size: 1rem;
-    font-weight: bold;
+#directorio .category-link {
+    flex: 1 1 20%;
+    /* Reducir el tamaño a 20% del ancho del contenedor */
+    min-width: 80px;
+    /* Asegura que los botones no sean demasiado pequeños */
+    padding: 6px 10px;
+    /* Ajustar el relleno interno del botón */
+    font-size: 0.85rem;
+    /* Ajustar el tamaño del texto */
     text-align: center;
-    word-wrap: break-word;
-    /* Para ajustar nombres largos */
+    white-space: nowrap;
+    /* Evitar que el texto se rompa en varias líneas */
+    overflow: hidden;
+    /* Ocultar el desbordamiento de texto */
+    text-overflow: ellipsis;
+    /* Añadir puntos suspensivos si el texto es demasiado largo */
 }
 
-#directorio .local-link {
-    text-decoration: none;
-    color: inherit;
+#directorio .alphabet-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    /* Reducir el espacio entre los botones */
 }
 
-#directorio .local-link:hover .local-name {
-    color: #fff;
+#directorio .alphabet-link {
+    flex: 1 1 15%;
+    /* Reducir el tamaño a 15% del ancho del contenedor */
+    min-width: 40px;
+    /* Asegura que los botones no sean demasiado pequeños */
+    padding: 5px 8px;
+    /* Reducir el relleno interno del botón */
+    font-size: 0.75rem;
+    /* Reducir el tamaño del texto */
+    text-align: center;
 }
 
-/* Estilos responsivos */
-@media (max-width: 767.98px) {
-    #directorio .local-name {
-        font-size: 0.9rem;
-    }
-}
+/* Estilos responsivos para los filtros */
+@media (max-width: 768px) {
 
-@media (max-width: 575.98px) {
-    #directorio .local-name {
+    #directorio .category-link,
+    #directorio .alphabet-link {
+        flex: 1 1 22%;
+        /* Los botones ocuparán menos espacio en pantallas más pequeñas */
         font-size: 0.8rem;
+        /* Ajustar el tamaño de texto */
+        padding: 5px 8px;
+        /* Ajustar el relleno interno */
+        white-space: normal;
+        /* Permitir que el texto se divida en varias líneas si es necesario */
     }
 }
 
-/* Ajustes adicionales */
-#directorio .col-md-2.col-sm-4.col-6 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+@media (max-width: 576px) {
 
-#directorio .mt-4 {
-    margin-top: 1.5rem !important;
+    #directorio .category-link,
+    #directorio .alphabet-link {
+        flex: 1 1 28%;
+        /* Los botones ocuparán menos espacio en pantallas muy pequeñas */
+        font-size: 0.75rem;
+        /* Ajustar el tamaño de texto para pantallas pequeñas */
+        padding: 4px 6px;
+        /* Ajustar el relleno interno */
+        white-space: normal;
+        /* Permitir que el texto se divida en varias líneas si es necesario */
+    }
 }
 
 /* Estilos para asegurar que los enlaces tengan un foco visible (accesibilidad) */
 #directorio .category-buttons .category-link:focus,
-#directorio .alphabet-navigation .alphabet-link:focus,
-#directorio .local-link:focus {
+#directorio .alphabet-navigation .alphabet-link:focus {
     outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
@@ -154,81 +132,110 @@
     color: #fff;
 }
 
-/* Contenedor de categorías - Ajustes para compactar el espacio y evitar corte de texto */
-.category-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    /* Reducir el espacio entre los botones */
+/* Estilos para la Sección de Locales (#locales) */
+
+/* Estilos para los encabezados de letras y separadores */
+#locales .letter-section h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-weight: bold;
+    color: #333;
 }
 
-.category-link {
-    flex: 1 1 20%;
-    /* Reducir el tamaño a 20% del ancho del contenedor */
-    min-width: 80px;
-    /* Asegura que los botones no sean demasiado pequeños */
-    padding: 6px 10px;
-    /* Ajustar el relleno interno del botón */
-    font-size: 0.85rem;
-    /* Ajustar el tamaño del texto */
-    text-align: center;
-    white-space: nowrap;
-    /* Evitar que el texto se rompa en varias líneas */
+#locales .letter-section hr {
+    border-top: 2px solid #ccc;
+    margin-bottom: 1em;
+}
+
+#locales .letter-section {
+    margin-bottom: 2em;
+}
+
+/* Estilos para los locales */
+#locales .locales-image-container {
+    position: relative;
     overflow: hidden;
-    /* Ocultar el desbordamiento de texto */
-    text-overflow: ellipsis;
-    /* Añadir puntos suspensivos si el texto es demasiado largo */
+    border-radius: 50%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    /* Mantiene la proporción cuadrada */
+    background-color: #f8f9fa;
+    /* Color de fondo mientras carga la imagen */
 }
 
-/* Contenedor de letras del alfabeto - Ajustes para compactar */
-.alphabet-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    /* Reducir el espacio entre los botones */
+#locales .local-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
 }
 
-.alphabet-link {
-    flex: 1 1 15%;
-    /* Reducir el tamaño a 15% del ancho del contenedor */
-    min-width: 40px;
-    /* Asegura que los botones no sean demasiado pequeños */
-    padding: 5px 8px;
-    /* Reducir el relleno (padding) interno del botón */
-    font-size: 0.75rem;
-    /* Reducir el tamaño del texto */
+#locales .locales-image-container:hover .local-image {
+    transform: scale(1.1);
+}
+
+#locales .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 50%;
+}
+
+#locales .locales-image-container:hover .overlay {
+    opacity: 1;
+}
+
+#locales .local-name {
+    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
+    word-wrap: break-word;
+    /* Para ajustar nombres largos */
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
+#locales .local-link {
+    text-decoration: none;
+    color: inherit;
+}
 
-    .category-link,
-    .alphabet-link {
-        flex: 1 1 22%;
-        /* Los botones ocuparán menos espacio en pantallas más pequeñas */
+#locales .local-link:hover .local-name {
+    color: #fff;
+}
+
+/* Estilos responsivos para los locales */
+@media (max-width: 767.98px) {
+    #locales .local-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #locales .local-name {
         font-size: 0.8rem;
-        /* Ajustar el tamaño de texto */
-        padding: 5px 8px;
-        /* Ajustar el relleno interno */
-        white-space: normal;
-        /* Permitir que el texto se divida en varias líneas si es necesario */
     }
 }
 
-@media (max-width: 576px) {
+/* Ajustes adicionales */
+#locales .col-md-2.col-sm-4.col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
-    .category-link,
-    .alphabet-link {
-        flex: 1 1 28%;
-        /* Los botones ocuparán menos espacio en pantallas muy pequeñas */
-        font-size: 0.75rem;
-        /* Ajustar el tamaño de texto para pantallas pequeñas */
-        padding: 4px 6px;
-        /* Ajustar el relleno interno */
-        white-space: normal;
-        /* Permitir que el texto se divida en varias líneas si es necesario */
-    }
+#locales .mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Estilos para asegurar que los enlaces tengan un foco visible (accesibilidad) */
+#locales .local-link:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
 }

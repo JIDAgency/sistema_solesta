@@ -1,7 +1,49 @@
-<section class="no-top no-bottom" id="content">
-    <div class="container my-5" id="directorio">
+<section class="bg-beige-solesta">
+    <div class="container">
+        <div class="row pb-5">
+            <!-- Usamos pb-5 en lugar de mb-5 -->
+            <div class="col-lg-6 col-md-12 col-sm-12 text-lg-start">
+                <h1 class="text-contacto d-none d-sm-block">DIREC <br>TORIO</h1>
+                <h1 class="text-contacto-movil d-block d-sm-none">DIREC <br>TORIO</h1>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center position-relative">
+                <img src="assets/images/recursos/directorio-titulo.png" alt="directorio-titulo" class="img-fluid fuera-del-margen">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .fuera-del-margen {
+        position: relative;
+        right: -35%;
+    }
+
+    :root {
+        --beige-solesta: #F1EFE3;
+    }
+
+    .bg-beige-solesta {
+        background-color: var(--beige-solesta);
+    }
+</style>
+
+
+<section class="bg-beige-solesta">
+    <div class="content">
+        <div class="row pb-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="assets/images/recursos/directorio-banner.jpg" alt="directorio-banner" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-top no-bottom bg-beige-solesta" id="content-directorio">
+    <div class="container" id="directorio">
+
         <!-- Filtros de Búsqueda y Categorías -->
-        <div class="row mb-4">
+        <div class="row pb-4">
             <div class="col-md-12">
                 <div class="category-buttons text-center">
                     <a href="javascript:void(0);" class="btn-main m-1 category-link directory-category-btn" data-category="all" style="background-color: <?php echo $colores[$color_index % count($colores)]; ?>;">Todas</a>
@@ -17,7 +59,7 @@
         <hr>
 
         <!-- Navegación Alfabética -->
-        <div class="alphabet-navigation mb-4 text-center">
+        <div class="alphabet-navigation pb-4 text-center">
             <?php $color_index = 0; // Reiniciar el índice de color para las letras 
             ?>
             <a href="javascript:void(0);" class="btn-line btn-sm m-1 alphabet-link directory-alphabet-btn" data-letter="all" style="background-color: <?php echo $colores[$color_index % count($colores)]; ?>;">Todas</a>
@@ -28,12 +70,17 @@
             <?php endforeach; ?>
         </div>
 
-        <div class="row mb-4">
+        <div class="row pb-4">
             <div class="col-md-12">
-                <input type="search" id="searchBar" class="form-control mb-3" placeholder="Buscar locales...">
+                <input type="search" id="searchBar" class="form-control pb-3" placeholder="Buscar locales...">
             </div>
         </div>
 
+    </div>
+</section>
+
+<section class="no-top no-bottom" id="content-locales">
+    <div class="container" id="locales">
 
         <!-- Mensaje de No Resultados -->
         <div id="no-results" style="display: none;">
