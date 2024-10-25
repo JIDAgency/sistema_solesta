@@ -113,7 +113,7 @@
                     <h2 class="marys">HO <br>GAR</h2>
                     <p>Ver mas</p>
                 </a>
-                <div class="col-12 text-center">
+                <div class="col-12 text-center my-3">
                     <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2">Explorar todos los locales</a>
                 </div>
             </div>

@@ -10,7 +10,7 @@
                 <div class="col-6">
                     <div class="row col-12">
                         <div class="col-6">
-                            <a type="button" class="btn-localesdisponibles px-5 py-2 d-none d-sm-block float-end">Locales disponibles</a>
+                            <a href="<?php echo site_url('contacto'); ?>" type="button" class="btn-localesdisponibles px-5 py-2 d-none d-sm-block float-end">Locales disponibles</a>
                         </div>
 
                         <div class="col-6">
@@ -48,7 +48,7 @@
             </div>
             <div class="row col-12 my-5">
                 <div class="col-6">
-                    <a type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none text-center">Locales disponibles</a>
+                    <a href="<?php echo site_url('contacto'); ?>" type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none text-center">Locales disponibles</a>
                 </div>
 
                 <div class="col-6">
