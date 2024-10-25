@@ -1,0 +1,33 @@
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Desplazamiento x, y, desenfoque, color */
+}
+
+.image-container {
+    width: 100%;
+    padding-bottom: 100%;
+    /* Mantiene una relación de aspecto 1:1 (cuadrada) */
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    /* Aplica el borde redondeado al contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aplica la sombra al contenedor */
+}
+
+.image-zoom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen se ajusta para llenar el contenedor manteniendo la proporción */
+    transition: transform 0.3s ease;
+    /* Efecto suave de zoom */
+}
+
+.image-zoom:hover {
+    transform: scale(1.2);
+    /* Zoom al hacer hover */
+}

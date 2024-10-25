@@ -52,16 +52,15 @@
 
         </div>
 
-        <div class="row d-block d-sm-none">
-            <div class="footer-logo mb-3 text-center">
+        <div class="row d-block d-sm-none text-center align-items-center">
+            <div class="footer-logo mb-3">
                 <a href="<?php echo site_url(''); ?>"><img src="<?php echo base_url('assets/images/logos/logo.png'); ?>" alt="logo" class="img-fluid" width="60%"></a>
             </div>
-            <div class="row col-12 my-5">
-                <div class="col-6">
+            <div class="row col-12 my-5 text-center align-items-center">
+                <div class="col-6 text-center align-items-center">
                     <a href="<?php echo site_url('contacto'); ?>" type="button" class="btn-localesdisponibles-movil px-4 py-2 d-block d-sm-none text-center">Locales disponibles</a>
                 </div>
-
-                <div class="col-6">
+                <div class="col-6 text-center align-items-center">
                     <div class="social-icons-movil2 text-center">
                         <span class="text-white">Síguenos: </span>
                         <a href="<?php echo tiktok(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/tiktok.png'); ?>" alt="tiktok" class="img-fluid" width="13%"></a>
@@ -89,9 +88,9 @@
             </ul>
 
             <ul class="list-inline footer-list text-center me-4 mb-4">
-                <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Solesta shop & fun Puebla</a></li>
-                <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Todos los derechos reservados</a></li>
+                <li class="list-inline-item"><span class="text-white">&copy; <span id="current-year"></span> Solesta Shop & Fun Puebla. Todos los derechos reservados.</span></li>
                 <li class="list-inline-item"><a class="text-white <?php echo isset($nav_aviso_privacidad) ? 'active' : ''; ?>" href="<?php echo site_url('aviso_privacidad'); ?>">Aviso de privacidad</a></li>
+                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_terminos_y_condiciones) ? 'active' : ''; ?>" href="<?php echo site_url('terminos_y_condiciones'); ?>">Términos y condiciones</a></li>
             </ul>
         </div>
     </div>

@@ -21,16 +21,23 @@ class Locales extends MY_Controller
 			$local = $this->input->post('local');
 		}
 
+		if (!$local) {
+			$this->session->set_flashdata('MENSAJE_INFO', '¡Oops! Al parecer ha ocurrido un error, por favor intentelo más tarde. (1)');
+			redirect('directorio');
+		}
+
 		$local_row = $this->locales_model->get_local_por_url($local)->row();
 
 		$data['pagina_menu_inicio'] = true;
 		$data['pagina_titulo'] = ucfirst(mb_strtolower($local_row->nombre));
 
 		$data['controlador'] = 'locales/' . $local;
-		$data['regresar_a'] = 'locales/' . $local;
+		$data['regresar_a'] = 'directorio';
 		$controlador_js = "locales/index";
 
-		$data['styles'] = array();
+		$data['styles'] = array(
+			array('es_rel' => true, 'href' => 'locales/index.css'),
+		);
 
 		$data['scripts'] = array(
 			array('es_rel' => true, 'src' => '' . $controlador_js . '.js'),
