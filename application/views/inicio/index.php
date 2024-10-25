@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="image-container">
-                                <img src="assets/images/recursos/banner2.png" alt="banner" class="img-fluid">
+                                <img src="assets/images/recursos/banner3.png" alt="banner" class="img-fluid">
                                 <a href="<?php echo site_url('directorio'); ?>" class="btn-explora px-4 py-2">Explora las categorías</a>
                                 <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar px-5 py-2 me-5">¿Cómo llegar?</a>
                             </div>
@@ -40,7 +40,7 @@
                 <div class="container d-block d-sm-none">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <img src="assets/images/recursos/banner-movil.png" alt="banner" class="img-fluid mb-3">
+                            <img src="assets/images/recursos/banner-movil2.png" alt="banner" class="img-fluid mb-3">
                             <a href="<?php echo site_url('directorio'); ?>" class="btn-explora-movil px-3 py-1">Explora las categorías</a>
                             <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil px-3 py-1">¿Cómo llegar?</a>
                         </div>
@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="image-container">
-                                <img src="assets/images/recursos/banner2.png" alt="banner" class="img-fluid">
+                                <img src="assets/images/recursos/banner4.png" alt="banner" class="img-fluid">
                                 <a href="<?php echo site_url('directorio'); ?>" class="btn-explora px-4 py-2">Explora las categorías</a>
                                 <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar px-5 py-2 me-5">¿Cómo llegar?</a>
                             </div>
@@ -62,7 +62,29 @@
                 <div class="container d-block d-sm-none">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <img src="assets/images/recursos/banner-movil.png" alt="banner" class="img-fluid mb-3">
+                            <img src="assets/images/recursos/banner-movil3.png" alt="banner" class="img-fluid mb-3">
+                            <a href="<?php echo site_url('directorio'); ?>" class="btn-explora-movil px-3 py-1">Explora las categorías</a>
+                            <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil px-3 py-1">¿Cómo llegar?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container d-none d-sm-block">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="image-container">
+                                <img src="assets/images/recursos/banner5.png" alt="banner" class="img-fluid">
+                                <a href="<?php echo site_url('directorio'); ?>" class="btn-explora px-4 py-2">Explora las categorías</a>
+                                <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar px-5 py-2 me-5">¿Cómo llegar?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-block d-sm-none">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="assets/images/recursos/banner-movil4.png" alt="banner" class="img-fluid mb-3">
                             <a href="<?php echo site_url('directorio'); ?>" class="btn-explora-movil px-3 py-1">Explora las categorías</a>
                             <a href="<?php echo google_maps(); ?>" target="_blank" rel="noopener noreferrer" class="btn-llegar-movil px-3 py-1">¿Cómo llegar?</a>
                         </div>
