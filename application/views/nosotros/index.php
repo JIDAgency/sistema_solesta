@@ -1,14 +1,14 @@
 <section class="banner-nosotros">
-    <div class="content">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <img src="<?php echo base_url('assets/images/recursos/banner-nosotros.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?php echo base_url('assets/images/recursos/banner-nosotros.png') ?>" alt="" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
 
-<section class="comercial">
+<section class="comercial mt-3">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12 py-5">

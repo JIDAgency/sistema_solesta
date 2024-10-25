@@ -135,7 +135,7 @@
     </div>
 </section>
 
-<section class="explora">
+<section class="explora d-none d-sm-block">
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo mb-12">
@@ -184,12 +184,76 @@
     </div>
 </section>
 
+<section class="explora d-block d-sm-none">
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo">
+                <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white me-2 restaurante wow fadeInUp">
+                    <h2 class="marys">RESTAU <br>RANTES</h2>
+                    <p> Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white me-2 diversion wow fadeInUp">
+                    <h2 class="marys">DIVER <br>SION</h2>
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white me-2 wellness wow fadeInUp" data-wow-delay=".2s">
+                    <h2 class="marys">WELL <br>NESS</h2>
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white me-2 accesorios wow fadeInUp" data-wow-delay=".2s">
+                    <h2 class="marys">ACCE <br>SORIOS</h2>
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white me-2 servicios wow fadeInUp" data-wow-delay=".4s">
+                    <h2 class="marys">SERVI <br>CIOS</h2>
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white me-2 shopping wow fadeInUp" data-wow-delay=".4s">
+                    <h2 class="marys">SHOPP <br>ING</h2>
+                    <p>Ver mas</p>
+                </a>
+                <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white me-2 hogar wow fadeInUp" data-wow-delay=".6s">
+                    <h2 class="marys">HO <br>GAR</h2>
+                    <p>Ver mas</p>
+                </a>
+                <div class="col-12 text-center my-3">
+                    <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2 wow fadeInUp" data-wow-delay=".8s">Explorar todos los locales</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block mb-12">
+                <img src="assets/images/recursos/explora.png" alt="locales" class="img-fluid mb-3 wow fadeInUp">
+
+                <h2 class="titulo-azul wow fadeInUp" data-wow-delay=".2s">Explora Solesta</h2>
+                <br>
+                <p class="wow fadeInUp" data-wow-delay=".4s">Con una arquitectura abierta y moderna, Solesta te invita a recorrer sus amplios
+                    espacios llenos de luz. Desde tiendas exclusivas hasta áreas de entretenimiento,
+                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="petfrien">
     <div class="container">
         <div class="row justify-content-center mt-negativopet">
-            <div class="col-12">
-                <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
-                <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none mt-neg wow fadeInUp">
+            <div class="swiper wow fadeInUp">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="col-12">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none wow fadeInUp">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none wow fadeInUp">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
                 <h2 class="titulo-azul wow fadeInUp" data-wow-delay=".2s">¡Tus mascotas <br>
