@@ -1326,3 +1326,31 @@ a.btn-lg {
 .de-icon-text h4 {
     margin-bottom: 0;
 }
+
+/* Estilos de paginación (puntos) */
+.swiper-pagination-bullet {
+    background-color: #fff;
+    /* Cambia el color a blanco */
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(244, 244, 244, 0.8);
+    /* Cambia el color del punto activo */
+    opacity: 1;
+}
+
+/* Estilos de botones de navegación */
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgba(244, 244, 244, 0.8);
+    /* Cambia el color a tu preferencia */
+    font-size: 24px;
+    /* Ajusta el tamaño si es necesario */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: rgba(244, 244, 244, 1);
+    /* Cambia el color en hover */
+}

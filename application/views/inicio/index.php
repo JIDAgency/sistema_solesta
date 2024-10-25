@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <section class="banner no-top no-bottom">
-    <div class="swiper wow fadeInUp">
+    <div class="swiper wow fadeInUp pb-2">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="container d-none d-sm-block">
@@ -92,16 +92,16 @@
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="row">
                     <div class="col-6 wow fadeInUp">
-                        <img src="assets/images/recursos/bed.png" alt="locales" class="img-fluid mt-5">
+                        <img src="<?php echo base_url('assets/images/recursos/bed.png'); ?>" alt="locales" class="img-fluid mt-5">
                     </div>
                     <div class="col-6 wow fadeInUp" data-wow-delay=".2s">
-                        <img src="assets/images/recursos/cinemex.png" alt="locales" class="img-fluid mt-5">
+                        <img src="<?php echo base_url('assets/images/recursos/cinemex.png'); ?>" alt="locales" class="img-fluid mt-5">
                     </div>
                     <div class="col-6 wow fadeInUp" data-wow-delay=".4s">
-                        <img src="assets/images/recursos/alboa.png" alt="locales" class="img-fluid mt-5">
+                        <img src="<?php echo base_url('assets/images/recursos/alboa.png'); ?>" alt="locales" class="img-fluid mt-5">
                     </div>
                     <div class="col-6 wow fadeInUp" data-wow-delay=".6s">
-                        <img src="assets/images/recursos/smartfit.png" alt="locales" class="img-fluid mt-5">
+                        <img src="<?php echo base_url('assets/images/recursos/smartfit.png'); ?>" alt="locales" class="img-fluid mt-5">
                     </div>
                 </div>
             </div>
@@ -251,18 +251,18 @@
     <div class="container mt-3 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-5 col-sm-12 mb-4 d-block d-sm-none">
-                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid wow fadeInUp">
+                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid wow fadeInUp" data-wow-delay=".4s">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 bg-lugar">
-                <h2 class="titulo-azul wow fadeInUp">Todo lo que buscas <br>
+                <h2 class="titulo-azul wow fadeInUp" data-wow-delay=".4s">Todo lo que buscas <br>
                     en un solo lugar</h2>
                 <br>
-                <p class="wow fadeInUp" data-wow-delay=".2s">Más que un centro comercial, Solesta es una experiencia. Saborea la diversidad culinaria
+                <p class="wow fadeInUp" data-wow-delay=".6s">Más que un centro comercial, Solesta es una experiencia. Saborea la diversidad culinaria
                     de nuestros restaurantes, disfruta del entretenimiento en nuestros cines y boliche,
                     y recorre espacios llenos de estilo y comodidad.</p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block">
-                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid wow fadeInUp">
+                <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid wow fadeInUp" data-wow-delay=".4s">
             </div>
         </div>
     </div>
