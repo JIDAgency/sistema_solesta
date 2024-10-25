@@ -83,7 +83,6 @@
 <script src="<?php echo base_url('app-assets/js/designesia.js'); ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('app-assets/js/swiper.js'); ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('app-assets/js/custom-marquee.js'); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url('app-assets/js/custom-swiper-1.js'); ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/main.js'); ?>" type="text/javascript"></script>
 
 <?php if (isset($scripts) && is_array($scripts)) : ?>

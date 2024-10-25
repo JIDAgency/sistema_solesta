@@ -1,9 +1,9 @@
 const swiper = new Swiper('.swiper', {
 
   autoplay: {
-     delay: 3000,
-     disableOnInteraction: false
-   },
+    delay: 3000,
+    disableOnInteraction: false
+  },
 
   // Optional parameters
   direction: 'horizontal',
@@ -13,10 +13,10 @@ const swiper = new Swiper('.swiper', {
   parallax: true,
 
   // If we need pagination
-   pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
 
   // Navigation arrows
   navigation: {
