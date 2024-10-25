@@ -23,11 +23,21 @@
                         </div>
                     </div>
                     <ul class="list-inline footer-list text-end me-2 my-4">
-                        <li class="list-inline-item"><a class="text-white nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(''); ?>">Inicio</a></li>
-                        <li class="list-inline-item"><a class="text-white nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a></li>
-                        <li class="list-inline-item"><a class="text-white nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a></li>
-                        <li class="list-inline-item"><a class="text-white <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a></li>
-                        <li class="list-inline-item"><a class="text-white <?php echo isset($nav_contacto) ? 'active' : ''; ?>" href="<?php echo site_url('contacto'); ?>">Contacto</a></li>
+                        <li class="list-inline-item">
+                            <a class="text-white nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(''); ?>">Inicio</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white <?php echo isset($nav_contacto) ? 'active' : ''; ?>" href="<?php echo site_url('contacto'); ?>">Contacto</a>
+                        </li>
                     </ul>
 
                     <ul class="list-inline footer-list me-1 mb-4">
@@ -61,11 +71,21 @@
                 </div>
             </div>
             <ul class="list-inline footer-list text-center me-4 my-4">
-                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(''); ?>">Inicio</a></li>
-                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a></li>
-                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a></li>
-                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a></li>
-                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_contacto) ? 'active' : ''; ?>" href="<?php echo site_url('contacto'); ?>">Contacto</a></li>
+                <li class="list-inline-item">
+                    <a class="text-white nav-link <?php echo isset($nav_inicio) ? 'active' : ''; ?>" href="<?php echo site_url(''); ?>">Inicio</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white <?php echo isset($nav_nosotros) ? 'active' : ''; ?>" href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-white <?php echo isset($nav_contacto) ? 'active' : ''; ?>" href="<?php echo site_url('contacto'); ?>">Contacto</a>
+                </li>
             </ul>
 
             <ul class="list-inline footer-list text-center me-4 mb-4">
