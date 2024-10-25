@@ -41,9 +41,9 @@
                     </ul>
 
                     <ul class="list-inline footer-list me-1 mb-4">
-                        <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Solesta shop & fun Puebla</a></li>
-                        <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Todos los derechos reservados</a></li>
-                        <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Aviso de privacidad</a></li>
+                        <li class="list-inline-item"><span class="text-white">&copy; <span id="current-year"></span> Solesta Shop & Fun Puebla. Todos los derechos reservados.</span></li>
+                        <li class="list-inline-item"><a class="text-white <?php echo isset($nav_aviso_privacidad) ? 'active' : ''; ?>" href="<?php echo site_url('aviso_privacidad'); ?>">Aviso de privacidad</a></li>
+                        <li class="list-inline-item"><a class="text-white <?php echo isset($nav_terminos_y_condiciones) ? 'active' : ''; ?>" href="<?php echo site_url('terminos_y_condiciones'); ?>">Términos y condiciones</a></li>
                     </ul>
 
                 </div>
@@ -91,7 +91,7 @@
             <ul class="list-inline footer-list text-center me-4 mb-4">
                 <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Solesta shop & fun Puebla</a></li>
                 <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Todos los derechos reservados</a></li>
-                <li class="list-inline-item"><a class="text-white" href="<?php echo site_url(''); ?>">Aviso de privacidad</a></li>
+                <li class="list-inline-item"><a class="text-white <?php echo isset($nav_aviso_privacidad) ? 'active' : ''; ?>" href="<?php echo site_url('aviso_privacidad'); ?>">Aviso de privacidad</a></li>
             </ul>
         </div>
     </div>
