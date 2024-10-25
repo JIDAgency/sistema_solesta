@@ -38,6 +38,10 @@ body .owl-stage .owl-item {
 
 }
 
+.titulo-azul {
+    color: #4B5A72;
+}
+
 #wrapper {
     position: relative;
     overflow: hidden;

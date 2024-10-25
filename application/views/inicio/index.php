@@ -81,8 +81,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-5 col-sm-12">
                 <div class="ms-2">
-                    <h2>Solesta</h2>
-                    <h2>Shop & Fun Puebla</h2>
+                    <h2 class="titulo-azul">Solesta</h2>
+                    <h2 class="titulo-azul">Shop & Fun Puebla</h2>
                     <br>
                     <p>Lo mejor de Puebla converge en un solo lugar. Ubicado en la zona más vibrante de
                         Puebla, te ofrecemos un centro comercial moderno y familiar con una amplia gama de
@@ -174,7 +174,7 @@
             <div class="col-lg-5 col-md-5 col-sm-12 mt-negativo d-none d-sm-block mb-12">
                 <img src="assets/images/recursos/explora.png" alt="locales" class="img-fluid mb-3">
 
-                <h2>Explora Solesta</h2>
+                <h2 class="titulo-azul">Explora Solesta</h2>
                 <br>
                 <p>Con una arquitectura abierta y moderna, Solesta te invita a recorrer sus amplios
                     espacios llenos de luz. Desde tiendas exclusivas hasta áreas de entretenimiento,
@@ -192,7 +192,7 @@
                 <img src="<?php echo base_url('assets/images/recursos/petfriendly-movil.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none mt-neg">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
-                <h2>¡Tus mascotas <br>
+                <h2 class="titulo-azul">¡Tus mascotas <br>
                     son bienvenidas!</h2>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
@@ -237,7 +237,7 @@
                 </div>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12 bg-ubicacion">
-                <h2>¡Estamos en el corazón <br>
+                <h2 class="titulo-azul">¡Estamos en el corazón <br>
                     de Puebla!</h2>
                 <p>Solesta Shop & Fun Puebla se encuentra en la mejor zona turística y comercial de la
                     ciudad, cerca de la Estrella de Puebla y vialidades principales como la Vía Atlixcáyotl
@@ -254,7 +254,7 @@
                 <img src="<?php echo base_url('assets/images/recursos/lugar.png') ?>" alt="lugar" class="img-fluid">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 bg-lugar">
-                <h2>Todo lo que buscas <br>
+                <h2 class="titulo-azul">Todo lo que buscas <br>
                     en un solo lugar</h2>
                 <br>
                 <p>Más que un centro comercial, Solesta es una experiencia. Saborea la diversidad culinaria
