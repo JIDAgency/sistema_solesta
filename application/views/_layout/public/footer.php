@@ -16,9 +16,9 @@
                         <div class="col-6">
                             <div class="social-icons text-center">
                                 <span class="text-white">Síguenos: </span>
-                                <a href="<?php echo tiktok(); ?>" target="_blank"><img src="assets/images/redes/tiktok.png" alt="tiktok" class="img-fluid" width="13%"></a>
-                                <a href="<?php echo facebook(); ?>" target="_blank"><img src="assets/images/redes/facebook.png" alt="facebook" class="img-fluid" width="13%"></a>
-                                <a href="<?php echo instagram(); ?>" target="_blank"><img src="assets/images/redes/instagram.png" alt="instagram" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo tiktok(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/tiktok.png'); ?>" alt="tiktok" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo facebook(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/facebook.png'); ?>" alt="facebook" class="img-fluid" width="13%"></a>
+                                <a href="<?php echo instagram(); ?>" target="_blank"><img src="<?php echo base_url('assets/images/redes/instagram.png'); ?>" alt="instagram" class="img-fluid" width="13%"></a>
                             </div>
                         </div>
                     </div>

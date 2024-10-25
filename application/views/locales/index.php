@@ -1,317 +1,224 @@
-<div class="app-content center-layout">
-    <div class="container-fluid">
-        <div class="content-body">
-            <?php if (isset($imagen_banner_principal)) : ?>
-            <?php endif; ?>
-            <div class="row bg-banner-locales-ver" style="background: url(<?php echo base_url_locales() . $local_row->url . '/' . $imagen_banner_principal->url; ?>) no-repeat center center; background-size: cover;">
-                <div class="mascara">
-                    <?php //if (isset($imagen_banner_principal_movil)): 
-                    ?>
-                    <!--div class="row bg-banner-locales-ver d-block d-sm-none" style="background: url(<?php echo base_url_locales() . $local_row->url . '/' . $imagen_banner_principal_movil->url; ?>) no-repeat center center; background-size: cover;"-->
-                    <?php //endif; 
-                    ?>
-
-                    <div class="container info-principal-local pt-5">
-                        <div class="row align-items-end">
-                            <div class="col">
-
-                                <div class="contenedor-principal-local">
-
-                                    <?php foreach ($categorias_list as $categoria_row) : ?>
-                                        <a class="btn btn-primary btn-min-width mr-1 mb-1 bg-purple bg-darken-3" href="<?php echo site_url("categorias/ver/" . $categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
-                                    <?php endforeach; ?>
-
-                                    <?php if (isset($local_row->nombre)) : ?>
-                                        <h1><?php echo $local_row->nombre; ?></h1>
-                                    <?php endif; ?>
-
-                                    </br>
-
-                                    <?php foreach ($horarios_list as $horario_row) : ?>
-                                        <span><i class="teal lighten-3 fa fa-clock-o info"></i> <?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? "<b>" . $horario_row->dia_inicio . " - " . $horario_row->dia_fin . "</b> | " . date('g:i a', strtotime($horario_row->hora_inicio)) . " - " . date('g:i a', strtotime($horario_row->hora_fin)) . "" : "<b>" . $horario_row->dia_inicio . "</b> | " . date('g:i a', strtotime($horario_row->hora_inicio)) . " - " . date('g:i a', strtotime($horario_row->hora_fin)) . ""; ?></span><br>
-                                    <?php endforeach; ?>
-
-                                    <?php if (isset($local_row->ubicacion)) : ?>
-                                        <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
-                                            <i class="teal lighten-3 fa fa-share-square"></i> <?php echo $local_row->ubicacion; ?>
-                                        </a>
-                                    <?php endif; ?>
-
-                                    <br>
-
-                                    <?php if (isset($local_row->telefono_1)) : ?>
-                                        <a href="tel:+52<?php echo $local_row->telefono_1; ?>">
-                                            <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_1; ?>
-                                        </a>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($local_row->telefono_1) and isset($local_row->telefono_2)) : ?>
-                                        <?php echo "&nbsp;&nbsp;&nbsp;&nbsp;"; ?>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($local_row->telefono_2)) : ?>
-                                        <a href="tel:+52<?php echo $local_row->telefono_2; ?>">
-                                            <i class="teal lighten-3 fa fa-phone-square"></i> <?php echo $local_row->telefono_2; ?>
-                                        </a>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($local_row->telefono_1) or isset($local_row->telefono_2) and isset($local_row->telefono_2)) : ?>
-                                        <?php echo "&nbsp;&nbsp;&nbsp;&nbsp;"; ?>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($local_row->correo_electronico)) : ?>
-                                        <a href="mailto:<?php echo $local_row->correo_electronico; ?>">
-                                            <i class="teal lighten-3 fa fa-envelope-square"></i> <?php echo $local_row->correo_electronico; ?>
-                                        </a>
-                                    <?php endif; ?>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section class="banner" name="banner" id="banner">
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-lg-12 col-md-12 mb-sm-20">
+                <div class="image-container rounded shadow">
+                    <img src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_banner_principal->url; ?>" alt="Local-banner" class="img-fluid shadow image-zoom">
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="content-body">
-            <div class="container">
-                <div class="row mt-3">
-                    <div class="col-lg-8 col-md-12">
+<section class="branding" name="branding" id="branding">
+    <div class="container">
 
-                        <div class="card bg-purple bg-darken-3">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <div class="row breadcrumbs-top">
-                                        <div class="breadcrumb-wrapper col-12">
-                                            <ol class="breadcrumb ">
-                                                <li class="breadcrumb-item white"><a href="<?php echo site_url("inicio"); ?>"><strong>Inicio</strong></a></li>
-                                                <li class="breadcrumb-item white"><a href="<?php echo site_url("categorias/ver/" . $categoria_row->url); ?>"><strong><?php echo ucwords(mb_strtolower($categoria_row->nombre)); ?></strong></a></li>
-                                                <li class="breadcrumb-item white active"><strong><?php echo ucwords(mb_strtolower($local_row->nombre)); ?></strong></li>
-                                            </ol>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body p-0">
-                                    <?php foreach (array_slice($imagenes_galeria_list, 0, 1) as $imagen_galeria_row) : ?>
-                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>">
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <?php if (isset($local_row->nombre)) : ?>
-                                        <h4 class="card-title text-uppercase purple"><?php echo $local_row->nombre . ' | ' . titulo(); ?></h4>
-                                    <?php endif; ?>
-                                    <?php if (isset($local_row->descripcion)) : ?>
-                                        <p class="text-justify"><?php echo $local_row->descripcion; ?></p>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card no-border">
-                            <div class="card-content">
-
-                                <div class="card-body my-gallery mb-2 p-0">
-                                    <div class="row">
-                                        <?php foreach ($imagenes_galeria_list as $imagen_galeria_row) : ?>
-                                            <figure class="col-lg-6 col-md-6 col-12 mb-2">
-                                                <a href="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_galeria_row->url; ?>" itemprop="contentUrl" data-size="1100x619">
-                                                    <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_galeria_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_galeria_row->alt; ?>" />
-                                                </a>
-                                            </figure>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body my-gallery mb-2 p-0">
-                                    <?php if (isset($imagenes_promociones_list)) : ?>
-                                        <div class="row">
-                                            <?php foreach ($imagenes_promociones_list as $imagen_promocion_row) : ?>
-                                                <figure class="col-lg-4 col-md-6 col-12 mb-2">
-                                                    <a href="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_promocion_row->url; ?>" itemprop="contentUrl" data-size="1200x1200">
-                                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_promocion_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_promocion_row->alt; ?>" />
-                                                    </a>
-                                                </figure>
-                                            <?php endforeach; ?>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body my-gallery mb-2 p-0">
-                                    <?php if (isset($imagenes_eventos_list)) : ?>
-                                        <div class="row">
-                                            <?php foreach ($imagenes_eventos_list as $imagen_evento_row) : ?>
-                                                <figure class="col-lg-6 col-md-6 col-12 mb-2">
-                                                    <a href="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_evento_row->url; ?>" itemprop="contentUrl" data-size="1200x1200">
-                                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_evento_row->url; ?>" itemprop="thumbnail" alt="<?php echo $imagen_evento_row->alt; ?>" />
-                                                    </a>
-                                                </figure>
-                                            <?php endforeach; ?>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        </div>
-
+        <div class="row gx-5 align-items-center pb-3">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="wow fadeInUp" data-wow-delay=".2s"><?php echo mb_strtoupper($local_row->nombre); ?></h1>
+                        <p class="">
+                            <?php foreach ($categorias_list as $categoria_row) : ?>
+                                <a class="" href="<?php echo site_url("directorio?categoria=" . $categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
+                            <?php endforeach; ?>
+                        </p>
+                        <p class=""><?php echo 'Solesta Local: ' . ucwords($local_row->planta) . ' #' . $local_row->numero_local; ?></p>
+                        <p class="text-justify"><?php echo $local_row->descripcion; ?></p>
                     </div>
-
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body p-0">
-                                    <?php if (isset($imagen_logotipo)) : ?>
-                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_logotipo->url; ?>" alt="">
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h4 class="card-title text-uppercase purple">Rango de precios</h4>
-                                    <p>Comida: <span class="teal lighten-3">$150 - $600</span></p>
-                                    <p>Bebidas: <span class="teal lighten-3">$60 - $1,000</span></p>
-                                </div>
-                            </div>
-                        </div-->
-
-                        <?php if (isset($etiquetas_list) and !empty($etiquetas_list)) : ?>
-                            <div class="card no-border">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <!--h4 class="card-title text-uppercase purple"></h4-->
-                                        <?php foreach ($etiquetas_list as $etiqueta_row) : ?>
-                                            <p><i class="teal lighten-3 fa fa-check"></i> <?php echo $etiqueta_row->nombre; ?></p>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6 text-center">
+                        <?php if (isset($imagen_logotipo)) : ?>
+                            <img src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_logotipo->url; ?>" alt="Local-logo" class="img-fluid rounded shadow" width="300px">
                         <?php endif; ?>
-
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-body">
-                                    <h4 class="card-title text-uppercase purple">Redes sociales</h4>
-                                    <div class="text-center mt-2">
-                                        <?php if (isset($local_row->url_pagina)) : ?>
-                                            <a href="//<?php echo $local_row->url_pagina; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-globe"></span></a>
-                                        <?php endif; ?>
-                                        <?php if (isset($local_row->url_facebook)) : ?>
-                                            <a href="<?php echo $local_row->url_facebook; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-facebook-square"></span></a>
-                                        <?php endif; ?>
-                                        <?php if (isset($local_row->url_instagram)) : ?>
-                                            <a href="<?php echo $local_row->url_instagram; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-instagram"></span></a>
-                                        <?php endif; ?>
-                                        <?php if (isset($local_row->url_twitter)) : ?>
-                                            <a href="<?php echo $local_row->url_twitter; ?>" target="_blank" class="btn btn-social-icon mr-1 mb-1"><span class="teal lighten-3 fa fa-twitter-square"></span></a>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card no-border">
-                            <div class="card-content">
-                                <div class="card-body p-0">
-                                    <?php if (isset($imagen_pickup)) : ?>
-                                        <img class="img-fluid rounded" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_pickup->url; ?>" alt="<?php echo $imagen_pickup->alt; ?>">
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
+        </div>
 
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mb10 pb-3 wow fadeInRight" data-wow-delay=".2s">
+                <div class="de-step-s1 text-dark shadow">
+
+                    <div class="de-icon-text p-4">
+                        <img src="<?php echo base_url('assets/images/recursos/local-reloj.png'); ?>" alt="icono-reloj" class="img-fluid">
+                        <div class="d-text">
+                            <?php foreach ($horarios_list as $horario_row) : ?>
+                                <h4><?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? $horario_row->dia_inicio . " - " . $horario_row->dia_fin : $horario_row->dia_inicio; ?></h4>
+                                <p class="pb-3">
+                                    <span>
+                                        <?php echo $horario_row->dia_inicio != $horario_row->dia_fin ? date('g:i a', strtotime($horario_row->hora_inicio)) . " - " . date('g:i a', strtotime($horario_row->hora_fin)) . "" : date('g:i a', strtotime($horario_row->hora_inicio)) . " - " . date('g:i a', strtotime($horario_row->hora_fin)) . ""; ?>
+                                    </span>
+                                    <br>
+                                </p>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mb10 pb-3 wow fadeInRight" data-wow-delay=".4s">
+                <div class="de-step-s1 text-dark shadow">
+
+                    <div class="de-icon-text p-4">
+                        <img src="<?php echo base_url('assets/images/recursos/local-instagram.png'); ?>" alt="icono-instagram" class="img-fluid">
+                        <div class="d-text">
+                            <?php if (isset($local_row->url_instagram)) : ?>
+                                <h4>¿Cómo llegar?</h4>
+                                <p class="pb-3">
+                                    <?php
+                                    $instagram_username = basename($local_row->url_instagram); // Esto obtiene el último segmento de la URL
+                                    ?>
+                                    <a href="<?php echo $local_row->url_instagram; ?>" target="_blank" rel="noopener noreferrer">
+                                        <?php echo '@' . $instagram_username; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <div class="de-icon-text p-4">
+                        <img src="<?php echo base_url('assets/images/recursos/local-facebook.png'); ?>" alt="icono-facebook" class="img-fluid">
+                        <div class="d-text">
+                            <?php if (isset($local_row->url_facebook)) : ?>
+                                <h4>¿Cómo llegar?</h4>
+                                <p class="pb-3">
+                                    <?php
+                                    $facebook_username = basename($local_row->url_facebook); // Esto obtiene el último segmento de la URL
+                                    ?>
+                                    <a href="<?php echo $local_row->url_facebook; ?>" target="_blank" rel="noopener noreferrer">
+                                        <?php echo '@' . $facebook_username; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <div class="de-icon-text p-4">
+                        <img src="<?php echo base_url('assets/images/recursos/local-telefono.png'); ?>" alt="icono-telefono" class="img-fluid">
+                        <div class="d-text">
+                            <?php if (isset($local_row->ubicacion)) : ?>
+                                <h4>¿Cómo llegar?</h4>
+                                <p class="pb-3">
+                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
+                                        <?php echo $local_row->ubicacion; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if (isset($local_row->telefono_1)) : ?>
+                                <h4>Teléfono</h4>
+                                <p class="pb-3">
+                                    <a href="tel:+52<?php echo $local_row->telefono_1; ?>" target="_blank" rel="noopener noreferrer">
+                                        +52<?php echo $local_row->telefono_1; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if (isset($local_row->telefono_2)) : ?>
+                                <h4>Teléfono secundario</h4>
+                                <p class="pb-3">
+                                    <a href="tel:+52<?php echo $local_row->telefono_2; ?>" target="_blank" rel="noopener noreferrer">
+                                        +52<?php echo $local_row->telefono_2; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if (isset($local_row->whatsapp)) : ?>
+                                <h4>Whatsapp</h4>
+                                <p class="pb-3">
+                                    <a href="https://wa.me/52<?php echo $local_row->whatsapp; ?>" target="_blank" rel="noopener noreferrer">
+                                        +52<?php echo $local_row->whatsapp; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if (isset($local_row->correo_electronico)) : ?>
+                                <h4>Correo electrónico</h4>
+                                <p class="pb-3">
+                                    <a href="mailto:<?php echo $local_row->correo_electronico; ?>" target="_blank" rel="noopener noreferrer">
+                                        <?php echo $local_row->correo_electronico; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+
+                            <?php if (isset($local_row->url_pagina)) : ?>
+                                <h4>Sitio web</h4>
+                                <p class="pb-3">
+                                    <a href="<?php echo $local_row->url_pagina; ?>" target="_blank" rel="noopener noreferrer">
+                                        <?php echo $local_row->url_pagina; ?>
+                                    </a>
+                                </p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
+<section class="no-top">
+    <div class="container">
+        <div class="row g-4 pb-5">
+            <?php foreach ($imagenes_galeria_list as $imagen_galeria_row) : ?>
+                <div class="col-6">
+                    <div class="bloglist item">
+                        <div class="post-content">
 
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-        It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader-active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
+                            <img class="img-fluid rounded shadow" src="<?php echo base_url_locales() . $local_row->url . '/' . $imagen_galeria_row->url; ?>" alt="<?php echo $imagen_galeria_row->alt; ?>" />
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
+            <?php endforeach; ?>
         </div>
-
     </div>
-</div>
+</section>
+
+<style>
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Desplazamiento x, y, desenfoque, color */
+    }
+
+    .image-container {
+        width: 100%;
+        padding-bottom: 100%;
+        /* Mantiene una relación de aspecto 1:1 (cuadrada) */
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        /* Aplica el borde redondeado al contenedor */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Aplica la sombra al contenedor */
+    }
+
+    .image-zoom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* La imagen se ajusta para llenar el contenedor manteniendo la proporción */
+        transition: transform 0.3s ease;
+        /* Efecto suave de zoom */
+    }
+
+    .image-zoom:hover {
+        transform: scale(1.2);
+        /* Zoom al hacer hover */
+    }
+</style>
+
+<?php if (isset($local_row->url_facebook)) : ?>
+    <a href="<?php echo $local_row->url_facebook; ?>" target="_blank"></a>
+<?php endif; ?>
+<?php if (isset($local_row->url_instagram)) : ?>
+    <a href="<?php echo $local_row->url_instagram; ?>" target="_blank"></a>
+<?php endif; ?>

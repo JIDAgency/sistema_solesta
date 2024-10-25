@@ -10,6 +10,8 @@
     font-style: normal;
 }
 
+
+
 body {
     overflow-x: hidden;
     padding: 0;
@@ -225,6 +227,7 @@ a.a-underline:hover span {
     padding: 5px 15px;
     border-radius: 15px;
 }
+
 .social-icons2 {
     background-color: #ff867c;
     padding: 6px;
@@ -453,6 +456,7 @@ a.a-underline:hover span {
     color: #967FA7;
     border-radius: 15px;
 }
+
 /* ESTILOS DE SECCION EXPLORA END */
 
 .bg-ubicacion {
@@ -542,11 +546,13 @@ a.a-underline:hover span {
     color: #91AFDC;
     font-size: 5em;
 }
+
 .text-contacto-movil {
     font-family: 'Block Marys', sans-serif;
     color: #91AFDC;
     font-size: 3em;
 }
+
 /* VISTA CONTACTO END */
 
 /* ------------------------------ */
@@ -933,4 +939,386 @@ a.btn-lg {
     content: "\f04b";
     position: relative;
     color: #fff;
+}
+
+
+
+
+
+
+/* marquee */
+.d-flex {
+    display: flex;
+    white-space: nowrap;
+}
+
+.de-marquee-list {
+    display: flex;
+    align-items: top;
+    -webkit-animation: loop 40s infinite linear;
+    animation: loop 40s infinite linear;
+}
+
+.de-marquee-list .d-item-txt {
+    font-size: 100px;
+    line-height: 100px;
+    padding-right: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    user-select: none;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .75);
+}
+
+.de-marquee-list.s2 .d-item-txt {
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0;
+}
+
+.de-marquee-list .d-item-txt img {
+    width: 80px;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+
+.de-marquee-list .d-item-display {
+    display: inline;
+}
+
+.de-marquee-list .d-item-block {
+    width: 80px;
+    height: 2px;
+    margin: 0 20px;
+    margin-right: 40px;
+    padding: 0px;
+    border-radius: .25rem !important;
+    display: inline-block;
+    transform: translateY(-30px);
+    background: var(--primary-color);
+}
+
+.de-marquee-list.s2 .d-item-block {
+    height: 5px;
+    background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+    background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%);
+}
+
+.de-marquee-list .d-item-block {
+    border-radius: 0;
+}
+
+.text-light .de-marquee-list .d-item-dot {
+    background: rgba(255, 255, 255, .3);
+}
+
+.de-marquee-list.style-2 .d-item-txt {
+    font-size: 160px;
+    background: rgba(255, 255, 255, .2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.de-marquee-list.style-2 .d-item-dot {
+    transform: translateY(-0px);
+    background: rgba(255, 255, 255, .2);
+}
+
+/* marquee */
+.de-step-s1 {
+    position: relative;
+    padding: 45px;
+    padding-top: 60px;
+    border-radius: .25rem !important;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    height: 100%;
+    background: #F4F4F4;
+}
+
+.de-step-s1 p {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.de-step-s1 h4 {
+    position: relative;
+    z-index: 1;
+}
+
+.de-step-s1 .d-number {
+    font-size: 72px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    color: var(--title-font-color)
+}
+
+.border-gray {
+    border: solid 1px #ddd;
+}
+
+.bg-white-50 {
+    background: rgba(255, 255, 255, .5);
+}
+
+.bg-white-60 {
+    background: rgba(255, 255, 255, .6);
+}
+
+.bg-white-75 {
+    background: rgba(255, 255, 255, .75);
+}
+
+.bg-white-85 {
+    background: rgba(255, 255, 255, .85);
+}
+
+.bg-blur {
+    background: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* marquee plugin */
+
+.testimonials-marquee {
+    display: block;
+    background: #333333;
+    height: 100%;
+}
+
+.testimonials-marquee .item {
+    width: 360px;
+    height: 100%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin: 0 15px;
+    top: 0;
+}
+
+.testimonials-marquee .item .de_testi blockquote {
+    position: relative;
+    height: 100%;
+}
+
+.testimonials-marquee .item .de_testi blockquote:before {
+    top: 30px;
+    color: var(--secondary-color);
+}
+
+/* ================================================== */
+/* social-icons */
+/* ================================================== */
+
+.social-icons {
+    display: inline-block;
+}
+
+.social-icons i {
+    text-shadow: none;
+    color: #fff;
+    padding: 10px 5px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 3px 0 3px;
+    background: var(--bg-dark-3);
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.dark-scheme .social-icons i {
+    background: rgba(255, 255, 255, .1);
+}
+
+.social-icons i.fa-google-plus {
+    padding: 12px 14px 10px 6px;
+}
+
+.social-icons.s2 i {
+    background: rgba(255, 255, 255, .1);
+}
+
+.social-icons i:hover {
+    background: #fff;
+    border-color: #eceff3;
+    color: #333;
+}
+
+.social-icons.big a {
+    padding: 0;
+    display: inline-block;
+}
+
+.social-icons.big i {
+    font-size: 26px;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    background: var(--primary-color);
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    width: 48px;
+    padding: 14px 0;
+}
+
+.social-icons.big i:hover {
+    background: none;
+}
+
+#topbar .social-icons i {
+    font-size: 14px;
+    background: rgba(255, 255, 255, .5);
+    margin-bottom: 0;
+    margin-right: 1px;
+    padding: 10px 5px;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.de-color-icons i {
+    text-shadow: none;
+    color: #fff;
+    padding: 12px 10px 8px 10px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 1px 10px 1px;
+    padding-top: 16px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+
+.de-color-icons .fa-twitter {
+    background: #3ea1ec;
+}
+
+.de-color-icons .fa-facebook {
+    background: #344e86;
+}
+
+.de-color-icons .fa-google-plus {
+    background: #d73925;
+}
+
+.de-color-icons .fa-reddit {
+    background: #c23321;
+}
+
+.de-color-icons .fa-linkedin {
+    background: #0976b4;
+}
+
+.de-color-icons .fa-pinterest {
+    background: #cc2127;
+}
+
+.de-color-icons .fa-stumbleupon {
+    background: #eb4924;
+}
+
+.de-color-icons .fa-delicious {
+    background: #198cff;
+}
+
+.de-color-icons span {
+    cursor: poInter;
+    display: inline-block;
+}
+
+.de-color-icons span:hover {
+    transform: scale(1.1);
+}
+
+.social-icons.big i {
+    margin: 0 15px 0 15px;
+}
+
+.social-icons.big i:hover {
+    background: none;
+}
+
+.social-icons.s1 i {
+    border: none;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.social-icons.s1:hover i {
+    background: none;
+}
+
+.social-icons.s1 {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.social-icons.s1 .inner {
+    display: inline-block;
+    position: relative;
+}
+
+.social-icons.s1 .inner:before,
+.social-icons.s1 .inner:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    top: 0;
+    width: 100%;
+}
+
+.social-icons.s1 .inner:before {
+    right: 100%;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.social-icons.s1 .inner:after {
+    left: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.col-right {
+    display: inline-block;
+    float: right;
+    margin-top: 22px;
+}
+
+.de-icon-text {
+    position: relative;
+}
+
+.de-icon-text img {
+    width: 48px;
+    position: absolute;
+}
+
+.de-icon-text .d-text {
+    padding-left: 60px;
+}
+
+.de-icon-text h4 {
+    margin-bottom: 0;
 }
