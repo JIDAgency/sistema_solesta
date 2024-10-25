@@ -246,19 +246,19 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="col-12">
-                            <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly2.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
                             <img src="<?php echo base_url('assets/images/recursos/petfriend-movil1.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none wow fadeInUp">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-12">
-                            <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly3.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
                             <img src="<?php echo base_url('assets/images/recursos/petfriend-movil2.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none wow fadeInUp">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="col-12">
-                            <img src="<?php echo base_url('assets/images/recursos/petfriendly.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
+                            <img src="<?php echo base_url('assets/images/recursos/petfriendly4.png') ?>" alt="petfriend" class="img-fluid d-none d-sm-block wow fadeInUp">
                             <img src="<?php echo base_url('assets/images/recursos/petfriend-movil3.png') ?>" alt="petfriend" class="img-fluid d-block d-sm-none wow fadeInUp">
                         </div>
                     </div>
