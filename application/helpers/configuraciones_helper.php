@@ -143,7 +143,7 @@ if (!function_exists('og_description')) {
 if (!function_exists('og_image')) {
     function og_image()
     {
-        return base_url('assets/images/og-image.png');
+        return base_url('assets/images/og-image.jpg');
     }
 }
 
