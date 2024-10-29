@@ -38,6 +38,14 @@ body .owl-stage .owl-item {
 
 }
 
+.text-black {
+    color: #967FA7;
+}
+
+.text-black:hover {
+    color: #ff867c;
+}
+
 .titulo-azul {
     color: #4B5A72;
 }

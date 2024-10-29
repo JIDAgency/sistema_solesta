@@ -20,7 +20,7 @@
                         <h1 class="wow fadeInUp" data-wow-delay=".2s"><?php echo mb_strtoupper($local_row->nombre); ?></h1>
                         <p class="">
                             <?php foreach ($categorias_list as $categoria_row) : ?>
-                                <a class="wow fadeInUp" data-wow-delay=".4s" href="<?php echo site_url("directorio?categoria=" . $categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
+                                <a class="wow fadeInUp text-black" data-wow-delay=".4s" href="<?php echo site_url("directorio?categoria=" . $categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
                             <?php endforeach; ?>
                         </p>
                         <p class="wow fadeInUp" data-wow-delay=".6s"><?php echo 'Solesta Local: ' . ucwords($local_row->planta) . ' #' . $local_row->numero_local; ?></p>
@@ -73,7 +73,7 @@
                                     <?php
                                     $instagram_username = basename($local_row->url_instagram); // Esto obtiene el último segmento de la URL
                                     ?>
-                                    <a href="<?php echo $local_row->url_instagram; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="<?php echo $local_row->url_instagram; ?>" target="_blank" rel="noopener noreferrer">
                                         <?php echo '@' . $instagram_username; ?>
                                     </a>
                                 </p>
@@ -90,7 +90,7 @@
                                     <?php
                                     $facebook_username = basename($local_row->url_facebook); // Esto obtiene el último segmento de la URL
                                     ?>
-                                    <a href="<?php echo $local_row->url_facebook; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="<?php echo $local_row->url_facebook; ?>" target="_blank" rel="noopener noreferrer">
                                         <?php echo '@' . $facebook_username; ?>
                                     </a>
                                 </p>
@@ -104,7 +104,7 @@
                             <?php if (isset($local_row->ubicacion)) : ?>
                                 <h4>¿Cómo llegar?</h4>
                                 <p class="pb-3">
-                                    <a href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
                                         <?php echo $local_row->ubicacion; ?>
                                     </a>
                                 </p>
@@ -113,7 +113,7 @@
                             <?php if (isset($local_row->telefono_1)) : ?>
                                 <h4>Teléfono</h4>
                                 <p class="pb-3">
-                                    <a href="tel:+52<?php echo $local_row->telefono_1; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="tel:+52<?php echo $local_row->telefono_1; ?>" target="_blank" rel="noopener noreferrer">
                                         +52<?php echo $local_row->telefono_1; ?>
                                     </a>
                                 </p>
@@ -122,7 +122,7 @@
                             <?php if (isset($local_row->telefono_2)) : ?>
                                 <h4>Teléfono secundario</h4>
                                 <p class="pb-3">
-                                    <a href="tel:+52<?php echo $local_row->telefono_2; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="tel:+52<?php echo $local_row->telefono_2; ?>" target="_blank" rel="noopener noreferrer">
                                         +52<?php echo $local_row->telefono_2; ?>
                                     </a>
                                 </p>
@@ -131,7 +131,7 @@
                             <?php if (isset($local_row->whatsapp)) : ?>
                                 <h4>Whatsapp</h4>
                                 <p class="pb-3">
-                                    <a href="https://wa.me/52<?php echo $local_row->whatsapp; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="https://wa.me/52<?php echo $local_row->whatsapp; ?>" target="_blank" rel="noopener noreferrer">
                                         +52<?php echo $local_row->whatsapp; ?>
                                     </a>
                                 </p>
@@ -140,7 +140,7 @@
                             <?php if (isset($local_row->correo_electronico)) : ?>
                                 <h4>Correo electrónico</h4>
                                 <p class="pb-3">
-                                    <a href="mailto:<?php echo $local_row->correo_electronico; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="mailto:<?php echo $local_row->correo_electronico; ?>" target="_blank" rel="noopener noreferrer">
                                         <?php echo $local_row->correo_electronico; ?>
                                     </a>
                                 </p>
@@ -156,7 +156,7 @@
                                 ?>
                                 <h4>Sitio web</h4>
                                 <p class="pb-3">
-                                    <a href="<?php echo $url_pagina; ?>" target="_blank" rel="noopener noreferrer">
+                                    <a class="text-black" href="<?php echo $url_pagina; ?>" target="_blank" rel="noopener noreferrer">
                                         <?php echo $local_row->url_pagina; ?>
                                     </a>
                                 </p>
