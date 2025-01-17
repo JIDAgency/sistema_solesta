@@ -32,11 +32,12 @@ class Funcionalidades extends MY_Controller
         echo "<br>";
 
         // Cambiar a TRUE cuando se vaya a ejecutar el proceso
-        $ejecutar_agregar_local = FALSE;
-        $ejecutar_horarios = FALSE;
-        $ejecutar_imagenes = FALSE;
+        $ejecutar_agregar_local = NULL;
+        $ejecutar_horarios = NULL;
+        $ejecutar_imagenes = NULL;
 
-        $local_id = null;
+        $local_id = NULL; //Si quieres agregar algun local que ya existe poner el id del local
+
 
         echo "Ejecutando...";
         echo "<br>";
@@ -65,22 +66,22 @@ class Funcionalidades extends MY_Controller
     {
         // Datos del nuevo local
         $data = array(
-            'nombre' => 'Nombre del Local', // Cambia por el nombre del local
+            'nombre' => 'Sherewow', // Cambia por el nombre del local
             'planta' => 'planta alta', // Cambia por 'planta alta' o 'planta baja'
-            'numero_local' => 123, // Cambia por el número de local
-            'descripcion' => 'Descripción del local.', // Cambia por la descripción
-            'telefono_1' => '1234567890', // Cambia por el teléfono 1
-            'telefono_2' => '0987654321', // (Opcional) Cambia por el teléfono 2
-            'whatsapp' => '1234567890', // Cambia por el número de WhatsApp
-            'telefono_atencion_clientes' => '1234567890', // Cambia por el teléfono de atención a clientes
-            'correo_electronico' => 'correo@ejemplo.com', // (Opcional) Cambia por el correo electrónico
-            'ubicacion' => 'Dirección del local', // (Opcional) Cambia por la ubicación
-            'url_ubicacion' => 'https://maps.google.com/tu_ubicacion', // (Opcional) Cambia por la URL de ubicación
-            'url_pagina' => 'https://www.paginaejemplo.com', // (Opcional) Cambia por la URL de la página
-            'url_facebook' => 'https://www.facebook.com/tu_facebook', // (Opcional) Cambia por la URL de Facebook
-            'url_instagram' => 'https://www.instagram.com/tu_instagram', // (Opcional) Cambia por la URL de Instagram
-            'url_twitter' => 'https://twitter.com/tu_twitter', // (Opcional) Cambia por la URL de Twitter
-            'url' => 'tu_url', // (Opcional) Cambia por la URL personalizada
+            'numero_local' => 147, // Cambia por el número de local
+            'descripcion' => 'Figuras personalizadas en 3D.', // Cambia por la descripción
+            'telefono_1' => '220306484', // Cambia por el teléfono 1
+            'telefono_2' => '2203806484', // (Opcional) Cambia por el teléfono 2
+            'whatsapp' => '0', // Cambia por el número de WhatsApp
+            'telefono_atencion_clientes' => '0', // Cambia por el teléfono de atención a clientes
+            'correo_electronico' => 'ventas@sharewowpuebla.com', // (Opcional) Cambia por el correo electrónico
+            'ubicacion' => 'Atlixcáyotl 4931, Reserva Territorial Atlixcáyotl, Centros Comerciales Desarrollo Atlixcayotl, 72193 Heroica Puebla de Zaragoza, Pue.', // (Opcional) Cambia por la ubicación
+            'url_ubicacion' => 'https://maps.app.goo.gl/BLc1yGvHcKJJJxFy8', // (Opcional) Cambia por la URL de ubicación
+            'url_pagina' => '', // (Opcional) Cambia por la URL de la página
+            'url_facebook' => 'https://www.facebook.com/profile.php?id=61570418912168&mibextid=LQQJ4d&rdid=0F9w37uIGPmXcGdg&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AfDr5Ehj6%2F%3Fmibextid%3DLQQJ4d#', // (Opcional) Cambia por la URL de Facebook
+            'url_instagram' => 'https://www.instagram.com/accounts/login/?next=%2Fsharewow_puebla%2Fprofilecard%2F&source=desktop_nav', // (Opcional) Cambia por la URL de Instagram
+            'url_twitter' => '', // (Opcional) Cambia por la URL de Twitter
+            'url' => 'sharewow', // (Opcional) Cambia por la URL personalizada
             'estatus' => 'activo' // Cambia por 'activo' o 'suspendido'
 
             // EJEMPLO...
