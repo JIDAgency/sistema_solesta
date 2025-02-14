@@ -23,7 +23,9 @@
                                 <a class="wow fadeInUp text-black" data-wow-delay=".4s" href="<?php echo site_url("directorio?categoria=" . $categoria_row->url); ?>"><?php echo $categoria_row->nombre; ?></a>
                             <?php endforeach; ?>
                         </p>
-                        <p class="wow fadeInUp" data-wow-delay=".6s"><?php echo 'Solesta Local: ' . ucwords($local_row->planta) . ' #' . $local_row->numero_local; ?></p>
+                        <!-- <p class="wow fadeInUp" data-wow-delay=".6s"><?php //echo 'Solesta Local: ' . ucwords($local_row->planta) . ' #' . $local_row->numero_local; 
+                                                                            ?></p> -->
+                        <p class="wow fadeInUp" data-wow-delay=".6s"><small><em><?php echo ucwords($local_row->planta); ?></em></small></p>
                         <p class="text-justify wow fadeInUp" data-wow-delay=".8s"><?php echo $local_row->descripcion; ?></p>
                     </div>
                     <div class="col-6 text-center">
@@ -99,9 +101,19 @@
                     <?php endif; ?>
 
                     <div class="de-icon-text p-4">
-                        <img src="<?php echo base_url('assets/images/recursos/local-telefono.png'); ?>" alt="icono-telefono" class="img-fluid">
+                        <?php if (
+                            (isset($local_row->ubicacion) && !empty($local_row->ubicacion)) ||
+                            (isset($local_row->telefono_1) && !empty($local_row->telefono_1)) ||
+                            (isset($local_row->telefono_2) && !empty($local_row->telefono_2)) ||
+                            (isset($local_row->whatsapp) && !empty($local_row->whatsapp)) ||
+                            (isset($local_row->correo_electronico) && !empty($local_row->correo_electronico)) ||
+                            (isset($local_row->url_pagina) && !empty($local_row->url_pagina))
+                        ) : ?>
+                            <img src="<?php echo base_url('assets/images/recursos/local-telefono.png'); ?>" alt="icono-telefono" class="img-fluid">
+                        <?php endif; ?>
+
                         <div class="d-text">
-                            <?php if (isset($local_row->ubicacion)) : ?>
+                            <?php if (isset($local_row->ubicacion) && !empty($local_row->ubicacion)) : ?>
                                 <h4>¿Cómo llegar?</h4>
                                 <p class="pb-3">
                                     <a class="text-black" href="<?php echo $local_row->url_ubicacion; ?>" target="_blank" rel="noopener noreferrer">
@@ -110,7 +122,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if (isset($local_row->telefono_1)) : ?>
+                            <?php if (isset($local_row->telefono_1) && !empty($local_row->telefono_1)) : ?>
                                 <h4>Teléfono</h4>
                                 <p class="pb-3">
                                     <a class="text-black" href="tel:+52<?php echo $local_row->telefono_1; ?>" target="_blank" rel="noopener noreferrer">
@@ -119,7 +131,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if (isset($local_row->telefono_2)) : ?>
+                            <?php if (isset($local_row->telefono_2) && !empty($local_row->telefono_2)) : ?>
                                 <h4>Teléfono secundario</h4>
                                 <p class="pb-3">
                                     <a class="text-black" href="tel:+52<?php echo $local_row->telefono_2; ?>" target="_blank" rel="noopener noreferrer">
@@ -128,7 +140,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if (isset($local_row->whatsapp)) : ?>
+                            <?php if (isset($local_row->whatsapp) && !empty($local_row->whatsapp)) : ?>
                                 <h4>Whatsapp</h4>
                                 <p class="pb-3">
                                     <a class="text-black" href="https://wa.me/52<?php echo $local_row->whatsapp; ?>" target="_blank" rel="noopener noreferrer">
@@ -137,7 +149,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if (isset($local_row->correo_electronico)) : ?>
+                            <?php if (isset($local_row->correo_electronico) && !empty($local_row->correo_electronico)) : ?>
                                 <h4>Correo electrónico</h4>
                                 <p class="pb-3">
                                     <a class="text-black" href="mailto:<?php echo $local_row->correo_electronico; ?>" target="_blank" rel="noopener noreferrer">
@@ -146,7 +158,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if (isset($local_row->url_pagina)) : ?>
+                            <?php if (isset($local_row->url_pagina) && !empty($local_row->url_pagina)) : ?>
                                 <?php
                                 // Añadir 'https://' si la URL no tiene prefijo 'http://' o 'https://'
                                 $url_pagina = $local_row->url_pagina;
@@ -161,7 +173,6 @@
                                     </a>
                                 </p>
                             <?php endif; ?>
-
                         </div>
                     </div>
 

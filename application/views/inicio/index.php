@@ -162,32 +162,32 @@
         <div class="row justify-content-center">
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo mb-12">
                 <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white me-2 restaurante wow fadeInUp">
-                    <h2 class="marys">RESTAU <br>RANTES</h2>
-                    <p> Ver mas</p>
+                    <h2 class="texto-tipo"><b>RESTAU <br>RANTES</b></h2>
+                    <p> Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white me-2 diversion wow fadeInUp">
-                    <h2 class="marys">DIVER <br>SION</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">DIVER <br>SION</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white me-2 wellness wow fadeInUp" data-wow-delay=".2s">
-                    <h2 class="marys">WELL <br>NESS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">WELL <br>NESS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white me-2 accesorios wow fadeInUp" data-wow-delay=".2s">
-                    <h2 class="marys">ACCE <br>SORIOS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">ACCE <br>SORIOS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white me-2 servicios wow fadeInUp" data-wow-delay=".4s">
-                    <h2 class="marys">SERVI <br>CIOS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">SERVI <br>CIOS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white me-2 shopping wow fadeInUp" data-wow-delay=".4s">
-                    <h2 class="marys">SHOPP <br>ING</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">SHOPP <br>ING</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white me-2 hogar wow fadeInUp" data-wow-delay=".6s">
-                    <h2 class="marys">HO <br>GAR</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">HO <br>GAR</h2>
+                    <p>Ver más</p>
                 </a>
                 <div class="col-12 text-center my-3">
                     <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2 wow fadeInUp" data-wow-delay=".8s">Explorar todos los locales</a>
@@ -200,7 +200,7 @@
                 <br>
                 <p class="wow fadeInUp" data-wow-delay=".4s">Con una arquitectura abierta y moderna, Solesta te invita a recorrer sus amplios
                     espacios llenos de luz. Desde tiendas exclusivas hasta áreas de entretenimiento,
-                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia</p>
+                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia.</p>
             </div>
         </div>
     </div>
@@ -211,32 +211,32 @@
         <div class="row justify-content-center">
             <div class="row col-lg-6 col-md-6 col-sm-12 mt-negativo">
                 <a href="<?php echo base_url('directorio?categoria=restaurantes') ?>" class="text-white me-2 restaurante wow fadeInUp">
-                    <h2 class="marys">RESTAU <br>RANTES</h2>
-                    <p> Ver mas</p>
+                    <h2 class="texto-tipo">RESTAU <br>RANTES</h2>
+                    <p> Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=fun') ?>" class="text-white me-2 diversion wow fadeInUp">
-                    <h2 class="marys">DIVER <br>SION</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">DIVER <br>SION</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=wellness') ?>" class="text-white me-2 wellness wow fadeInUp" data-wow-delay=".2s">
-                    <h2 class="marys">WELL <br>NESS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">WELL <br>NESS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=accesorios') ?>" class="text-white me-2 accesorios wow fadeInUp" data-wow-delay=".2s">
-                    <h2 class="marys">ACCE <br>SORIOS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">ACCE <br>SORIOS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=servicios') ?>" class="text-white me-2 servicios wow fadeInUp" data-wow-delay=".4s">
-                    <h2 class="marys">SERVI <br>CIOS</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">SERVI <br>CIOS</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=shopping') ?>" class="text-white me-2 shopping wow fadeInUp" data-wow-delay=".4s">
-                    <h2 class="marys">SHOPP <br>ING</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">SHOPP <br>ING</h2>
+                    <p>Ver más</p>
                 </a>
                 <a href="<?php echo base_url('directorio?categoria=hogar') ?>" class="text-white me-2 hogar wow fadeInUp" data-wow-delay=".6s">
-                    <h2 class="marys">HO <br>GAR</h2>
-                    <p>Ver mas</p>
+                    <h2 class="texto-tipo">HO <br>GAR</h2>
+                    <p>Ver más</p>
                 </a>
                 <div class="col-12 text-center my-3">
                     <a href="<?php echo site_url('directorio'); ?>" type="button" class="btn-locales2 px-5 py-2 wow fadeInUp" data-wow-delay=".8s">Explorar todos los locales</a>
@@ -249,7 +249,7 @@
                 <br>
                 <p class="wow fadeInUp" data-wow-delay=".4s">Con una arquitectura abierta y moderna, Solesta te invita a recorrer sus amplios
                     espacios llenos de luz. Desde tiendas exclusivas hasta áreas de entretenimiento,
-                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia</p>
+                    cada rincón está diseñado para brindar una experiencia inolvidable a toda la familia.</p>
             </div>
         </div>
     </div>

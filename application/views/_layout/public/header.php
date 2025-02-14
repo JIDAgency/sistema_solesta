@@ -73,7 +73,7 @@
                             </a>
 
                             <div class="social-icons-movil d-block d-sm-none">
-                                <span class="text-white">Síguenos:</span>
+                                <span class="text-white">Síguenos en:</span>
                                 <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/tiktok.png'); ?>" alt="tiktok" class="img-fluid" width="14%"></a>
                                 <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/facebook.png'); ?>" alt="facebook" class="img-fluid" width="14%"></a>
                                 <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/instagram.png'); ?>" alt="instagram" class="img-fluid" width="14%"></a>
@@ -100,7 +100,7 @@
                                     </li>
                                 </ul>
                                 <div class="social-icons ms-lg-3 d-none d-sm-block">
-                                    <span class="text-white">Sígueno:</span>
+                                    <span class="text-white">Síguenos en:</span>
                                     <a href="<?php echo tiktok(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/tiktok.png'); ?>" alt="tiktok" class="img-fluid"></a>
                                     <a href="<?php echo facebook(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/facebook.png'); ?>" alt="facebook" class="img-fluid"></a>
                                     <a href="<?php echo instagram(); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo base_url('assets/images/redes/instagram.png'); ?>" alt="instagram" class="img-fluid"></a>
