@@ -66,20 +66,20 @@ class Funcionalidades extends MY_Controller
     {
         // Datos del nuevo local
         $data = array(
-            'nombre' => 'Sherewow', // Cambia por el nombre del local
+            'nombre' => 'McCarthy\'s Black', // Cambia por el nombre del local
             'planta' => 'planta alta', // Cambia por 'planta alta' o 'planta baja'
-            'numero_local' => 147, // Cambia por el número de local
-            'descripcion' => 'Figuras personalizadas en 3D.', // Cambia por la descripción
-            'telefono_1' => '220306484', // Cambia por el teléfono 1
-            'telefono_2' => '2203806484', // (Opcional) Cambia por el teléfono 2
-            'whatsapp' => '0', // Cambia por el número de WhatsApp
+            'numero_local' => 06, // Cambia por el número de local
+            'descripcion' => 'Pub Irlandes, con música en vivo, beer garden, wings place.', // Cambia por la descripción
+            'telefono_1' => '2229005990', // Cambia por el teléfono 1
+            'telefono_2' => null, // (Opcional) Cambia por el teléfono 2
+            'whatsapp' => '+522229005990', // Cambia por el número de WhatsApp
             'telefono_atencion_clientes' => '0', // Cambia por el teléfono de atención a clientes
-            'correo_electronico' => 'ventas@sharewowpuebla.com', // (Opcional) Cambia por el correo electrónico
-            'ubicacion' => 'Atlixcáyotl 4931, Reserva Territorial Atlixcáyotl, Centros Comerciales Desarrollo Atlixcayotl, 72193 Heroica Puebla de Zaragoza, Pue.', // (Opcional) Cambia por la ubicación
-            'url_ubicacion' => 'https://maps.app.goo.gl/BLc1yGvHcKJJJxFy8', // (Opcional) Cambia por la URL de ubicación
-            'url_pagina' => '', // (Opcional) Cambia por la URL de la página
-            'url_facebook' => 'https://www.facebook.com/profile.php?id=61570418912168&mibextid=LQQJ4d&rdid=0F9w37uIGPmXcGdg&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AfDr5Ehj6%2F%3Fmibextid%3DLQQJ4d#', // (Opcional) Cambia por la URL de Facebook
-            'url_instagram' => 'https://www.instagram.com/accounts/login/?next=%2Fsharewow_puebla%2Fprofilecard%2F&source=desktop_nav', // (Opcional) Cambia por la URL de Instagram
+            'correo_electronico' => 'soporte@luckycompany.mx', // (Opcional) Cambia por el correo electrónico
+            'ubicacion' => 'Atlixcáyotl 4913, Reserva Territorial Atlixcáyotl, Centros Comerciales Desarrollo Atlixcayotl, 72193 Heroica Puebla de Zaragoza, Pue.', // (Opcional) Cambia por la ubicación
+            'url_ubicacion' => 'https://maps.app.goo.gl/DVNVQBxJ4Gebiknd7', // (Opcional) Cambia por la URL de ubicación
+            'url_pagina' => 'https://www.mccarthyspub.com.mx/', // (Opcional) Cambia por la URL de la página
+            'url_facebook' => 'https://www.facebook.com/profile.php?id=61565928042722', // (Opcional) Cambia por la URL de Facebook
+            'url_instagram' => 'https://www.instagram.com/mccarthysblack', // (Opcional) Cambia por la URL de Instagram
             'url_twitter' => '', // (Opcional) Cambia por la URL de Twitter
             'url' => 'sharewow', // (Opcional) Cambia por la URL personalizada
             'estatus' => 'activo' // Cambia por 'activo' o 'suspendido'
