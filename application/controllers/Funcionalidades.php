@@ -66,23 +66,23 @@ class Funcionalidades extends MY_Controller
     {
         // Datos del nuevo local
         $data = array(
-            'nombre' => 'McCarthy\'s Black', // Cambia por el nombre del local
-            'planta' => 'planta alta', // Cambia por 'planta alta' o 'planta baja'
-            'numero_local' => 06, // Cambia por el número de local
-            'descripcion' => 'Pub Irlandes, con música en vivo, beer garden, wings place.', // Cambia por la descripción
-            'telefono_1' => '2229005990', // Cambia por el teléfono 1
-            'telefono_2' => null, // (Opcional) Cambia por el teléfono 2
-            'whatsapp' => '+522229005990', // Cambia por el número de WhatsApp
-            'telefono_atencion_clientes' => '0', // Cambia por el teléfono de atención a clientes
-            'correo_electronico' => 'soporte@luckycompany.mx', // (Opcional) Cambia por el correo electrónico
-            'ubicacion' => 'Atlixcáyotl 4913, Reserva Territorial Atlixcáyotl, Centros Comerciales Desarrollo Atlixcayotl, 72193 Heroica Puebla de Zaragoza, Pue.', // (Opcional) Cambia por la ubicación
-            'url_ubicacion' => 'https://maps.app.goo.gl/DVNVQBxJ4Gebiknd7', // (Opcional) Cambia por la URL de ubicación
-            'url_pagina' => 'https://www.mccarthyspub.com.mx/', // (Opcional) Cambia por la URL de la página
-            'url_facebook' => 'https://www.facebook.com/profile.php?id=61565928042722', // (Opcional) Cambia por la URL de Facebook
-            'url_instagram' => 'https://www.instagram.com/mccarthysblack', // (Opcional) Cambia por la URL de Instagram
-            'url_twitter' => '', // (Opcional) Cambia por la URL de Twitter
-            'url' => 'sharewow', // (Opcional) Cambia por la URL personalizada
-            'estatus' => 'activo' // Cambia por 'activo' o 'suspendido'
+            'nombre' => 'MiraMira',
+            'planta' => 'planta baja',             // Ajusta según corresponda (por la abreviatura "PBA" quizá sea Planta Baja)
+            'numero_local' => 18,                  // Ajusta al número real de local en Solesta
+            'descripcion' => 'Joyería chapada en oro de 14k, plata .925 y piedras exclusivas. Accesorios 100% mexicanos con envíos a todo México.',
+            'telefono_1' => '2221026688',          // Ajusta si tuvieras otro teléfono real
+            'telefono_2' => null,                  // Puedes dejarlo en null si no existe un segundo teléfono
+            'whatsapp' => '+522221026688',         // Ajusta a la línea de WhatsApp oficial, si aplica
+            'telefono_atencion_clientes' => '0',    // Puedes cambiarlo si hay un número de atención diferente
+            'correo_electronico' => 'info@miramira.com', // Cambia por un correo oficial si aplica
+            'ubicacion' => 'Atlixcáyotl 4913, Planta Baja, 72193 Heroica Puebla de Zaragoza, Pue.',
+            'url_ubicacion' => null, // Coloca la URL de Google Maps real
+            'url_pagina' => '',                    // Si tienen página web oficial, colócala aquí
+            'url_facebook' => '',                  // URL oficial de Facebook (opcional)
+            'url_instagram' => 'https://www.instagram.com/miramira/', // Ajusta la cuenta oficial si es distinta
+            'url_twitter' => '',                   // Si tienen Twitter, agrégalo
+            'url' => '',                           // URL personalizada o “slug” (opcional)
+            'estatus' => 'activo'                  // 'activo' o 'suspendido'
 
             // EJEMPLO...
             // 'nombre' => 'Nombre del Local', // Cambia por el nombre del local
@@ -119,37 +119,40 @@ class Funcionalidades extends MY_Controller
 
     public function dar_de_alta_horarios($local_id)
     {
+        // Asegúrate de que $local_id sea válido y exista en tu base de datos
         $locales_list = $this->locales_model->get_local_por_id($local_id)->result();
 
         $data_horarios = array();
 
         foreach ($locales_list as $local_row) {
-            /** Horario de tiendas */
+            // Lunes a Jueves: 10:00 am - 8:00 pm
             $data_horarios[] = array(
                 'local_id' => $local_row->id,
-                'dia_inicio' => "Lun",
-                'dia_fin' => "Jue",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "20:00",
-                'estatus' => "activo",
+                'dia_inicio' => 'Lun',
+                'dia_fin' => 'Jue',
+                'hora_inicio' => '10:00',
+                'hora_fin' => '20:00',
+                'estatus' => 'activo',
             );
-            /** Horario de tiendas */
+
+            // Viernes y Sábado: 10:00 am - 9:00 pm
             $data_horarios[] = array(
                 'local_id' => $local_row->id,
-                'dia_inicio' => "Vie",
-                'dia_fin' => "Sab",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "21:00",
-                'estatus' => "activo",
+                'dia_inicio' => 'Vie',
+                'dia_fin' => 'Sab',
+                'hora_inicio' => '10:00',
+                'hora_fin' => '21:00',
+                'estatus' => 'activo',
             );
-            /** Horario de tiendas */
+
+            // Domingo: 10:00 am - 8:00 pm
             $data_horarios[] = array(
                 'local_id' => $local_row->id,
-                'dia_inicio' => "Dom",
-                'dia_fin' => "Dom",
-                'hora_inicio' => "11:00",
-                'hora_fin' => "20:00",
-                'estatus' => "activo",
+                'dia_inicio' => 'Dom',
+                'dia_fin' => 'Dom',
+                'hora_inicio' => '10:00',
+                'hora_fin' => '20:00',
+                'estatus' => 'activo',
             );
         }
 

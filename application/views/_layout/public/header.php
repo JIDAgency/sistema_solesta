@@ -58,7 +58,6 @@
     <div id="wrapper">
         <div id="de-loader"></div>
 
-        <!-- header begin -->
         <header class="">
             <div class="container-fluid">
                 <div class="row">
@@ -88,6 +87,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link <?php echo isset($nav_directorio) ? 'active' : ''; ?>" href="<?php echo site_url('directorio'); ?>">Directorio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link <?php echo isset($nav_islas) ? 'active' : ''; ?>" href="<?php echo site_url('islas'); ?>">Islas</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link <?php echo isset($nav_mapa) ? 'active' : ''; ?>" href="<?php echo site_url('mapa'); ?>">Mapa</a>
